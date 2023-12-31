@@ -1,0 +1,36 @@
+[package]
+name = "twende-server"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "twende-server"
+path = "src/main.rs"
+
+[dependencies]
+axum = { version = "0.7", features = ["macros", "multipart"] }
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.7", features = ["postgres", "uuid", "time", "json", "bigdecimal", "runtime-tokio-rustls"] }
+bigdecimal = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+time = { version = "0.3", features = ["serde", "serde-human-readable", "formatting", "parsing"] }
+tower-http = { version = "0.5", features = ["cors", "trace", "request-id", "timeout"] }
+tower = "0.4"
+jsonwebtoken = "9"
+argon2 = { version = "0.5", features = ["std"] }
+thiserror = "1"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+dotenvy = "0.15"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rand = "0.8"
+validator = { version = "0.18", features = ["derive"] }
+axum-extra = { version = "0.9", features = ["typed-header"] }
+headers = "0.4"
+ed25519-dalek = { version = "2", features = ["std"] }
+base64 = "0.22"
+parking_lot = "0.12"
+url = "2"
