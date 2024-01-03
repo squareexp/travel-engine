@@ -13,3 +13,5 @@ pub mod handlers;
 // deadass don't touch this it works - 38
 
 // is this garbage? probably - 48
+
+// resolved this to prevent crash - 74
