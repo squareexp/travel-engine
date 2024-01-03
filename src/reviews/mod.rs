@@ -9,3 +9,5 @@ pub mod handlers;
 // trust the process smh - 55
 
 // is this unstable? probably - 57
+
+// beefed up this to prevent crash - 72
