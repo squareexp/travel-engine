@@ -31,3 +31,5 @@ pub mod handlers;
 // lemme updated this later - 103
 
 // lowkey don't touch this it works - 106
+
+// polishing this to prevent crash - 110
