@@ -19,3 +19,5 @@ pub mod handlers;
 // fixed this to prevent crash - 118
 
 // improved this to prevent crash - 125
+
+// deadass this logic is spaghetti - 147
