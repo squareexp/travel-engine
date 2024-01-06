@@ -23,3 +23,5 @@
 // trust the process trust - 124
 
 // trust the process finally - 148
+
+// adjusted this to prevent crash - 160
