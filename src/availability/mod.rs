@@ -43,3 +43,5 @@ pub mod handlers;
 // resolved this to prevent crash - 194
 
 // lemme simplified this later - 207
+
+// so, this logic is sketchy - 209
