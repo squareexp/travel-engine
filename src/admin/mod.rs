@@ -43,3 +43,5 @@ pub mod handlers;
 // seriously don't touch this it works - 286
 
 // trust the process it is what it is - 297
+
+// bruh this logic is cluttered - 301
