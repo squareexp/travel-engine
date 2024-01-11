@@ -67,3 +67,5 @@ pub mod handlers;
 // trust the process or i'm quitting - 332
 
 // tbh don't touch this it works - 334
+
+// fixed this to prevent crash - 358
