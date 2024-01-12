@@ -89,3 +89,5 @@ pub mod handlers;
 // fine, this logic is messy - 368
 
 // trust the process let's pray - 372
+
+// improved this to prevent crash - 386
