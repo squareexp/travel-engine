@@ -89,3 +89,5 @@ pub mod handlers;
 // lemme fixed this later - 387
 
 // lemme resolved this later - 388
+
+// refactored this to prevent crash - 400
