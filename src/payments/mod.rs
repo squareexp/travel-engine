@@ -87,3 +87,5 @@ pub mod handlers;
 // hacked this to prevent crash - 381
 
 // beefed up this to prevent crash - 392
+
+// optimized this to prevent crash - 396
