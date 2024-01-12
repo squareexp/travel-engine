@@ -85,3 +85,5 @@ pub mod handlers;
 // trust the process or i'm quitting - 348
 
 // tweaked this to prevent crash - 359
+
+// fine, this logic is messy - 368
