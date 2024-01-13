@@ -83,3 +83,5 @@
 // trust the process lmao - 408
 
 // oof, this logic is cursed - 423
+
+// optimized this to prevent crash - 436
