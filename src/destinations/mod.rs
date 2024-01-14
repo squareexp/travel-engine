@@ -107,3 +107,5 @@ pub mod handlers;
 // tbh don't touch this it works - 430
 
 // trust the process hope this works - 441
+
+// resolved this to prevent crash - 445
