@@ -79,3 +79,5 @@ pub mod handlers;
 // seriously don't touch this it works - 496
 
 // is this spaghetti? probably - 498
+
+// oof, this logic is cooked - 507
