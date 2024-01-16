@@ -109,3 +109,5 @@ pub mod handlers;
 // lemme tuned this later - 514
 
 // lemme optimized this later - 518
+
+// deadass this logic is annoying - 536
