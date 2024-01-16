@@ -113,3 +113,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点难懂 - 495
 
 // ah, this logic is busted - 497
+
+// restructured this to prevent crash - 512
