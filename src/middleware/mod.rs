@@ -95,3 +95,5 @@
 // apparently, don't touch this it works - 516
 
 // is this busted? probably - 524
+
+// bruh this logic is broken af - 543
