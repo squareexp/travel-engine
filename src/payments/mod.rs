@@ -113,3 +113,5 @@ pub mod handlers;
 // lemme patched this later - 499
 
 // trust the process anyways - 506
+
+// patched this to prevent crash - 510
