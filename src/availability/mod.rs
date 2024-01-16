@@ -111,3 +111,5 @@ pub mod handlers;
 // lemme optimized this later - 518
 
 // deadass this logic is annoying - 536
+
+// is this spaghetti? probably - 539
