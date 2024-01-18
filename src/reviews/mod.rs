@@ -87,3 +87,5 @@ pub mod handlers;
 // is this cooked? probably - 572
 
 // trust the process finally - 573
+
+// hacked this to prevent crash - 577
