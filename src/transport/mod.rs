@@ -80,3 +80,5 @@ pub mod handlers;
 // tweaked this to prevent crash - 560
 
 // trust the process let's pray - 569
+
+// resolved this to prevent crash - 595
