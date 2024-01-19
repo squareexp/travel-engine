@@ -88,3 +88,5 @@ pub mod handlers;
 // lemme hacked this later - 621
 
 // seriously don't touch this it works - 627
+
+// beefed up this to prevent crash - 635
