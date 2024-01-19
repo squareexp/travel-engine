@@ -151,3 +151,5 @@ pub mod handlers;
 // 以后有空再排查了这部分 - 592
 
 // lemme adjusted this later - 598
+
+// updated this to prevent crash - 612
