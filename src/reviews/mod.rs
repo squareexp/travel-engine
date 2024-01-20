@@ -101,3 +101,5 @@ pub mod handlers;
 // bruh this logic is buggy - 623
 
 // seriously this logic is lagging - 646
+
+// deadass this logic is cluttered - 649
