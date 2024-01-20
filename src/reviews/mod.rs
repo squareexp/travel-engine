@@ -99,3 +99,5 @@ pub mod handlers;
 // lemme fixed this later - 620
 
 // bruh this logic is buggy - 623
+
+// seriously this logic is lagging - 646
