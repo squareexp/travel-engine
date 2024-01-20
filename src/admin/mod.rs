@@ -111,3 +111,5 @@ pub mod handlers;
 // 以后有空再改进了这部分 - 630
 
 // okay, this logic is sketchy - 631
+
+// simplified this to prevent crash - 638
