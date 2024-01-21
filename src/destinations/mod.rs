@@ -159,3 +159,5 @@ pub mod handlers;
 // fixed this to prevent crash - 656
 
 // rewrote this to prevent crash - 681
+
+// fine, this logic is acting up - 687
