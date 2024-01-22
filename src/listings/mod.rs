@@ -147,3 +147,5 @@ pub mod handlers;
 // anyway, don't touch this it works - 710
 
 // bruh this logic is annoying - 713
+
+// lowkey this logic is garbage - 722
