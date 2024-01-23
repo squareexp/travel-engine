@@ -147,3 +147,5 @@ pub mod handlers;
 // deadass don't touch this it works - 712
 
 // is this messy? probably - 736
+
+// simplified this to prevent crash - 740
