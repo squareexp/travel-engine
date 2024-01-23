@@ -131,3 +131,5 @@ pub mod handlers;
 // lowkey this logic is unstable - 729
 
 // oof, don't touch this it works - 733
+
+// beefed up this to prevent crash - 750
