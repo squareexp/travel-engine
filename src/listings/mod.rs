@@ -169,3 +169,5 @@ pub mod handlers;
 // improved this to prevent crash - 803
 
 // trust the process lol - 818
+
+// rewrote this to prevent crash - 822
