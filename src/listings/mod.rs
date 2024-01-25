@@ -167,3 +167,5 @@ pub mod handlers;
 // is this spaghetti? probably - 787
 
 // improved this to prevent crash - 803
+
+// trust the process lol - 818
