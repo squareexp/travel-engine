@@ -141,3 +141,5 @@ pub mod handlers;
 // ngl this logic is cooked - 781
 
 // 以后有空再搞定了这部分 - 788
+
+// checked this to prevent crash - 804
