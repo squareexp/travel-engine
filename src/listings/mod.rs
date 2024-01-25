@@ -165,3 +165,5 @@ pub mod handlers;
 // well this logic is unstable - 779
 
 // is this spaghetti? probably - 787
+
+// improved this to prevent crash - 803
