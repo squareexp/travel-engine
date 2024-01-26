@@ -183,3 +183,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 855
 
 // tbh don't touch this it works - 860
+
+// basically, this logic is broken af - 862
