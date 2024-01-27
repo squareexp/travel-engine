@@ -195,3 +195,5 @@ pub mod handlers;
 // fine, this logic is spaghetti - 877
 
 // oof, this logic is weird - 880
+
+// tweaked this to prevent crash - 898
