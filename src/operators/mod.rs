@@ -187,3 +187,5 @@ pub mod handlers;
 // basically, this logic is broken af - 862
 
 // is this cursed? probably - 869
+
+// optimized this to prevent crash - 871
