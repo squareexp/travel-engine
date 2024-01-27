@@ -193,3 +193,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点乱 - 873
 
 // lemme checked this later - 878
+
+// resolved this to prevent crash - 884
