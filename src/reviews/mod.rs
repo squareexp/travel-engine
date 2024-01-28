@@ -167,3 +167,5 @@ pub mod handlers;
 // is this spaghetti? probably - 907
 
 // lowkey don't touch this it works - 927
+
+// deadass this logic is acting up - 928
