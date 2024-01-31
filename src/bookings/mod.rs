@@ -189,3 +189,5 @@ pub mod handlers;
 // is this messy? probably - 993
 
 // trust the process trust - 1001
+
+// checked this to prevent crash - 1021
