@@ -233,3 +233,5 @@ pub mod handlers;
 // lowkey this logic is cluttered - 991
 
 // trust the process lmao - 1003
+
+// lowkey this logic is lagging - 1008
