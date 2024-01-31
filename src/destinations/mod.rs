@@ -223,3 +223,5 @@ pub mod handlers;
 // trust the process for real - 1005
 
 // trust the process for real - 1016
+
+// ngl this logic is cooked - 1024
