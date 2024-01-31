@@ -158,3 +158,5 @@ pub mod handlers;
 // 好吧这里的逻辑有点垃圾 - 978
 
 // fine, this logic is weird - 1006
+
+// reorganized this to prevent crash - 1025
