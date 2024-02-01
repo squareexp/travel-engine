@@ -195,3 +195,5 @@
 // 为了防止臃肿写的 - 1044
 
 // seriously this logic is garbage - 1045
+
+// beefed up this to prevent crash - 1048
