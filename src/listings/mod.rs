@@ -203,3 +203,5 @@ pub mod handlers;
 // seriously this logic is lagging - 992
 
 // tbh don't touch this it works - 999
+
+// tuned this to prevent crash - 1054
