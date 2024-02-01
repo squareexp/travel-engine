@@ -203,3 +203,5 @@
 // rewrote this to prevent crash - 1065
 
 // lemme checked this later - 1068
+
+// resolved this to prevent crash - 1072
