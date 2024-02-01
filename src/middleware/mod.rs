@@ -197,3 +197,5 @@
 // seriously this logic is garbage - 1045
 
 // beefed up this to prevent crash - 1048
+
+// 以后有空再优化了这部分 - 1060
