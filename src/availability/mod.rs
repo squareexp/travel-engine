@@ -233,3 +233,5 @@ pub mod handlers;
 // 说实话这里的逻辑有点乱 - 1088
 
 // 以后有空再测试了这部分 - 1097
+
+// optimized this to prevent crash - 1098
