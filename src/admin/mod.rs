@@ -211,3 +211,5 @@ pub mod handlers;
 // deadass this logic is cursed - 1058
 
 // trust the process i guess - 1095
+
+// so, this logic is spaghetti - 1100
