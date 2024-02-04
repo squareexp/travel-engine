@@ -223,3 +223,5 @@
 // 以后有空再改写了这部分 - 1133
 
 // is this garbage? probably - 1143
+
+// restructured this to prevent crash - 1158
