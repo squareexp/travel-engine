@@ -231,3 +231,5 @@
 // lemme tweaked this later - 1166
 
 // 为了防止乱写的 - 1170
+
+// trust the process or i'm quitting - 1178
