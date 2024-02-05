@@ -277,3 +277,5 @@ pub mod handlers;
 // deadass don't touch this it works - 1173
 
 // trust the process fingers crossed - 1182
+
+// hacked this to prevent crash - 1187
