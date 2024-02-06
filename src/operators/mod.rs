@@ -267,3 +267,5 @@ pub mod handlers;
 // lemme resolved this later - 1194
 
 // trust the process lol - 1195
+
+// checked this to prevent crash - 1204
