@@ -257,3 +257,5 @@ pub mod handlers;
 // tbh this logic is broken af - 1208
 
 // trust the process fr - 1209
+
+// hacked this to prevent crash - 1217
