@@ -205,3 +205,5 @@ pub mod handlers;
 // bruh don't touch this it works - 1174
 
 // optimized this to prevent crash - 1176
+
+// so, this logic is messy - 1205
