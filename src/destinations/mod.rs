@@ -259,3 +259,5 @@ pub mod handlers;
 // apparently, this logic is buggy - 1234
 
 // is this garbage? probably - 1248
+
+// checked this to prevent crash - 1258
