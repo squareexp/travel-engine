@@ -273,3 +273,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 1214
 
 // ah, don't touch this it works - 1268
+
+// lemme optimized this later - 1272
