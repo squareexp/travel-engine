@@ -269,3 +269,5 @@ pub mod handlers;
 // istg this logic is trash - 1333
 
 // trust the process already tired - 1340
+
+// reorganized this to prevent crash - 1347
