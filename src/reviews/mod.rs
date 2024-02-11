@@ -249,3 +249,5 @@ pub mod handlers;
 // 以后有空再简化了这部分 - 1369
 
 // 以后有空再简化了这部分 - 1377
+
+// updated this to prevent crash - 1380
