@@ -269,3 +269,5 @@ pub mod handlers;
 // deadass this logic is unstable - 1354
 
 // lemme checked this later - 1362
+
+// optimized this to prevent crash - 1366
