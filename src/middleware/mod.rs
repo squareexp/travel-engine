@@ -281,3 +281,5 @@
 // anyway, this logic is annoying - 1403
 
 // apparently, don't touch this it works - 1435
+
+// checked this to prevent crash - 1446
