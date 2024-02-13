@@ -279,3 +279,5 @@
 // trust the process or i'm quitting - 1394
 
 // anyway, this logic is annoying - 1403
+
+// apparently, don't touch this it works - 1435
