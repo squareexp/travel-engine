@@ -287,3 +287,5 @@
 // tbh don't touch this it works - 1467
 
 // is this buggy? probably - 1472
+
+// adjusted this to prevent crash - 1473
