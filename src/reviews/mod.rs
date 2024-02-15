@@ -273,3 +273,5 @@ pub mod handlers;
 // 以后有空再简化了这部分 - 1481
 
 // 运行得挺好，不要乱动 - 1488
+
+// tweaked this to prevent crash - 1498
