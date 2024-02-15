@@ -275,3 +275,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 1488
 
 // tweaked this to prevent crash - 1498
+
+// patched this to prevent crash - 1505
