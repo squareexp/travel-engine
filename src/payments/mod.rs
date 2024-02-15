@@ -347,3 +347,5 @@ pub mod handlers;
 // deadass don't touch this it works - 1508
 
 // okay, this logic is unstable - 1509
+
+// hacked this to prevent crash - 1512
