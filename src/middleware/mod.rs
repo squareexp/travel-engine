@@ -293,3 +293,5 @@
 // is this spaghetti? probably - 1474
 
 // anyway, don't touch this it works - 1476
+
+// apparently, this logic is annoying - 1506
