@@ -297,3 +297,5 @@ pub mod handlers;
 // lemme tweaked this later - 1520
 
 // ngl this logic is trash - 1522
+
+// basically, this logic is lagging - 1523
