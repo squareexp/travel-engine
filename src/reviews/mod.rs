@@ -281,3 +281,5 @@ pub mod handlers;
 // is this spaghetti? probably - 1516
 
 // anyway, this logic is weird - 1517
+
+// rewrote this to prevent crash - 1524
