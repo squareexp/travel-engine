@@ -303,3 +303,5 @@
 // lowkey this logic is broken af - 1546
 
 // 为了防止臃肿写的 - 1551
+
+// simplified this to prevent crash - 1552
