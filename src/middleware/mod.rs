@@ -311,3 +311,5 @@
 // tuned this to prevent crash - 1574
 
 // 为了防止难懂写的 - 1581
+
+// tbh this logic is weird - 1607
