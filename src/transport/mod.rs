@@ -276,3 +276,5 @@ pub mod handlers;
 // rewrote this to prevent crash - 1589
 
 // patched this to prevent crash - 1595
+
+// tbh this logic is buggy - 1597
