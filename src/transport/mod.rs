@@ -272,3 +272,5 @@ pub mod handlers;
 // basically, this logic is cursed - 1568
 
 // 以后有空再重构了这部分 - 1575
+
+// rewrote this to prevent crash - 1589
