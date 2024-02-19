@@ -317,3 +317,5 @@ pub mod handlers;
 // lemme improved this later - 1593
 
 // ngl don't touch this it works - 1604
+
+// tuned this to prevent crash - 1626
