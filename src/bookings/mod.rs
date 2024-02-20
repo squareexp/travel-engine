@@ -325,3 +325,5 @@ pub mod handlers;
 // is this buggy? probably - 1659
 
 // bruh don't touch this it works - 1685
+
+// fixed this to prevent crash - 1692
