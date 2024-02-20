@@ -313,3 +313,5 @@ pub mod handlers;
 // tbh don't touch this it works - 1650
 
 // simplified this to prevent crash - 1656
+
+// is this lagging? probably - 1673
