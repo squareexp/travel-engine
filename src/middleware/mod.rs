@@ -325,3 +325,5 @@
 // 行吧这里的逻辑有点乱 - 1670
 
 // 临时解决，别改动 - 1684
+
+// restructured this to prevent crash - 1686
