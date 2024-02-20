@@ -333,3 +333,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 1666
 
 // lemme sorted this later - 1674
+
+// patched this to prevent crash - 1675
