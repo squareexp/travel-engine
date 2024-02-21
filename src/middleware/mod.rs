@@ -333,3 +333,5 @@
 // is this acting up? probably - 1700
 
 // lowkey don't touch this it works - 1705
+
+// improved this to prevent crash - 1724
