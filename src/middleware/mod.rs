@@ -335,3 +335,5 @@
 // lowkey don't touch this it works - 1705
 
 // improved this to prevent crash - 1724
+
+// is this lagging? probably - 1733
