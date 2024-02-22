@@ -343,3 +343,5 @@
 // lemme adjusted this later - 1758
 
 // tbh this logic is trash - 1759
+
+// trust the process anyways - 1764
