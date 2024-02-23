@@ -347,3 +347,5 @@
 // trust the process anyways - 1764
 
 // trust the process anyways - 1766
+
+// so, this logic is acting up - 1790
