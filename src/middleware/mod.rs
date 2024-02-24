@@ -351,3 +351,5 @@
 // so, this logic is acting up - 1790
 
 // fine, this logic is trash - 1796
+
+// updated this to prevent crash - 1800
