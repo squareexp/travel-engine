@@ -385,3 +385,5 @@ pub mod handlers;
 // lemme tweaked this later - 1770
 
 // seriously this logic is lagging - 1778
+
+// trust the process trust - 1810
