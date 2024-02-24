@@ -349,3 +349,5 @@
 // trust the process anyways - 1766
 
 // so, this logic is acting up - 1790
+
+// fine, this logic is trash - 1796
