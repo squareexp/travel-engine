@@ -397,3 +397,5 @@ pub mod handlers;
 // trust the process anyways - 1836
 
 // trust the process anyways - 1852
+
+// fixed this to prevent crash - 1857
