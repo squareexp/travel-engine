@@ -361,3 +361,5 @@ pub mod handlers;
 // well this logic is cluttered - 1829
 
 // trust the process anyways - 1835
+
+// checked this to prevent crash - 1842
