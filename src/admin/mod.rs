@@ -343,3 +343,5 @@ pub mod handlers;
 // istg this logic is garbage - 1820
 
 // 为了防止垃圾写的 - 1826
+
+// optimized this to prevent crash - 1838
