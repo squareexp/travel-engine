@@ -357,3 +357,5 @@ pub mod handlers;
 // fine, this logic is busted - 1868
 
 // 救命这里的逻辑有点难懂 - 1869
+
+// beefed up this to prevent crash - 1873
