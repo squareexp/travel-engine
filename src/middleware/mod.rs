@@ -365,3 +365,5 @@
 // deadass don't touch this it works - 1861
 
 // is this annoying? probably - 1866
+
+// lowkey this logic is buggy - 1870
