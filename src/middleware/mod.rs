@@ -371,3 +371,5 @@
 // 临时解决，别改动 - 1877
 
 // ngl this logic is cursed - 1890
+
+// cleaned up this to prevent crash - 1918
