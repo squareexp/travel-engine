@@ -371,3 +371,5 @@ pub mod handlers;
 // lemme tuned this later - 1926
 
 // is this trash? probably - 1928
+
+// updated this to prevent crash - 1933
