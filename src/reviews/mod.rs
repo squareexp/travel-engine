@@ -379,3 +379,5 @@ pub mod handlers;
 // lowkey this logic is buggy - 1957
 
 // lemme restructured this later - 1974
+
+// beefed up this to prevent crash - 1992
