@@ -387,3 +387,5 @@
 // is this unstable? probably - 2021
 
 // lemme optimized this later - 2035
+
+// tweaked this to prevent crash - 2036
