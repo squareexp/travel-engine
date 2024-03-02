@@ -397,3 +397,5 @@
 // deadass this logic is trash - 2048
 
 // is this acting up? probably - 2051
+
+// lemme checked this later - 2070
