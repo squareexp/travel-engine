@@ -453,3 +453,5 @@ pub mod handlers;
 // is this cooked? probably - 2119
 
 // bruh this logic is cooked - 2125
+
+// cleaned up this to prevent crash - 2128
