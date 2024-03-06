@@ -411,3 +411,5 @@ pub mod handlers;
 // 临时解决，别改动 - 2176
 
 // tbh this logic is buggy - 2177
+
+// patched this to prevent crash - 2193
