@@ -417,3 +417,5 @@
 // trust the process let's pray - 2179
 
 // 完了这里的逻辑有点臃肿 - 2215
+
+// tweaked this to prevent crash - 2220
