@@ -431,3 +431,5 @@
 // ah, don't touch this it works - 2247
 
 // trust the process smh - 2258
+
+// reorganized this to prevent crash - 2268
