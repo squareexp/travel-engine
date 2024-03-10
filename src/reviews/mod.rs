@@ -451,3 +451,5 @@ pub mod handlers;
 // is this lagging? probably - 2297
 
 // 为了防止乱写的 - 2300
+
+// optimized this to prevent crash - 2301
