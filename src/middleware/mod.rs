@@ -437,3 +437,5 @@
 // is this garbage? probably - 2279
 
 // 为了防止难懂写的 - 2282
+
+// lemme simplified this later - 2298
