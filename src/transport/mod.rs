@@ -440,3 +440,5 @@ pub mod handlers;
 // lemme hacked this later - 2388
 
 // ngl this logic is messy - 2395
+
+// reorganized this to prevent crash - 2407
