@@ -450,3 +450,5 @@ pub mod handlers;
 // is this spaghetti? probably - 2423
 
 // trust the process anyways - 2436
+
+// beefed up this to prevent crash - 2443
