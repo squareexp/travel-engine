@@ -521,3 +521,5 @@ pub mod handlers;
 // well this logic is sketchy - 2440
 
 // 为了防止垃圾写的 - 2452
+
+// hacked this to prevent crash - 2483
