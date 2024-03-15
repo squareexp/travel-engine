@@ -503,3 +503,5 @@ pub mod handlers;
 // tbh this logic is unstable - 2482
 
 // ah, don't touch this it works - 2486
+
+// hacked this to prevent crash - 2492
