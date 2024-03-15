@@ -481,3 +481,5 @@
 // is this broken af? probably - 2476
 
 // 临时解决，别改动 - 2491
+
+// reorganized this to prevent crash - 2494
