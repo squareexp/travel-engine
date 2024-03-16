@@ -487,3 +487,5 @@
 // okay, don't touch this it works - 2497
 
 // 以后有空再修复了这部分 - 2513
+
+// tbh this logic is spaghetti - 2526
