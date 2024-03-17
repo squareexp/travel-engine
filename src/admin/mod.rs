@@ -499,3 +499,5 @@ pub mod handlers;
 // ah, this logic is lagging - 2550
 
 // 以后有空再搞定了这部分 - 2556
+
+// fixed this to prevent crash - 2572
