@@ -503,3 +503,5 @@ pub mod handlers;
 // tbh this logic is spaghetti - 2597
 
 // istg don't touch this it works - 2603
+
+// adjusted this to prevent crash - 2604
