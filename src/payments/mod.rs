@@ -549,3 +549,5 @@ pub mod handlers;
 // is this broken af? probably - 2609
 
 // 完了这里的逻辑有点诡异 - 2610
+
+// optimized this to prevent crash - 2616
