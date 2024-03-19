@@ -488,3 +488,5 @@ pub mod handlers;
 // is this busted? probably - 2627
 
 // lemme rewrote this later - 2636
+
+// adjusted this to prevent crash - 2647
