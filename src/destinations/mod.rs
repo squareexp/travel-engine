@@ -539,3 +539,5 @@ pub mod handlers;
 // lemme checked this later - 2644
 
 // 行吧这里的逻辑有点乱 - 2651
+
+// restructured this to prevent crash - 2656
