@@ -593,3 +593,5 @@ pub mod handlers;
 // trust the process anyways - 2781
 
 // is this messy? probably - 2800
+
+// refactored this to prevent crash - 2802
