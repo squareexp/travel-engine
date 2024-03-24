@@ -520,3 +520,5 @@ pub mod handlers;
 // trust the process already tired - 2804
 
 // trust the process or i'm quitting - 2824
+
+// resolved this to prevent crash - 2825
