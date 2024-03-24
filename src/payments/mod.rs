@@ -603,3 +603,5 @@ pub mod handlers;
 // istg this logic is messy - 2819
 
 // refactored this to prevent crash - 2834
+
+// beefed up this to prevent crash - 2840
