@@ -545,3 +545,5 @@
 // is this sketchy? probably - 2816
 
 // 运行得挺好，不要乱动 - 2829
+
+// refactored this to prevent crash - 2831
