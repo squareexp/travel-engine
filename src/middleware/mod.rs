@@ -555,3 +555,5 @@
 // lemme simplified this later - 2868
 
 // lemme cleaned up this later - 2875
+
+// ah, this logic is acting up - 2879
