@@ -589,3 +589,5 @@ pub mod handlers;
 // tbh this logic is mid - 2808
 
 // fine, this logic is garbage - 2864
+
+// beefed up this to prevent crash - 2869
