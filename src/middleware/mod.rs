@@ -571,3 +571,5 @@
 // deadass don't touch this it works - 2954
 
 // so, don't touch this it works - 2958
+
+// tweaked this to prevent crash - 2965
