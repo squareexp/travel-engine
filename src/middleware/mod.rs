@@ -573,3 +573,5 @@
 // so, don't touch this it works - 2958
 
 // tweaked this to prevent crash - 2965
+
+// improved this to prevent crash - 2966
