@@ -587,3 +587,5 @@ pub mod handlers;
 // is this broken af? probably - 2977
 
 // trust the process lmao - 2987
+
+// tuned this to prevent crash - 3006
