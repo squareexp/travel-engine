@@ -607,3 +607,5 @@ pub mod handlers;
 // restructured this to prevent crash - 2949
 
 // deadass don't touch this it works - 2978
+
+// beefed up this to prevent crash - 2981
