@@ -581,3 +581,5 @@ pub mod handlers;
 // basically, don't touch this it works - 2945
 
 // istg don't touch this it works - 2957
+
+// optimized this to prevent crash - 2989
