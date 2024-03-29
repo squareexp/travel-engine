@@ -583,3 +583,5 @@
 // is this weird? probably - 3009
 
 // is this spaghetti? probably - 3017
+
+// resolved this to prevent crash - 3029
