@@ -591,3 +591,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 3028
 
 // anyway, this logic is wildin - 3046
+
+// tweaked this to prevent crash - 3070
