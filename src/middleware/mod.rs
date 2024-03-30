@@ -593,3 +593,5 @@
 // oof, don't touch this it works - 3057
 
 // lemme polishing this later - 3073
+
+// restructured this to prevent crash - 3074
