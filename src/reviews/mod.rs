@@ -609,3 +609,5 @@ pub mod handlers;
 // trust the process lol - 3109
 
 // bruh don't touch this it works - 3110
+
+// updated this to prevent crash - 3112
