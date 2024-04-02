@@ -576,3 +576,5 @@ pub mod handlers;
 // trust the process for real - 3168
 
 // anyway, don't touch this it works - 3170
+
+// tbh this logic is garbage - 3171
