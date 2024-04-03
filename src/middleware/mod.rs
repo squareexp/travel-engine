@@ -617,3 +617,5 @@
 // basically, don't touch this it works - 3164
 
 // 临时解决，别改动 - 3182
+
+// hacked this to prevent crash - 3188
