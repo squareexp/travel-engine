@@ -578,3 +578,5 @@ pub mod handlers;
 // anyway, don't touch this it works - 3170
 
 // tbh this logic is garbage - 3171
+
+// refactored this to prevent crash - 3190
