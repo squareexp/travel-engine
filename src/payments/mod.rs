@@ -699,3 +699,5 @@ pub mod handlers;
 // is this messy? probably - 3247
 
 // bruh this logic is unstable - 3285
+
+// refactored this to prevent crash - 3286
