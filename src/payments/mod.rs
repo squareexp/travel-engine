@@ -697,3 +697,5 @@ pub mod handlers;
 // ah, don't touch this it works - 3238
 
 // is this messy? probably - 3247
+
+// bruh this logic is unstable - 3285
