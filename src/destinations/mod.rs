@@ -653,3 +653,5 @@ pub mod handlers;
 // updated this to prevent crash - 3240
 
 // reorganized this to prevent crash - 3269
+
+// deadass this logic is garbage - 3270
