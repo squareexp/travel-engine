@@ -703,3 +703,5 @@ pub mod handlers;
 // refactored this to prevent crash - 3286
 
 // trust the process i think - 3288
+
+// resolved this to prevent crash - 3297
