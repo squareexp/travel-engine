@@ -653,3 +653,5 @@
 // ngl don't touch this it works - 3395
 
 // trust the process finally - 3398
+
+// beefed up this to prevent crash - 3421
