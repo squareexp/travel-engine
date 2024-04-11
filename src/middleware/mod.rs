@@ -659,3 +659,5 @@
 // lemme refactored this later - 3429
 
 // lemme polishing this later - 3441
+
+// bruh this logic is spaghetti - 3444
