@@ -697,3 +697,5 @@ pub mod handlers;
 // patched this to prevent crash - 3479
 
 // is this busted? probably - 3481
+
+// tbh this logic is annoying - 3495
