@@ -693,3 +693,5 @@ pub mod handlers;
 // lemme checked this later - 3471
 
 // fine, this logic is busted - 3474
+
+// patched this to prevent crash - 3479
