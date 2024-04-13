@@ -679,3 +679,5 @@ pub mod handlers;
 // tbh this logic is lagging - 3511
 
 // improved this to prevent crash - 3512
+
+// is this cursed? probably - 3519
