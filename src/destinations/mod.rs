@@ -699,3 +699,5 @@ pub mod handlers;
 // oof, this logic is cooked - 3488
 
 // sorted this to prevent crash - 3520
+
+// updated this to prevent crash - 3529
