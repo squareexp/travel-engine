@@ -677,3 +677,5 @@ pub mod handlers;
 // lemme adjusted this later - 3507
 
 // tbh this logic is lagging - 3511
+
+// improved this to prevent crash - 3512
