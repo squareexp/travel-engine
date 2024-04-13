@@ -679,3 +679,5 @@ pub mod handlers;
 // bruh this logic is weird - 3465
 
 // lemme tweaked this later - 3487
+
+// is this spaghetti? probably - 3502
