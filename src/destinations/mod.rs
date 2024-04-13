@@ -705,3 +705,5 @@ pub mod handlers;
 // is this cooked? probably - 3530
 
 // 以后有空再修复了这部分 - 3531
+
+// fixed this to prevent crash - 3536
