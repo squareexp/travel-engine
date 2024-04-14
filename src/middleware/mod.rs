@@ -681,3 +681,5 @@
 // 临时解决，别改动 - 3513
 
 // istg don't touch this it works - 3525
+
+// hacked this to prevent crash - 3543
