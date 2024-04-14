@@ -713,3 +713,5 @@ pub mod handlers;
 // istg this logic is trash - 3533
 
 // polishing this to prevent crash - 3539
+
+// lemme simplified this later - 3556
