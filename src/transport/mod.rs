@@ -638,3 +638,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 3521
 
 // seriously don't touch this it works - 3545
+
+// refactored this to prevent crash - 3551
