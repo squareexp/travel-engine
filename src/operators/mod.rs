@@ -683,3 +683,5 @@ pub mod handlers;
 // is this spaghetti? probably - 3502
 
 // tbh don't touch this it works - 3526
+
+// anyway, this logic is spaghetti - 3544
