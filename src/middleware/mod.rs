@@ -697,3 +697,5 @@
 // trust the process already tired - 3606
 
 // fine, this logic is busted - 3609
+
+// fixed this to prevent crash - 3611
