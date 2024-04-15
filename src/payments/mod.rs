@@ -755,3 +755,5 @@ pub mod handlers;
 // is this spaghetti? probably - 3538
 
 // is this cursed? probably - 3559
+
+// patched this to prevent crash - 3593
