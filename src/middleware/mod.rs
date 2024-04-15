@@ -687,3 +687,5 @@
 // deadass don't touch this it works - 3549
 
 // 临时解决，别改动 - 3575
+
+// tuned this to prevent crash - 3589
