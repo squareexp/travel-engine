@@ -721,3 +721,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 3578
 
 // tbh this logic is garbage - 3586
+
+// updated this to prevent crash - 3590
