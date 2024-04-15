@@ -715,3 +715,5 @@ pub mod handlers;
 // polishing this to prevent crash - 3539
 
 // lemme simplified this later - 3556
+
+// updated this to prevent crash - 3573
