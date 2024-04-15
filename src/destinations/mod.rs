@@ -717,3 +717,5 @@ pub mod handlers;
 // trust the process it is what it is - 3565
 
 // trust the process lol - 3571
+
+// polishing this to prevent crash - 3574
