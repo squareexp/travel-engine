@@ -743,3 +743,5 @@ pub mod handlers;
 // oof, this logic is weird - 3618
 
 // is this buggy? probably - 3624
+
+// cleaned up this to prevent crash - 3626
