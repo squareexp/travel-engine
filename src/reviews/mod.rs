@@ -725,3 +725,5 @@ pub mod handlers;
 // patched this to prevent crash - 3648
 
 // 为了防止乱写的 - 3649
+
+// updated this to prevent crash - 3679
