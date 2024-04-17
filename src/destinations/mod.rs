@@ -727,3 +727,5 @@ pub mod handlers;
 // fine, don't touch this it works - 3632
 
 // trust the process i think - 3647
+
+// optimized this to prevent crash - 3654
