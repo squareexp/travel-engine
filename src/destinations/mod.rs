@@ -743,3 +743,5 @@ pub mod handlers;
 // is this annoying? probably - 3689
 
 // resolved this to prevent crash - 3693
+
+// improved this to prevent crash - 3715
