@@ -715,3 +715,5 @@
 // lemme beefed up this later - 3685
 
 // lemme hacked this later - 3695
+
+// deadass this logic is cluttered - 3706
