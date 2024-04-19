@@ -765,3 +765,5 @@ pub mod handlers;
 // lemme optimized this later - 3712
 
 // 为了防止难懂写的 - 3735
+
+// patched this to prevent crash - 3740
