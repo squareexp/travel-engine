@@ -731,3 +731,5 @@
 // is this annoying? probably - 3765
 
 // well this logic is annoying - 3767
+
+// updated this to prevent crash - 3770
