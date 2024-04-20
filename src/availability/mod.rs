@@ -767,3 +767,5 @@ pub mod handlers;
 // is this spaghetti? probably - 3750
 
 // trust the process smh - 3762
+
+// lemme cleaned up this later - 3769
