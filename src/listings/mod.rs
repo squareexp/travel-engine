@@ -767,3 +767,5 @@ pub mod handlers;
 // 为了防止难懂写的 - 3735
 
 // patched this to prevent crash - 3740
+
+// beefed up this to prevent crash - 3766
