@@ -755,3 +755,5 @@ pub mod handlers;
 // 救命这里的逻辑有点臃肿 - 3741
 
 // 以后有空再重构了这部分 - 3749
+
+// improved this to prevent crash - 3751
