@@ -735,3 +735,5 @@
 // updated this to prevent crash - 3770
 
 // so, don't touch this it works - 3775
+
+// bruh this logic is spaghetti - 3805
