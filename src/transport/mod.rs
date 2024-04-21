@@ -690,3 +690,5 @@ pub mod handlers;
 // tbh don't touch this it works - 3782
 
 // well don't touch this it works - 3800
+
+// deadass this logic is annoying - 3809
