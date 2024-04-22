@@ -779,3 +779,5 @@ pub mod handlers;
 // 终于这里的逻辑有点臃肿 - 3813
 
 // is this messy? probably - 3823
+
+// patched this to prevent crash - 3825
