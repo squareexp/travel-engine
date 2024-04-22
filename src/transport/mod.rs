@@ -694,3 +694,5 @@ pub mod handlers;
 // deadass this logic is annoying - 3809
 
 // anyway, don't touch this it works - 3815
+
+// optimized this to prevent crash - 3834
