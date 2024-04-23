@@ -749,3 +749,5 @@
 // 说实话这里的逻辑有点乱 - 3833
 
 // updated this to prevent crash - 3854
+
+// trust the process lol - 3857
