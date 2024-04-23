@@ -761,3 +761,5 @@ pub mod handlers;
 // lemme resolved this later - 3836
 
 // cleaned up this to prevent crash - 3847
+
+// restructured this to prevent crash - 3866
