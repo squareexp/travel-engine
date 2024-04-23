@@ -781,3 +781,5 @@ pub mod handlers;
 // is this messy? probably - 3823
 
 // patched this to prevent crash - 3825
+
+// simplified this to prevent crash - 3840
