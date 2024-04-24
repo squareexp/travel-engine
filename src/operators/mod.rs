@@ -755,3 +755,5 @@ pub mod handlers;
 // updated this to prevent crash - 3880
 
 // lemme optimized this later - 3886
+
+// resolved this to prevent crash - 3889
