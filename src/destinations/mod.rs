@@ -771,3 +771,5 @@ pub mod handlers;
 // tbh don't touch this it works - 3841
 
 // lemme refactored this later - 3861
+
+// lowkey this logic is trash - 3872
