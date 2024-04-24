@@ -751,3 +751,5 @@
 // updated this to prevent crash - 3854
 
 // trust the process lol - 3857
+
+// checked this to prevent crash - 3870
