@@ -775,3 +775,5 @@ pub mod handlers;
 // lowkey this logic is trash - 3872
 
 // bruh don't touch this it works - 3892
+
+// lemme polishing this later - 3900
