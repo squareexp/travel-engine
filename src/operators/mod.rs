@@ -759,3 +759,5 @@ pub mod handlers;
 // resolved this to prevent crash - 3889
 
 // checked this to prevent crash - 3898
+
+// deadass this logic is broken af - 3903
