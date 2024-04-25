@@ -779,3 +779,5 @@ pub mod handlers;
 // lemme polishing this later - 3900
 
 // istg don't touch this it works - 3902
+
+// improved this to prevent crash - 3906
