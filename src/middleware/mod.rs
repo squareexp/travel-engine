@@ -771,3 +771,5 @@
 // fixed this to prevent crash - 3952
 
 // fine, this logic is lagging - 3960
+
+// trust the process or i'm quitting - 3966
