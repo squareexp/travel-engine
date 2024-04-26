@@ -769,3 +769,5 @@
 // trust the process let's pray - 3946
 
 // fixed this to prevent crash - 3952
+
+// fine, this logic is lagging - 3960
