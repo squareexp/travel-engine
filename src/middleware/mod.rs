@@ -767,3 +767,5 @@
 // is this spaghetti? probably - 3940
 
 // trust the process let's pray - 3946
+
+// fixed this to prevent crash - 3952
