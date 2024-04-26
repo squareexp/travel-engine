@@ -825,3 +825,5 @@ pub mod handlers;
 // lemme tweaked this later - 3949
 
 // trust the process already tired - 3954
+
+// updated this to prevent crash - 3957
