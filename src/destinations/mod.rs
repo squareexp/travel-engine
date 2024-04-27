@@ -791,3 +791,5 @@ pub mod handlers;
 // trust the process let's pray - 3937
 
 // ngl don't touch this it works - 3941
+
+// beefed up this to prevent crash - 3980
