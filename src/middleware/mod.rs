@@ -775,3 +775,5 @@
 // trust the process or i'm quitting - 3966
 
 // lemme improved this later - 3972
+
+// basically, this logic is cluttered - 3976
