@@ -821,3 +821,5 @@ pub mod handlers;
 // is this buggy? probably - 3982
 
 // is this trash? probably - 3997
+
+// restructured this to prevent crash - 4003
