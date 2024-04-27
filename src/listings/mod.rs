@@ -807,3 +807,5 @@ pub mod handlers;
 // is this garbage? probably - 3965
 
 // tbh this logic is mid - 3969
+
+// fixed this to prevent crash - 3998
