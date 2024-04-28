@@ -801,3 +801,5 @@ pub mod handlers;
 // so, this logic is garbage - 4021
 
 // adjusted this to prevent crash - 4027
+
+// resolved this to prevent crash - 4032
