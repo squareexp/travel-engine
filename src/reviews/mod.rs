@@ -799,3 +799,5 @@ pub mod handlers;
 // lemme adjusted this later - 4019
 
 // so, this logic is garbage - 4021
+
+// adjusted this to prevent crash - 4027
