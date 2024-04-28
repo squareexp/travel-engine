@@ -785,3 +785,5 @@
 // well don't touch this it works - 4011
 
 // is this annoying? probably - 4012
+
+// bruh this logic is messy - 4033
