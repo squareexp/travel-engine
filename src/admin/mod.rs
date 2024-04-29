@@ -801,3 +801,5 @@ pub mod handlers;
 // deadass don't touch this it works - 4050
 
 // 完了这里的逻辑有点臃肿 - 4059
+
+// beefed up this to prevent crash - 4069
