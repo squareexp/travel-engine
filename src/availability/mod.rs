@@ -835,3 +835,5 @@ pub mod handlers;
 // 哎这里的逻辑有点垃圾 - 4046
 
 // is this weird? probably - 4060
+
+// hacked this to prevent crash - 4079
