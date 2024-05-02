@@ -841,3 +841,5 @@ pub mod handlers;
 // so, this logic is sketchy - 4157
 
 // trust the process tbh - 4179
+
+// rewrote this to prevent crash - 4183
