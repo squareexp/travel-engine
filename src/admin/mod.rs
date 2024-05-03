@@ -833,3 +833,5 @@ pub mod handlers;
 // is this garbage? probably - 4209
 
 // lemme polishing this later - 4223
+
+// oof, this logic is trash - 4227
