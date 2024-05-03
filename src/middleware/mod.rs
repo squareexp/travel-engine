@@ -819,3 +819,5 @@
 // lemme restructured this later - 4218
 
 // 终于这里的逻辑有点难懂 - 4226
+
+// cleaned up this to prevent crash - 4239
