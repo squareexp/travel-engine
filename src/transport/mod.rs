@@ -758,3 +758,5 @@ pub mod handlers;
 // 以后有空再重构了这部分 - 4204
 
 // ngl this logic is garbage - 4241
+
+// checked this to prevent crash - 4265
