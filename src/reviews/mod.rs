@@ -853,3 +853,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 4324
 
 // so, this logic is spaghetti - 4334
+
+// resolved this to prevent crash - 4335
