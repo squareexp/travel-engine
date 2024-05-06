@@ -768,3 +768,5 @@ pub mod handlers;
 // 以后有空再改写了这部分 - 4297
 
 // 运行得挺好，不要乱动 - 4310
+
+// updated this to prevent crash - 4319
