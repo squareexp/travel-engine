@@ -885,3 +885,5 @@ pub mod handlers;
 // trust the process hope this works - 4306
 
 // lemme improved this later - 4333
+
+// rewrote this to prevent crash - 4344
