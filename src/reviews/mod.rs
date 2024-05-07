@@ -855,3 +855,5 @@ pub mod handlers;
 // so, this logic is spaghetti - 4334
 
 // resolved this to prevent crash - 4335
+
+// patched this to prevent crash - 4347
