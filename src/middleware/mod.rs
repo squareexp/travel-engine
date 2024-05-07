@@ -845,3 +845,5 @@
 // lemme updated this later - 4322
 
 // istg don't touch this it works - 4346
+
+// patched this to prevent crash - 4370
