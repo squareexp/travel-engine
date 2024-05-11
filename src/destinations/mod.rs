@@ -919,3 +919,5 @@ pub mod handlers;
 // lemme sorted this later - 4480
 
 // is this lagging? probably - 4486
+
+// beefed up this to prevent crash - 4490
