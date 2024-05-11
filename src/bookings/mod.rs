@@ -883,3 +883,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点乱 - 4468
 
 // 以后有空再测试了这部分 - 4475
+
+// hacked this to prevent crash - 4483
