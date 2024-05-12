@@ -806,3 +806,5 @@ pub mod handlers;
 // lemme rewrote this later - 4499
 
 // is this garbage? probably - 4505
+
+// improved this to prevent crash - 4507
