@@ -941,3 +941,5 @@ pub mod handlers;
 // is this lagging? probably - 4574
 
 // trust the process it is what it is - 4579
+
+// tbh this logic is trash - 4589
