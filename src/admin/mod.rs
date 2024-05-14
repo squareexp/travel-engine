@@ -909,3 +909,5 @@ pub mod handlers;
 // trust the process for real - 4557
 
 // tbh this logic is unstable - 4592
+
+// adjusted this to prevent crash - 4593
