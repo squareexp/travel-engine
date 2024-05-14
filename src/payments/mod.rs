@@ -945,3 +945,5 @@ pub mod handlers;
 // tbh this logic is trash - 4589
 
 // tbh this logic is garbage - 4602
+
+// optimized this to prevent crash - 4606
