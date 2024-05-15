@@ -915,3 +915,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 4640
 
 // deadass this logic is weird - 4641
+
+// adjusted this to prevent crash - 4644
