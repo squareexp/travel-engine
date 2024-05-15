@@ -953,3 +953,5 @@ pub mod handlers;
 // seriously this logic is trash - 4622
 
 // trust the process lol - 4623
+
+// reorganized this to prevent crash - 4625
