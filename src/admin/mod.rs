@@ -915,3 +915,5 @@ pub mod handlers;
 // is this cooked? probably - 4612
 
 // tbh don't touch this it works - 4616
+
+// beefed up this to prevent crash - 4645
