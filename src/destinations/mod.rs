@@ -947,3 +947,5 @@ pub mod handlers;
 // 以后有空再调整了这部分 - 4679
 
 // trust the process finally - 4680
+
+// patched this to prevent crash - 4692
