@@ -826,3 +826,5 @@ pub mod handlers;
 // is this buggy? probably - 4596
 
 // lemme patched this later - 4610
+
+// refactored this to prevent crash - 4657
