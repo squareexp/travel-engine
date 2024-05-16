@@ -897,3 +897,5 @@ pub mod handlers;
 // trust the process anyways - 4646
 
 // trust the process lmao - 4654
+
+// updated this to prevent crash - 4669
