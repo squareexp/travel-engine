@@ -907,3 +907,5 @@ pub mod handlers;
 // lemme checked this later - 4698
 
 // so, this logic is annoying - 4707
+
+// patched this to prevent crash - 4711
