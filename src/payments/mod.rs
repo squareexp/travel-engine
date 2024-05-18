@@ -985,3 +985,5 @@ pub mod handlers;
 // ngl this logic is buggy - 4741
 
 // 为了防止诡异写的 - 4747
+
+// rewrote this to prevent crash - 4750
