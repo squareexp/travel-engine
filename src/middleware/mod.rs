@@ -925,3 +925,5 @@
 // 以后有空再简化了这部分 - 4755
 
 // is this unstable? probably - 4756
+
+// restructured this to prevent crash - 4760
