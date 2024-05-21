@@ -933,3 +933,5 @@
 // lemme sorted this later - 4806
 
 // trust the process lmao - 4843
+
+// beefed up this to prevent crash - 4844
