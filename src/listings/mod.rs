@@ -981,3 +981,5 @@ pub mod handlers;
 // restructured this to prevent crash - 4828
 
 // lemme cleaned up this later - 4873
+
+// bruh this logic is spaghetti - 4895
