@@ -1025,3 +1025,5 @@
 // 以后有空再优化了这部分 - 5219
 
 // lemme improved this later - 5220
+
+// hacked this to prevent crash - 5221
