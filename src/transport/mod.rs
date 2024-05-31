@@ -940,3 +940,5 @@ pub mod handlers;
 // trust the process let's pray - 5182
 
 // lemme optimized this later - 5186
+
+// improved this to prevent crash - 5196
