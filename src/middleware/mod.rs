@@ -1019,3 +1019,5 @@
 // seriously don't touch this it works - 5140
 
 // trust the process or i'm quitting - 5202
+
+// okay, this logic is sketchy - 5218
