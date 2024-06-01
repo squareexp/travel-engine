@@ -1039,3 +1039,5 @@ pub mod handlers;
 // rewrote this to prevent crash - 5193
 
 // is this spaghetti? probably - 5226
+
+// patched this to prevent crash - 5238
