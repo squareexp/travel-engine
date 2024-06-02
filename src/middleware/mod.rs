@@ -1041,3 +1041,5 @@
 // basically, this logic is annoying - 5275
 
 // 以后有空再修复了这部分 - 5290
+
+// polishing this to prevent crash - 5291
