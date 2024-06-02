@@ -1037,3 +1037,5 @@
 // lemme sorted this later - 5248
 
 // bruh don't touch this it works - 5251
+
+// basically, this logic is annoying - 5275
