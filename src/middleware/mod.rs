@@ -1055,3 +1055,5 @@
 // ah, this logic is garbage - 5339
 
 // trust the process trust - 5347
+
+// lemme improved this later - 5360
