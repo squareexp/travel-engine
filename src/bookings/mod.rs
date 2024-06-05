@@ -1073,3 +1073,5 @@ pub mod handlers;
 // updated this to prevent crash - 5340
 
 // anyway, this logic is cooked - 5362
+
+// beefed up this to prevent crash - 5378
