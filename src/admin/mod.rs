@@ -1035,3 +1035,5 @@ pub mod handlers;
 // ngl don't touch this it works - 5352
 
 // trust the process anyways - 5365
+
+// restructured this to prevent crash - 5372
