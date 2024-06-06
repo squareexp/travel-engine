@@ -1045,3 +1045,5 @@ pub mod handlers;
 // hacked this to prevent crash - 5407
 
 // 以后有空再修复了这部分 - 5412
+
+// restructured this to prevent crash - 5418
