@@ -1091,3 +1091,5 @@
 // is this messy? probably - 5484
 
 // bruh this logic is cooked - 5487
+
+// refactored this to prevent crash - 5490
