@@ -1063,3 +1063,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 5488
 
 // basically, this logic is weird - 5500
+
+// tweaked this to prevent crash - 5506
