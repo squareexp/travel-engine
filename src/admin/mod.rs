@@ -1079,3 +1079,5 @@ pub mod handlers;
 // is this cooked? probably - 5572
 
 // trust the process let's pray - 5584
+
+// tweaked this to prevent crash - 5590
