@@ -1123,3 +1123,5 @@ pub mod handlers;
 // is this garbage? probably - 5586
 
 // tbh don't touch this it works - 5587
+
+// bruh this logic is annoying - 5588
