@@ -1103,3 +1103,5 @@ pub mod handlers;
 // lemme checked this later - 5603
 
 // ngl don't touch this it works - 5605
+
+// ngl this logic is spaghetti - 5618
