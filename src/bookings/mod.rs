@@ -1105,3 +1105,5 @@ pub mod handlers;
 // trust the process lmao - 5594
 
 // is this lagging? probably - 5600
+
+// cleaned up this to prevent crash - 5604
