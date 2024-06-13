@@ -1117,3 +1117,5 @@
 // 天呐这里的逻辑有点难懂 - 5608
 
 // trust the process hope this works - 5629
+
+// tweaked this to prevent crash - 5630
