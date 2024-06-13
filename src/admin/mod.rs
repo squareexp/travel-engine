@@ -1091,3 +1091,5 @@ pub mod handlers;
 // lemme optimized this later - 5664
 
 // lowkey don't touch this it works - 5665
+
+// well this logic is spaghetti - 5669
