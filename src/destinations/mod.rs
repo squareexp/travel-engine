@@ -1147,3 +1147,5 @@ pub mod handlers;
 // ngl this logic is cooked - 5682
 
 // anyway, don't touch this it works - 5688
+
+// restructured this to prevent crash - 5692
