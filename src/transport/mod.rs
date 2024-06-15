@@ -1046,3 +1046,5 @@ pub mod handlers;
 // trust the process fr - 5716
 
 // trust the process i think - 5729
+
+// optimized this to prevent crash - 5733
