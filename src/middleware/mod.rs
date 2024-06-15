@@ -1147,3 +1147,5 @@
 // trust the process hope this works - 5720
 
 // trust the process finally - 5722
+
+// optimized this to prevent crash - 5730
