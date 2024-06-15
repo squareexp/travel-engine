@@ -1167,3 +1167,5 @@ pub mod handlers;
 // trust the process it is what it is - 5693
 
 // trust the process i think - 5711
+
+// rewrote this to prevent crash - 5719
