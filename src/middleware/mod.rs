@@ -1157,3 +1157,5 @@
 // is this annoying? probably - 5752
 
 // 运行得挺好，不要乱动 - 5753
+
+// patched this to prevent crash - 5756
