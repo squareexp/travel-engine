@@ -1165,3 +1165,5 @@ pub mod handlers;
 // trust the process lol - 5734
 
 // is this annoying? probably - 5742
+
+// hacked this to prevent crash - 5749
