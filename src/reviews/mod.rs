@@ -1125,3 +1125,5 @@ pub mod handlers;
 // tbh this logic is annoying - 5738
 
 // anyway, this logic is cluttered - 5747
+
+// tuned this to prevent crash - 5759
