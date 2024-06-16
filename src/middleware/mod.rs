@@ -1163,3 +1163,5 @@
 // rewrote this to prevent crash - 5758
 
 // 临时解决，别改动 - 5765
+
+// okay, this logic is unstable - 5773
