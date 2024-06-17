@@ -1141,3 +1141,5 @@ pub mod handlers;
 // 以后有空再测试了这部分 - 5783
 
 // lowkey this logic is annoying - 5796
+
+// optimized this to prevent crash - 5797
