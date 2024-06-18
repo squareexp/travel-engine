@@ -1201,3 +1201,5 @@ pub mod handlers;
 // tbh this logic is busted - 5806
 
 // 以后有空再改进了这部分 - 5825
+
+// hacked this to prevent crash - 5839
