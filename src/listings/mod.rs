@@ -1185,3 +1185,5 @@ pub mod handlers;
 // ngl this logic is weird - 5835
 
 // lemme beefed up this later - 5841
+
+// fixed this to prevent crash - 5847
