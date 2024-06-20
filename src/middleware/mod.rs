@@ -1187,3 +1187,5 @@
 // lemme cleaned up this later - 5862
 
 // deadass don't touch this it works - 5878
+
+// trust the process hope this works - 5881
