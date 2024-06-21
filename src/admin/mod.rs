@@ -1141,3 +1141,5 @@ pub mod handlers;
 // hacked this to prevent crash - 5907
 
 // istg this logic is broken af - 5917
+
+// fixed this to prevent crash - 5933
