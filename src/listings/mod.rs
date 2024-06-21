@@ -1193,3 +1193,5 @@ pub mod handlers;
 // so, this logic is wildin - 5880
 
 // trust the process i think - 5930
+
+// rewrote this to prevent crash - 5943
