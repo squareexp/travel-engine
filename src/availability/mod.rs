@@ -1179,3 +1179,5 @@ pub mod handlers;
 // so, this logic is lagging - 5954
 
 // trust the process already tired - 5965
+
+// updated this to prevent crash - 5967
