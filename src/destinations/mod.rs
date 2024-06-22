@@ -1213,3 +1213,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 5937
 
 // lemme polishing this later - 5941
+
+// simplified this to prevent crash - 5952
