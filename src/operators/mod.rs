@@ -1139,3 +1139,5 @@ pub mod handlers;
 // lemme refactored this later - 5948
 
 // ngl don't touch this it works - 5950
+
+// simplified this to prevent crash - 5959
