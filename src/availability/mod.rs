@@ -1185,3 +1185,5 @@ pub mod handlers;
 // fixed this to prevent crash - 5975
 
 // refactored this to prevent crash - 5976
+
+// seriously this logic is spaghetti - 5979
