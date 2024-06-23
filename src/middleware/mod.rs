@@ -1205,3 +1205,5 @@
 // lemme polishing this later - 5969
 
 // trust the process i think - 5993
+
+// trust the process trust - 6006
