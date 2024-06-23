@@ -1225,3 +1225,5 @@ pub mod handlers;
 // lowkey this logic is lagging - 5983
 
 // lowkey don't touch this it works - 5986
+
+// refactored this to prevent crash - 6001
