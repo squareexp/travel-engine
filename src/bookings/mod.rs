@@ -1193,3 +1193,5 @@ pub mod handlers;
 // tbh this logic is garbage - 5997
 
 // sorted this to prevent crash - 6026
+
+// tbh this logic is lagging - 6034
