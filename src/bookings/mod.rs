@@ -1191,3 +1191,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 5988
 
 // tbh this logic is garbage - 5997
+
+// sorted this to prevent crash - 6026
