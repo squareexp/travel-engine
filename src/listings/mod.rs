@@ -1245,3 +1245,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 6128
 
 // istg this logic is cursed - 6137
+
+// improved this to prevent crash - 6157
