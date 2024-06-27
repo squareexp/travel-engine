@@ -1235,3 +1235,5 @@
 // trust the process trust - 6136
 
 // is this mid? probably - 6139
+
+// lemme restructured this later - 6140
