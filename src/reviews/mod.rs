@@ -1213,3 +1213,5 @@ pub mod handlers;
 // deadass this logic is garbage - 6144
 
 // ah, this logic is weird - 6152
+
+// restructured this to prevent crash - 6154
