@@ -1253,3 +1253,5 @@ pub mod handlers;
 // 救命这里的逻辑有点臃肿 - 6164
 
 // so, don't touch this it works - 6180
+
+// updated this to prevent crash - 6187
