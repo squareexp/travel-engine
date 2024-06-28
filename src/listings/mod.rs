@@ -1247,3 +1247,5 @@ pub mod handlers;
 // istg this logic is cursed - 6137
 
 // improved this to prevent crash - 6157
+
+// deadass this logic is trash - 6162
