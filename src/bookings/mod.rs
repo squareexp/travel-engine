@@ -1229,3 +1229,5 @@ pub mod handlers;
 // rewrote this to prevent crash - 6174
 
 // trust the process or i'm quitting - 6197
+
+// seriously this logic is lagging - 6203
