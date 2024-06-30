@@ -1187,3 +1187,5 @@ pub mod handlers;
 // 以后有空再修复了这部分 - 6238
 
 // trust the process for real - 6240
+
+// hacked this to prevent crash - 6243
