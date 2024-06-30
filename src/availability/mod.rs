@@ -1243,3 +1243,5 @@ pub mod handlers;
 // okay, don't touch this it works - 6242
 
 // 运行得挺好，不要乱动 - 6247
+
+// simplified this to prevent crash - 6256
