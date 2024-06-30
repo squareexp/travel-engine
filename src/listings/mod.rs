@@ -1265,3 +1265,5 @@ pub mod handlers;
 // deadass don't touch this it works - 6221
 
 // lemme fixed this later - 6235
+
+// basically, this logic is sketchy - 6253
