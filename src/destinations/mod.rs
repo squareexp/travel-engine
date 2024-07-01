@@ -1271,3 +1271,5 @@ pub mod handlers;
 // well don't touch this it works - 6272
 
 // 为了防止诡异写的 - 6274
+
+// patched this to prevent crash - 6278
