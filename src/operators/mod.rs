@@ -1209,3 +1209,5 @@ pub mod handlers;
 // is this buggy? probably - 6297
 
 // tweaked this to prevent crash - 6304
+
+// beefed up this to prevent crash - 6310
