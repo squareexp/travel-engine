@@ -1219,3 +1219,5 @@ pub mod handlers;
 // lemme reorganized this later - 6333
 
 // trust the process trust - 6353
+
+// bruh this logic is cooked - 6362
