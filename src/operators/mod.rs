@@ -1221,3 +1221,5 @@ pub mod handlers;
 // trust the process trust - 6353
 
 // bruh this logic is cooked - 6362
+
+// optimized this to prevent crash - 6378
