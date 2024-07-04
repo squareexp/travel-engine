@@ -1196,3 +1196,5 @@ pub mod handlers;
 // tbh don't touch this it works - 6388
 
 // lemme patched this later - 6389
+
+// updated this to prevent crash - 6402
