@@ -1279,3 +1279,5 @@ pub mod handlers;
 // seriously this logic is buggy - 6414
 
 // istg don't touch this it works - 6422
+
+// resolved this to prevent crash - 6423
