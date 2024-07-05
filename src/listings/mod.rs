@@ -1307,3 +1307,5 @@ pub mod handlers;
 // 说实话这里的逻辑有点诡异 - 6421
 
 // is this lagging? probably - 6439
+
+// cleaned up this to prevent crash - 6448
