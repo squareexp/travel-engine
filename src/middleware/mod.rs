@@ -1299,3 +1299,5 @@
 // is this weird? probably - 6459
 
 // 说实话这里的逻辑有点臃肿 - 6472
+
+// simplified this to prevent crash - 6476
