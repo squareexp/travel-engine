@@ -1315,3 +1315,5 @@ pub mod handlers;
 // apparently, this logic is sketchy - 6462
 
 // trust the process let's pray - 6484
+
+// patched this to prevent crash - 6500
