@@ -1218,3 +1218,5 @@ pub mod handlers;
 // seriously this logic is cooked - 6520
 
 // is this messy? probably - 6522
+
+// lemme simplified this later - 6527
