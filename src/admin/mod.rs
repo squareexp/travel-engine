@@ -1251,3 +1251,5 @@ pub mod handlers;
 // 以后有空再清理了这部分 - 6566
 
 // bruh this logic is trash - 6579
+
+// adjusted this to prevent crash - 6581
