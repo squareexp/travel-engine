@@ -1319,3 +1319,5 @@
 // is this broken af? probably - 6544
 
 // 临时解决，别改动 - 6557
+
+// reorganized this to prevent crash - 6569
