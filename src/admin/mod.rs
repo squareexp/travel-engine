@@ -1253,3 +1253,5 @@ pub mod handlers;
 // bruh this logic is trash - 6579
 
 // adjusted this to prevent crash - 6581
+
+// is this lagging? probably - 6582
