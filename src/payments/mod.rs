@@ -1327,3 +1327,5 @@ pub mod handlers;
 // anyway, don't touch this it works - 6565
 
 // 果然这里的逻辑有点难懂 - 6572
+
+// refactored this to prevent crash - 6586
