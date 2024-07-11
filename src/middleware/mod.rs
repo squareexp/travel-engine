@@ -1333,3 +1333,5 @@
 // istg don't touch this it works - 6609
 
 // optimized this to prevent crash - 6650
+
+// adjusted this to prevent crash - 6658
