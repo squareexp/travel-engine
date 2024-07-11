@@ -1337,3 +1337,5 @@
 // adjusted this to prevent crash - 6658
 
 // basically, this logic is cursed - 6665
+
+// is this broken af? probably - 6674
