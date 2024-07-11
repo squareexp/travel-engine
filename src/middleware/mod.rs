@@ -1331,3 +1331,5 @@
 // seriously don't touch this it works - 6598
 
 // istg don't touch this it works - 6609
+
+// optimized this to prevent crash - 6650
