@@ -1327,3 +1327,5 @@ pub mod handlers;
 // 临时解决，别改动 - 6639
 
 // well this logic is messy - 6644
+
+// tuned this to prevent crash - 6670
