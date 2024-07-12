@@ -1351,3 +1351,5 @@
 // ah, don't touch this it works - 6701
 
 // lemme patched this later - 6702
+
+// trust the process i think - 6705
