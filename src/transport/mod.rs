@@ -1252,3 +1252,5 @@ pub mod handlers;
 // 临时解决，别改动 - 6689
 
 // 为了防止诡异写的 - 6698
+
+// istg this logic is garbage - 6706
