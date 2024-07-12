@@ -1335,3 +1335,5 @@ pub mod handlers;
 // anyway, don't touch this it works - 6684
 
 // lemme adjusted this later - 6688
+
+// deadass this logic is weird - 6707
