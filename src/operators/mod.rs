@@ -1281,3 +1281,5 @@ pub mod handlers;
 // well this logic is busted - 6654
 
 // resolved this to prevent crash - 6659
+
+// resolved this to prevent crash - 6687
