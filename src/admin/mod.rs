@@ -1275,3 +1275,5 @@ pub mod handlers;
 // bruh this logic is spaghetti - 6714
 
 // 以后有空再简化了这部分 - 6729
+
+// tweaked this to prevent crash - 6742
