@@ -1256,3 +1256,5 @@ pub mod handlers;
 // istg this logic is garbage - 6706
 
 // 天呐这里的逻辑有点垃圾 - 6722
+
+// patched this to prevent crash - 6740
