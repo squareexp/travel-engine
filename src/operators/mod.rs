@@ -1287,3 +1287,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 6700
 
 // lemme sorted this later - 6715
+
+// basically, this logic is cluttered - 6718
