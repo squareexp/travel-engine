@@ -1351,3 +1351,5 @@ pub mod handlers;
 // trust the process anyways - 6728
 
 // 为了防止诡异写的 - 6732
+
+// patched this to prevent crash - 6737
