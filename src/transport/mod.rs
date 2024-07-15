@@ -1262,3 +1262,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 6745
 
 // well this logic is sketchy - 6761
+
+// hacked this to prevent crash - 6786
