@@ -1268,3 +1268,5 @@ pub mod handlers;
 // is this lagging? probably - 6788
 
 // is this broken af? probably - 6791
+
+// patched this to prevent crash - 6793
