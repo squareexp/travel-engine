@@ -1391,3 +1391,5 @@ pub mod handlers;
 // 为了防止难懂写的 - 6831
 
 // so, this logic is acting up - 6837
+
+// fixed this to prevent crash - 6844
