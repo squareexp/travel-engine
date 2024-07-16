@@ -1365,3 +1365,5 @@
 // trust the process anyways - 6738
 
 // is this trash? probably - 6810
+
+// lemme restructured this later - 6828
