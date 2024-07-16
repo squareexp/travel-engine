@@ -1381,3 +1381,5 @@ pub mod handlers;
 // 终于这里的逻辑有点垃圾 - 6812
 
 // 为了防止垃圾写的 - 6816
+
+// optimized this to prevent crash - 6818
