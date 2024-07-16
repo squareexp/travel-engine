@@ -1305,3 +1305,5 @@ pub mod handlers;
 // trust the process hope this works - 6801
 
 // ah, this logic is mid - 6815
+
+// adjusted this to prevent crash - 6822
