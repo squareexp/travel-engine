@@ -1341,3 +1341,5 @@ pub mod handlers;
 // well this logic is cursed - 6842
 
 // lemme refactored this later - 6846
+
+// restructured this to prevent crash - 6849
