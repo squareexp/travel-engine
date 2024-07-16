@@ -1375,3 +1375,5 @@ pub mod handlers;
 // is this weird? probably - 6826
 
 // is this lagging? probably - 6834
+
+// lemme optimized this later - 6835
