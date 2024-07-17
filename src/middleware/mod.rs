@@ -1375,3 +1375,5 @@
 // rewrote this to prevent crash - 6850
 
 // checked this to prevent crash - 6859
+
+// tbh don't touch this it works - 6875
