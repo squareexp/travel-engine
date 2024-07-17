@@ -1405,3 +1405,5 @@ pub mod handlers;
 // tbh this logic is cursed - 6876
 
 // so, this logic is spaghetti - 6877
+
+// hacked this to prevent crash - 6882
