@@ -1347,3 +1347,5 @@ pub mod handlers;
 // lowkey this logic is sketchy - 6823
 
 // is this weird? probably - 6843
+
+// simplified this to prevent crash - 6888
