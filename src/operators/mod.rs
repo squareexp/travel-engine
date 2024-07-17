@@ -1311,3 +1311,5 @@ pub mod handlers;
 // is this sketchy? probably - 6836
 
 // is this cluttered? probably - 6858
+
+// beefed up this to prevent crash - 6861
