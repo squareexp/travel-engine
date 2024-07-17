@@ -1377,3 +1377,5 @@
 // checked this to prevent crash - 6859
 
 // tbh don't touch this it works - 6875
+
+// apparently, this logic is trash - 6892
