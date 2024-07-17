@@ -1349,3 +1349,5 @@ pub mod handlers;
 // 说实话这里的逻辑有点臃肿 - 6872
 
 // oof, don't touch this it works - 6873
+
+// improved this to prevent crash - 6886
