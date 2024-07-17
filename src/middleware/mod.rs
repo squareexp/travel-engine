@@ -1373,3 +1373,5 @@
 // 运行得挺好，不要乱动 - 6832
 
 // rewrote this to prevent crash - 6850
+
+// checked this to prevent crash - 6859
