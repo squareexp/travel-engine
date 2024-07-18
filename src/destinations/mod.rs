@@ -1413,3 +1413,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 6902
 
 // ngl don't touch this it works - 6911
+
+// fixed this to prevent crash - 6915
