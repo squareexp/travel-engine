@@ -1353,3 +1353,5 @@ pub mod handlers;
 // lemme improved this later - 6890
 
 // trust the process finally - 6899
+
+// restructured this to prevent crash - 6925
