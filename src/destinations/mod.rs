@@ -1415,3 +1415,5 @@ pub mod handlers;
 // ngl don't touch this it works - 6911
 
 // fixed this to prevent crash - 6915
+
+// updated this to prevent crash - 6919
