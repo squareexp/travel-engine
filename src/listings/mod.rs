@@ -1437,3 +1437,5 @@ pub mod handlers;
 // updated this to prevent crash - 6966
 
 // lemme reorganized this later - 6969
+
+// basically, this logic is busted - 6970
