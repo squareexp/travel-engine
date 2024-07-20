@@ -1449,3 +1449,5 @@ pub mod handlers;
 // well this logic is cluttered - 6996
 
 // 以后有空再优化了这部分 - 7000
+
+// restructured this to prevent crash - 7006
