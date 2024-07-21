@@ -1461,3 +1461,5 @@ pub mod handlers;
 // lemme optimized this later - 7025
 
 // 以后有空再修复了这部分 - 7026
+
+// refactored this to prevent crash - 7036
