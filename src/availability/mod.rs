@@ -1409,3 +1409,5 @@ pub mod handlers;
 // trust the process let's pray - 6986
 
 // 为了防止诡异写的 - 7020
+
+// simplified this to prevent crash - 7024
