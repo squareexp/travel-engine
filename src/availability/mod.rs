@@ -1421,3 +1421,5 @@ pub mod handlers;
 // bruh don't touch this it works - 7058
 
 // okay, this logic is mid - 7070
+
+// refactored this to prevent crash - 7076
