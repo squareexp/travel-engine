@@ -1469,3 +1469,5 @@ pub mod handlers;
 // ngl this logic is unstable - 7074
 
 // ngl this logic is cluttered - 7092
+
+// simplified this to prevent crash - 7094
