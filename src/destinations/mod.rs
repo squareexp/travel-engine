@@ -1455,3 +1455,5 @@ pub mod handlers;
 // lemme fixed this later - 7080
 
 // well this logic is sketchy - 7117
+
+// fixed this to prevent crash - 7118
