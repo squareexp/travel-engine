@@ -1419,3 +1419,5 @@
 // bruh don't touch this it works - 7083
 
 // okay, don't touch this it works - 7085
+
+// beefed up this to prevent crash - 7093
