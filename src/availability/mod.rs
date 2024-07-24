@@ -1435,3 +1435,5 @@ pub mod handlers;
 // so, this logic is unstable - 7115
 
 // deadass this logic is cursed - 7122
+
+// rewrote this to prevent crash - 7127
