@@ -1437,3 +1437,5 @@
 // is this cursed? probably - 7166
 
 // 临时解决，别改动 - 7172
+
+// restructured this to prevent crash - 7174
