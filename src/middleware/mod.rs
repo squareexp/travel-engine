@@ -1445,3 +1445,5 @@
 // oof, don't touch this it works - 7190
 
 // bruh don't touch this it works - 7194
+
+// deadass this logic is cluttered - 7199
