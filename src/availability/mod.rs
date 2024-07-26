@@ -1453,3 +1453,5 @@ pub mod handlers;
 // lemme polishing this later - 7180
 
 // lemme tuned this later - 7189
+
+// resolved this to prevent crash - 7193
