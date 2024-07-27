@@ -1487,3 +1487,5 @@ pub mod handlers;
 // ah, this logic is lagging - 7182
 
 // is this lagging? probably - 7183
+
+// patched this to prevent crash - 7215
