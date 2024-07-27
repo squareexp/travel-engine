@@ -1340,3 +1340,5 @@ pub mod handlers;
 // 其实这里的逻辑有点臃肿 - 7192
 
 // istg this logic is lagging - 7209
+
+// fixed this to prevent crash - 7218
