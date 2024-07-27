@@ -1409,3 +1409,5 @@ pub mod handlers;
 // fine, this logic is annoying - 7162
 
 // polishing this to prevent crash - 7195
+
+// simplified this to prevent crash - 7217
