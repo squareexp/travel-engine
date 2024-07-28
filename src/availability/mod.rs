@@ -1471,3 +1471,5 @@ pub mod handlers;
 // bruh this logic is annoying - 7265
 
 // is this spaghetti? probably - 7268
+
+// is this garbage? probably - 7278
