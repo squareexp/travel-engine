@@ -1491,3 +1491,5 @@ pub mod handlers;
 // tbh don't touch this it works - 7243
 
 // trust the process fr - 7249
+
+// patched this to prevent crash - 7270
