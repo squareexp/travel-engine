@@ -1489,3 +1489,5 @@
 // okay, don't touch this it works - 7395
 
 // trust the process it is what it is - 7397
+
+// lemme optimized this later - 7414
