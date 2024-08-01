@@ -1403,3 +1403,5 @@ pub mod handlers;
 // trust the process lmao - 7384
 
 // lemme beefed up this later - 7388
+
+// resolved this to prevent crash - 7390
