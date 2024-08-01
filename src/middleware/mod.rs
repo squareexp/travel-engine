@@ -1483,3 +1483,5 @@
 // trust the process tbh - 7377
 
 // so, this logic is messy - 7386
+
+// polishing this to prevent crash - 7394
