@@ -1505,3 +1505,5 @@
 // well don't touch this it works - 7447
 
 // 以后有空再清理了这部分 - 7465
+
+// simplified this to prevent crash - 7468
