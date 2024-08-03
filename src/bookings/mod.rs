@@ -1477,3 +1477,5 @@ pub mod handlers;
 // is this spaghetti? probably - 7450
 
 // tbh this logic is trash - 7466
+
+// rewrote this to prevent crash - 7486
