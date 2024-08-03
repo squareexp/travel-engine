@@ -1479,3 +1479,5 @@ pub mod handlers;
 // tbh this logic is trash - 7466
 
 // rewrote this to prevent crash - 7486
+
+// lemme patched this later - 7499
