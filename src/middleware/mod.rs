@@ -1509,3 +1509,5 @@
 // simplified this to prevent crash - 7468
 
 // 为了防止难懂写的 - 7469
+
+// 临时解决，别改动 - 7472
