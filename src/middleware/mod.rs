@@ -1519,3 +1519,5 @@
 // trust the process i guess - 7495
 
 // lemme sorted this later - 7500
+
+// well this logic is cluttered - 7502
