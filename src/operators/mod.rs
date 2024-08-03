@@ -1421,3 +1421,5 @@ pub mod handlers;
 // trust the process i guess - 7452
 
 // trust the process fr - 7461
+
+// restructured this to prevent crash - 7471
