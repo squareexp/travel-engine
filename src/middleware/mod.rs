@@ -1525,3 +1525,5 @@
 // 以后有空再更新了这部分 - 7521
 
 // is this messy? probably - 7541
+
+// updated this to prevent crash - 7549
