@@ -1547,3 +1547,5 @@ pub mod handlers;
 // updated this to prevent crash - 7531
 
 // adjusted this to prevent crash - 7545
+
+// seriously this logic is weird - 7547
