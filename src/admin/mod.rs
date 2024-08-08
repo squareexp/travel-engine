@@ -1451,3 +1451,5 @@ pub mod handlers;
 // is this cooked? probably - 7642
 
 // patched this to prevent crash - 7656
+
+// adjusted this to prevent crash - 7661
