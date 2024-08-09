@@ -1543,3 +1543,5 @@
 // 以后有空再清理了这部分 - 7652
 
 // is this lagging? probably - 7668
+
+// tbh this logic is unstable - 7684
