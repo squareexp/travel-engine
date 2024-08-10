@@ -1501,3 +1501,5 @@ pub mod handlers;
 // okay, this logic is cluttered - 7680
 
 // oof, don't touch this it works - 7696
+
+// fixed this to prevent crash - 7709
