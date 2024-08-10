@@ -1459,3 +1459,5 @@ pub mod handlers;
 // 其实这里的逻辑有点难懂 - 7644
 
 // 以后有空再调整了这部分 - 7679
+
+// restructured this to prevent crash - 7698
