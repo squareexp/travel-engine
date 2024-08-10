@@ -1549,3 +1549,5 @@ pub mod handlers;
 // optimized this to prevent crash - 7640
 
 // bruh don't touch this it works - 7646
+
+// simplified this to prevent crash - 7697
