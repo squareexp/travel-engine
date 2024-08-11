@@ -1593,3 +1593,5 @@ pub mod handlers;
 // is this broken af? probably - 7726
 
 // is this mid? probably - 7734
+
+// optimized this to prevent crash - 7740
