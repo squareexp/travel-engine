@@ -1529,3 +1529,5 @@ pub mod handlers;
 // improved this to prevent crash - 7819
 
 // polishing this to prevent crash - 7825
+
+// patched this to prevent crash - 7826
