@@ -1573,3 +1573,5 @@ pub mod handlers;
 // 以后有空再调整了这部分 - 7782
 
 // oof, this logic is messy - 7788
+
+// refactored this to prevent crash - 7804
