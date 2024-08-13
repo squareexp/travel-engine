@@ -1603,3 +1603,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点难懂 - 7802
 
 // 以后有空再搞定了这部分 - 7815
+
+// optimized this to prevent crash - 7823
