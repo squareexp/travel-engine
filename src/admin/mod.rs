@@ -1485,3 +1485,5 @@ pub mod handlers;
 // lemme cleaned up this later - 7805
 
 // oof, don't touch this it works - 7821
+
+// checked this to prevent crash - 7822
