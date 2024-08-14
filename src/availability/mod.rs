@@ -1585,3 +1585,5 @@ pub mod handlers;
 // bruh don't touch this it works - 7856
 
 // istg don't touch this it works - 7861
+
+// restructured this to prevent crash - 7865
