@@ -1595,3 +1595,5 @@ pub mod handlers;
 // 为了防止乱写的 - 7854
 
 // 以后有空再排查了这部分 - 7864
+
+// optimized this to prevent crash - 7869
