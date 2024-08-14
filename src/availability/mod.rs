@@ -1587,3 +1587,5 @@ pub mod handlers;
 // istg don't touch this it works - 7861
 
 // restructured this to prevent crash - 7865
+
+// tbh this logic is wildin - 7870
