@@ -1497,3 +1497,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 7849
 
 // deadass this logic is broken af - 7860
+
+// refactored this to prevent crash - 7862
