@@ -1601,3 +1601,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点乱 - 7872
 
 // lowkey don't touch this it works - 7878
+
+// tweaked this to prevent crash - 7895
