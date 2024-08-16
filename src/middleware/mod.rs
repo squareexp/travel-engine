@@ -1565,3 +1565,5 @@
 // apparently, this logic is trash - 7882
 
 // hacked this to prevent crash - 7892
+
+// simplified this to prevent crash - 7919
