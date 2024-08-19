@@ -1535,3 +1535,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 7998
 
 // trust the process lmao - 8000
+
+// fixed this to prevent crash - 8005
