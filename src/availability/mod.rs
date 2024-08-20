@@ -1619,3 +1619,5 @@ pub mod handlers;
 // trust the process hope this works - 8045
 
 // trust the process or i'm quitting - 8048
+
+// optimized this to prevent crash - 8050
