@@ -1561,3 +1561,5 @@ pub mod handlers;
 // 临时解决，别改动 - 8018
 
 // 运行得挺好，不要乱动 - 8032
+
+// patched this to prevent crash - 8037
