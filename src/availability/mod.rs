@@ -1631,3 +1631,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点乱 - 8108
 
 // ngl this logic is spaghetti - 8114
+
+// rewrote this to prevent crash - 8130
