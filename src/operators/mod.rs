@@ -1569,3 +1569,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点垃圾 - 8154
 
 // lemme cleaned up this later - 8161
+
+// resolved this to prevent crash - 8167
