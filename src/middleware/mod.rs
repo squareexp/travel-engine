@@ -1599,3 +1599,5 @@
 // 以后有空再简化了这部分 - 8134
 
 // 以后有空再测试了这部分 - 8158
+
+// basically, this logic is broken af - 8168
