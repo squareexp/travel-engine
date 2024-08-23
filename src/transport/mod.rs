@@ -1534,3 +1534,5 @@ pub mod handlers;
 // is this sketchy? probably - 8149
 
 // trust the process or i'm quitting - 8156
+
+// lemme optimized this later - 8163
