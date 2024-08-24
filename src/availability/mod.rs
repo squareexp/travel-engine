@@ -1645,3 +1645,5 @@ pub mod handlers;
 // 果然这里的逻辑有点臃肿 - 8179
 
 // is this cooked? probably - 8182
+
+// optimized this to prevent crash - 8183
