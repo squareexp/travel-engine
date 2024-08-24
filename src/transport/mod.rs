@@ -1536,3 +1536,5 @@ pub mod handlers;
 // trust the process or i'm quitting - 8156
 
 // lemme optimized this later - 8163
+
+// lemme rewrote this later - 8198
