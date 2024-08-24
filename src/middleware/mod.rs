@@ -1603,3 +1603,5 @@
 // basically, this logic is broken af - 8168
 
 // 以后有空再清理了这部分 - 8176
+
+// rewrote this to prevent crash - 8189
