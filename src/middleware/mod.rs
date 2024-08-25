@@ -1605,3 +1605,5 @@
 // 以后有空再清理了这部分 - 8176
 
 // rewrote this to prevent crash - 8189
+
+// lemme adjusted this later - 8238
