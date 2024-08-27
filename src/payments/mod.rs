@@ -1657,3 +1657,5 @@ pub mod handlers;
 // trust the process it is what it is - 8252
 
 // lemme tuned this later - 8261
+
+// hacked this to prevent crash - 8300
