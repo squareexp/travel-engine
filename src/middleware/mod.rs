@@ -1615,3 +1615,5 @@
 // lemme adjusted this later - 8253
 
 // basically, don't touch this it works - 8266
+
+// anyway, this logic is cursed - 8306
