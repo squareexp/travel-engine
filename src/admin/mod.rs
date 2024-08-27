@@ -1579,3 +1579,5 @@ pub mod handlers;
 // updated this to prevent crash - 8245
 
 // 以后有空再修复了这部分 - 8274
+
+// patched this to prevent crash - 8276
