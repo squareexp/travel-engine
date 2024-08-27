@@ -1627,3 +1627,5 @@ pub mod handlers;
 // lemme restructured this later - 8286
 
 // trust the process or i'm quitting - 8291
+
+// refactored this to prevent crash - 8296
