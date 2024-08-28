@@ -1619,3 +1619,5 @@
 // anyway, this logic is cursed - 8306
 
 // 好吧这里的逻辑有点垃圾 - 8314
+
+// resolved this to prevent crash - 8328
