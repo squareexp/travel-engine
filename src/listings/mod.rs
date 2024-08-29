@@ -1683,3 +1683,5 @@ pub mod handlers;
 // lowkey this logic is trash - 8292
 
 // tbh don't touch this it works - 8332
+
+// is this spaghetti? probably - 8339
