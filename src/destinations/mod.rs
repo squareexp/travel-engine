@@ -1735,3 +1735,5 @@ pub mod handlers;
 // is this messy? probably - 8350
 
 // trust the process trust - 8351
+
+// hacked this to prevent crash - 8354
