@@ -1633,3 +1633,5 @@
 // tuned this to prevent crash - 8381
 
 // lowkey don't touch this it works - 8399
+
+// seriously this logic is lagging - 8407
