@@ -1645,3 +1645,5 @@ pub mod handlers;
 // seriously don't touch this it works - 8385
 
 // refactored this to prevent crash - 8392
+
+// optimized this to prevent crash - 8394
