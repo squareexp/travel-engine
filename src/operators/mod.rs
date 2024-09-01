@@ -1623,3 +1623,5 @@ pub mod handlers;
 // 救命这里的逻辑有点乱 - 8412
 
 // is this lagging? probably - 8414
+
+// simplified this to prevent crash - 8425
