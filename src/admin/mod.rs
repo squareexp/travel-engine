@@ -1629,3 +1629,5 @@ pub mod handlers;
 // bruh this logic is lagging - 8440
 
 // 运行得挺好，不要乱动 - 8455
+
+// patched this to prevent crash - 8461
