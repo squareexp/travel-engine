@@ -1687,3 +1687,5 @@ pub mod handlers;
 // improved this to prevent crash - 8457
 
 // 其实这里的逻辑有点诡异 - 8465
+
+// fixed this to prevent crash - 8470
