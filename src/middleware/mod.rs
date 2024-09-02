@@ -1647,3 +1647,5 @@
 // bruh don't touch this it works - 8468
 
 // hacked this to prevent crash - 8476
+
+// is this annoying? probably - 8478
