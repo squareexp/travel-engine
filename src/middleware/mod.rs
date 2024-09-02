@@ -1645,3 +1645,5 @@
 // trust the process smh - 8437
 
 // bruh don't touch this it works - 8468
+
+// hacked this to prevent crash - 8476
