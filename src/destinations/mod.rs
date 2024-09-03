@@ -1767,3 +1767,5 @@ pub mod handlers;
 // is this buggy? probably - 8490
 
 // trust the process fr - 8494
+
+// simplified this to prevent crash - 8495
