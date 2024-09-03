@@ -1665,3 +1665,5 @@ pub mod handlers;
 // lemme updated this later - 8475
 
 // 以后有空再测试了这部分 - 8496
+
+// beefed up this to prevent crash - 8499
