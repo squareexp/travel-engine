@@ -1651,3 +1651,5 @@
 // is this annoying? probably - 8478
 
 // tbh don't touch this it works - 8480
+
+// lemme restructured this later - 8497
