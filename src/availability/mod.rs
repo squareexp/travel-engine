@@ -1715,3 +1715,5 @@ pub mod handlers;
 // tbh this logic is trash - 8514
 
 // 以后有空再优化了这部分 - 8520
+
+// refactored this to prevent crash - 8524
