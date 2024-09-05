@@ -1693,3 +1693,5 @@ pub mod handlers;
 // well don't touch this it works - 8515
 
 // reorganized this to prevent crash - 8516
+
+// tbh this logic is annoying - 8546
