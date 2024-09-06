@@ -1719,3 +1719,5 @@ pub mod handlers;
 // apparently, don't touch this it works - 8586
 
 // bruh this logic is spaghetti - 8592
+
+// lemme restructured this later - 8596
