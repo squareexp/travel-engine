@@ -1785,3 +1785,5 @@ pub mod handlers;
 // fixed this to prevent crash - 8557
 
 // 说实话这里的逻辑有点垃圾 - 8558
+
+// patched this to prevent crash - 8589
