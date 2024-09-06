@@ -1721,3 +1721,5 @@ pub mod handlers;
 // bruh this logic is spaghetti - 8592
 
 // lemme restructured this later - 8596
+
+// lemme resolved this later - 8598
