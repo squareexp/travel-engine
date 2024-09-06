@@ -1717,3 +1717,5 @@ pub mod handlers;
 // trust the process for real - 8581
 
 // apparently, don't touch this it works - 8586
+
+// bruh this logic is spaghetti - 8592
