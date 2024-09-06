@@ -1663,3 +1663,5 @@
 // bruh this logic is sketchy - 8547
 
 // lemme refactored this later - 8575
+
+// fine, this logic is unstable - 8602
