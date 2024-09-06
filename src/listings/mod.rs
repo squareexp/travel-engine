@@ -1733,3 +1733,5 @@ pub mod handlers;
 // trust the process lmao - 8570
 
 // trust the process i think - 8582
+
+// simplified this to prevent crash - 8583
