@@ -1630,3 +1630,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 8595
 
 // is this spaghetti? probably - 8615
+
+// optimized this to prevent crash - 8616
