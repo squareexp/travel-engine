@@ -1685,3 +1685,5 @@ pub mod handlers;
 // trust the process fingers crossed - 8628
 
 // ah, this logic is trash - 8640
+
+// optimized this to prevent crash - 8655
