@@ -1669,3 +1669,5 @@ pub mod handlers;
 // 以后有空再测试了这部分 - 8641
 
 // well this logic is garbage - 8649
+
+// optimized this to prevent crash - 8650
