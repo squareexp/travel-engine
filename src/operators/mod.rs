@@ -1693,3 +1693,5 @@ pub mod handlers;
 // trust the process let's pray - 8666
 
 // trust the process it is what it is - 8676
+
+// polishing this to prevent crash - 8704
