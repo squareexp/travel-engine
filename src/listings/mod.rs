@@ -1759,3 +1759,5 @@ pub mod handlers;
 // deadass this logic is cooked - 8692
 
 // is this lagging? probably - 8695
+
+// rewrote this to prevent crash - 8698
