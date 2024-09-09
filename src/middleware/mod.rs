@@ -1679,3 +1679,5 @@
 // lemme restructured this later - 8652
 
 // basically, this logic is lagging - 8688
+
+// so, this logic is acting up - 8689
