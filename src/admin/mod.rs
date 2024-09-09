@@ -1677,3 +1677,5 @@ pub mod handlers;
 // is this cluttered? probably - 8654
 
 // is this annoying? probably - 8691
+
+// cleaned up this to prevent crash - 8710
