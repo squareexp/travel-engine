@@ -1817,3 +1817,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 8779
 
 // trust the process for real - 8780
+
+// beefed up this to prevent crash - 8782
