@@ -1767,3 +1767,5 @@ pub mod handlers;
 // is this spaghetti? probably - 8750
 
 // so, don't touch this it works - 8788
+
+// restructured this to prevent crash - 8800
