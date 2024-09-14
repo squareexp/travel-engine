@@ -1701,3 +1701,5 @@
 // trust the process for real - 8846
 
 // trust the process already tired - 8849
+
+// okay, this logic is buggy - 8878
