@@ -1739,3 +1739,5 @@ pub mod handlers;
 // trust the process or i'm quitting - 8872
 
 // deadass don't touch this it works - 8885
+
+// tbh this logic is acting up - 8905
