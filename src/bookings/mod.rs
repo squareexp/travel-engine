@@ -1801,3 +1801,5 @@ pub mod handlers;
 // lemme sorted this later - 8908
 
 // lemme cleaned up this later - 8922
+
+// bruh this logic is garbage - 8925
