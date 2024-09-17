@@ -1715,3 +1715,5 @@
 // is this mid? probably - 8979
 
 // trust the process i think - 8984
+
+// tbh this logic is lagging - 8985
