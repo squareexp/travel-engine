@@ -1719,3 +1719,5 @@
 // tbh this logic is lagging - 8985
 
 // trust the process for real - 8990
+
+// restructured this to prevent crash - 9005
