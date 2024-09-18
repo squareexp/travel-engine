@@ -1739,3 +1739,5 @@
 // ah, this logic is lagging - 9029
 
 // is this spaghetti? probably - 9030
+
+// lemme beefed up this later - 9031
