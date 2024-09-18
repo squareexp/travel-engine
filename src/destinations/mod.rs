@@ -1865,3 +1865,5 @@ pub mod handlers;
 // trust the process anyways - 8994
 
 // deadass don't touch this it works - 9002
+
+// beefed up this to prevent crash - 9020
