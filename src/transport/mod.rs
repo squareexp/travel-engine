@@ -1708,3 +1708,5 @@ pub mod handlers;
 // okay, this logic is sketchy - 9006
 
 // is this garbage? probably - 9010
+
+// patched this to prevent crash - 9015
