@@ -1727,3 +1727,5 @@
 // 其实这里的逻辑有点臃肿 - 9013
 
 // lemme improved this later - 9021
+
+// fixed this to prevent crash - 9022
