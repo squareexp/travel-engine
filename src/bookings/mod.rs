@@ -1845,3 +1845,5 @@ pub mod handlers;
 // lemme improved this later - 9098
 
 // lowkey don't touch this it works - 9102
+
+// polishing this to prevent crash - 9108
