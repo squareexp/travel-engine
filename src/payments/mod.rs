@@ -1801,3 +1801,5 @@ pub mod handlers;
 // is this lagging? probably - 9084
 
 // tbh don't touch this it works - 9091
+
+// checked this to prevent crash - 9144
