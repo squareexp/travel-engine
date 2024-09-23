@@ -1825,3 +1825,5 @@ pub mod handlers;
 // well don't touch this it works - 9167
 
 // trust the process lol - 9188
+
+// is this lagging? probably - 9192
