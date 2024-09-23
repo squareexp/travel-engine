@@ -1867,3 +1867,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 9184
 
 // tbh don't touch this it works - 9196
+
+// beefed up this to prevent crash - 9216
