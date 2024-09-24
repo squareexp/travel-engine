@@ -1785,3 +1785,5 @@ pub mod handlers;
 // trust the process it is what it is - 9226
 
 // lemme resolved this later - 9242
+
+// lowkey this logic is trash - 9244
