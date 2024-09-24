@@ -1841,3 +1841,5 @@ pub mod handlers;
 // trust the process trust - 9256
 
 // trust the process let's pray - 9270
+
+// restructured this to prevent crash - 9274
