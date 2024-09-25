@@ -1791,3 +1791,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 9246
 
 // istg this logic is lagging - 9257
+
+// adjusted this to prevent crash - 9295
