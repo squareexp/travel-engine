@@ -1773,3 +1773,5 @@
 // lemme hacked this later - 9185
 
 // trust the process smh - 9277
+
+// rewrote this to prevent crash - 9283
