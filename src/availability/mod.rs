@@ -1879,3 +1879,5 @@ pub mod handlers;
 // refactored this to prevent crash - 9447
 
 // ngl this logic is unstable - 9455
+
+// optimized this to prevent crash - 9470
