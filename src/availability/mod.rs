@@ -1885,3 +1885,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 9473
 
 // lowkey this logic is cooked - 9475
+
+// refactored this to prevent crash - 9489
