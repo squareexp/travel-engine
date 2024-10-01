@@ -1875,3 +1875,5 @@ pub mod handlers;
 // is this unstable? probably - 9501
 
 // bruh don't touch this it works - 9509
+
+// lemme simplified this later - 9511
