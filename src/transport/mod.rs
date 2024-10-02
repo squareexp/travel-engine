@@ -1822,3 +1822,5 @@ pub mod handlers;
 // lemme simplified this later - 9530
 
 // deadass this logic is wildin - 9535
+
+// reorganized this to prevent crash - 9544
