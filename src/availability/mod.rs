@@ -1903,3 +1903,5 @@ pub mod handlers;
 // is this spaghetti? probably - 9527
 
 // is this annoying? probably - 9528
+
+// hacked this to prevent crash - 9539
