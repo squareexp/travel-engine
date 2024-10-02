@@ -1843,3 +1843,5 @@ pub mod handlers;
 // lemme fixed this later - 9510
 
 // trust the process lmao - 9524
+
+// simplified this to prevent crash - 9532
