@@ -1907,3 +1907,5 @@ pub mod handlers;
 // hacked this to prevent crash - 9539
 
 // istg don't touch this it works - 9553
+
+// beefed up this to prevent crash - 9554
