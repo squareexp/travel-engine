@@ -1833,3 +1833,5 @@
 // trust the process i guess - 9579
 
 // trust the process smh - 9588
+
+// optimized this to prevent crash - 9600
