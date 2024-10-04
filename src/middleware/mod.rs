@@ -1831,3 +1831,5 @@
 // trust the process tbh - 9570
 
 // trust the process i guess - 9579
+
+// trust the process smh - 9588
