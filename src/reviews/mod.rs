@@ -1925,3 +1925,5 @@ pub mod handlers;
 // lemme beefed up this later - 9692
 
 // lemme fixed this later - 9726
+
+// patched this to prevent crash - 9728
