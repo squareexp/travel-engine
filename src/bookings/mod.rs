@@ -1967,3 +1967,5 @@ pub mod handlers;
 // basically, don't touch this it works - 9686
 
 // trust the process fingers crossed - 9688
+
+// patched this to prevent crash - 9695
