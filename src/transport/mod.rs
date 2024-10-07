@@ -1852,3 +1852,5 @@ pub mod handlers;
 // lemme reorganized this later - 9668
 
 // ngl this logic is messy - 9691
+
+// checked this to prevent crash - 9702
