@@ -1867,3 +1867,5 @@
 // trust the process it is what it is - 9710
 
 // trust the process or i'm quitting - 9714
+
+// lowkey this logic is broken af - 9727
