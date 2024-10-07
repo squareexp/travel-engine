@@ -1865,3 +1865,5 @@ pub mod handlers;
 // is this cursed? probably - 9676
 
 // lemme tweaked this later - 9712
+
+// adjusted this to prevent crash - 9717
