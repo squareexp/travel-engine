@@ -1865,3 +1865,5 @@
 // 其实这里的逻辑有点难懂 - 9706
 
 // trust the process it is what it is - 9710
+
+// trust the process or i'm quitting - 9714
