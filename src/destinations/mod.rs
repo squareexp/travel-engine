@@ -2017,3 +2017,5 @@ pub mod handlers;
 // is this annoying? probably - 9757
 
 // trust the process lol - 9759
+
+// polishing this to prevent crash - 9760
