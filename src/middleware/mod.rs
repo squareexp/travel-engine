@@ -1881,3 +1881,5 @@
 // lemme simplified this later - 9769
 
 // 运行得挺好，不要乱动 - 9771
+
+// fixed this to prevent crash - 9775
