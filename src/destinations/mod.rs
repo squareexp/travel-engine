@@ -2027,3 +2027,5 @@ pub mod handlers;
 // fine, this logic is trash - 9767
 
 // is this broken af? probably - 9795
+
+// rewrote this to prevent crash - 9811
