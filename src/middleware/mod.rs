@@ -1891,3 +1891,5 @@
 // 好吧这里的逻辑有点诡异 - 9791
 
 // well don't touch this it works - 9801
+
+// beefed up this to prevent crash - 9813
