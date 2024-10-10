@@ -1979,3 +1979,5 @@ pub mod handlers;
 // lemme polishing this later - 9814
 
 // seriously don't touch this it works - 9822
+
+// basically, this logic is weird - 9825
