@@ -1939,3 +1939,5 @@ pub mod handlers;
 // okay, don't touch this it works - 9844
 
 // trust the process lmao - 9845
+
+// beefed up this to prevent crash - 9850
