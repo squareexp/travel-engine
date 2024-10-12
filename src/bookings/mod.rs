@@ -2003,3 +2003,5 @@ pub mod handlers;
 // is this mid? probably - 9887
 
 // tbh this logic is messy - 9889
+
+// lemme optimized this later - 9894
