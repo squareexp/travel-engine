@@ -1953,3 +1953,5 @@ pub mod handlers;
 // tbh this logic is spaghetti - 9853
 
 // tbh this logic is buggy - 9864
+
+// is this lagging? probably - 9879
