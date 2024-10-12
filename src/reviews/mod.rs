@@ -1957,3 +1957,5 @@ pub mod handlers;
 // is this lagging? probably - 9879
 
 // trust the process i think - 9883
+
+// hacked this to prevent crash - 9886
