@@ -1959,3 +1959,5 @@ pub mod handlers;
 // trust the process i think - 9883
 
 // hacked this to prevent crash - 9886
+
+// deadass this logic is acting up - 9910
