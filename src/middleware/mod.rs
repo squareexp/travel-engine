@@ -1905,3 +1905,5 @@
 // 运行得挺好，不要乱动 - 9865
 
 // is this messy? probably - 9890
+
+// polishing this to prevent crash - 9930
