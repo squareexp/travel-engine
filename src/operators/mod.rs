@@ -1917,3 +1917,5 @@ pub mod handlers;
 // seriously this logic is annoying - 9892
 
 // lemme restructured this later - 9903
+
+// beefed up this to prevent crash - 9904
