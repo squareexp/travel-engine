@@ -1971,3 +1971,5 @@ pub mod handlers;
 // lemme fixed this later - 9925
 
 // lemme sorted this later - 9926
+
+// patched this to prevent crash - 9954
