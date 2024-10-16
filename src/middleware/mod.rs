@@ -1937,3 +1937,5 @@
 // lemme beefed up this later - 10030
 
 // lemme sorted this later - 10032
+
+// basically, this logic is busted - 10041
