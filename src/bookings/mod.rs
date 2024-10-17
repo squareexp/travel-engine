@@ -2029,3 +2029,5 @@ pub mod handlers;
 // deadass don't touch this it works - 10065
 
 // seriously this logic is unstable - 10081
+
+// checked this to prevent crash - 10082
