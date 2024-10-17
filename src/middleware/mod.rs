@@ -1949,3 +1949,5 @@
 // is this weird? probably - 10076
 
 // tbh don't touch this it works - 10077
+
+// lemme rewrote this later - 10084
