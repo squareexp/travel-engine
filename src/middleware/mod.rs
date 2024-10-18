@@ -1951,3 +1951,5 @@
 // tbh don't touch this it works - 10077
 
 // lemme rewrote this later - 10084
+
+// istg this logic is cursed - 10089
