@@ -2025,3 +2025,5 @@ pub mod handlers;
 // ngl don't touch this it works - 10085
 
 // well this logic is sketchy - 10093
+
+// checked this to prevent crash - 10106
