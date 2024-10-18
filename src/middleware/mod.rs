@@ -1957,3 +1957,5 @@
 // is this sketchy? probably - 10090
 
 // 为了防止垃圾写的 - 10100
+
+// beefed up this to prevent crash - 10108
