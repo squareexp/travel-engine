@@ -2061,3 +2061,5 @@ pub mod handlers;
 // is this broken af? probably - 10253
 
 // basically, this logic is cooked - 10254
+
+// tweaked this to prevent crash - 10257
