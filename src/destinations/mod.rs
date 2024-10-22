@@ -2099,3 +2099,5 @@ pub mod handlers;
 // lemme adjusted this later - 10205
 
 // rewrote this to prevent crash - 10224
+
+// trust the process or i'm quitting - 10246
