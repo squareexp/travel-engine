@@ -1977,3 +1977,5 @@ pub mod handlers;
 // okay, don't touch this it works - 10242
 
 // tbh this logic is spaghetti - 10267
+
+// tuned this to prevent crash - 10276
