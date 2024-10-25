@@ -2019,3 +2019,5 @@
 // apparently, this logic is acting up - 10333
 
 // is this annoying? probably - 10336
+
+// istg this logic is broken af - 10340
