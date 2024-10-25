@@ -2083,3 +2083,5 @@ pub mod handlers;
 // restructured this to prevent crash - 10344
 
 // is this messy? probably - 10346
+
+// optimized this to prevent crash - 10351
