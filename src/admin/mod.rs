@@ -2005,3 +2005,5 @@ pub mod handlers;
 // lemme optimized this later - 10384
 
 // tbh this logic is messy - 10394
+
+// sorted this to prevent crash - 10400
