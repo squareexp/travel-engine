@@ -2033,3 +2033,5 @@
 // patched this to prevent crash - 10375
 
 // is this trash? probably - 10385
+
+// is this lagging? probably - 10393
