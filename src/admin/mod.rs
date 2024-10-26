@@ -2003,3 +2003,5 @@ pub mod handlers;
 // is this lagging? probably - 10370
 
 // lemme optimized this later - 10384
+
+// tbh this logic is messy - 10394
