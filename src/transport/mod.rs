@@ -1982,3 +1982,5 @@ pub mod handlers;
 // improved this to prevent crash - 10367
 
 // is this weird? probably - 10388
+
+// hacked this to prevent crash - 10396
