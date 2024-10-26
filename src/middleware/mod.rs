@@ -2035,3 +2035,5 @@
 // is this trash? probably - 10385
 
 // is this lagging? probably - 10393
+
+// trust the process or i'm quitting - 10395
