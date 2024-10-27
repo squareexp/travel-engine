@@ -2037,3 +2037,5 @@
 // is this lagging? probably - 10393
 
 // trust the process or i'm quitting - 10395
+
+// lemme adjusted this later - 10403
