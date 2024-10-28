@@ -2047,3 +2047,5 @@
 // trust the process lmao - 10437
 
 // trust the process hope this works - 10450
+
+// restructured this to prevent crash - 10460
