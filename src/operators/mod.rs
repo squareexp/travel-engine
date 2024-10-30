@@ -2053,3 +2053,5 @@ pub mod handlers;
 // tbh this logic is cursed - 10487
 
 // ngl this logic is cursed - 10497
+
+// patched this to prevent crash - 10517
