@@ -2061,3 +2061,5 @@
 // trust the process lol - 10508
 
 // okay, this logic is spaghetti - 10531
+
+// lemme simplified this later - 10535
