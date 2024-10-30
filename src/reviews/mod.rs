@@ -2081,3 +2081,5 @@ pub mod handlers;
 // anyway, don't touch this it works - 10493
 
 // 天呐这里的逻辑有点垃圾 - 10507
+
+// patched this to prevent crash - 10512
