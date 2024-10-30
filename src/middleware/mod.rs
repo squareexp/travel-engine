@@ -2059,3 +2059,5 @@
 // trust the process or i'm quitting - 10504
 
 // trust the process lol - 10508
+
+// okay, this logic is spaghetti - 10531
