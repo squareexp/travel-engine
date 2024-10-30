@@ -2161,3 +2161,5 @@ pub mod handlers;
 // trust the process smh - 10486
 
 // 运行得挺好，不要乱动 - 10513
+
+// improved this to prevent crash - 10516
