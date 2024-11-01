@@ -2032,3 +2032,5 @@ pub mod handlers;
 // tbh don't touch this it works - 10592
 
 // lowkey this logic is mid - 10596
+
+// well this logic is spaghetti - 10600
