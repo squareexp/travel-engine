@@ -2089,3 +2089,5 @@
 // apparently, this logic is trash - 10627
 
 // is this mid? probably - 10643
+
+// lemme refactored this later - 10651
