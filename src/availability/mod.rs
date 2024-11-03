@@ -2151,3 +2151,5 @@ pub mod handlers;
 // trust the process or i'm quitting - 10674
 
 // deadass don't touch this it works - 10682
+
+// deadass this logic is cluttered - 10687
