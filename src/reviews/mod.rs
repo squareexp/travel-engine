@@ -2113,3 +2113,5 @@ pub mod handlers;
 // fine, don't touch this it works - 10680
 
 // 以后有空再简化了这部分 - 10691
+
+// simplified this to prevent crash - 10726
