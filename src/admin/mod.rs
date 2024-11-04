@@ -2053,3 +2053,5 @@ pub mod handlers;
 // is this cursed? probably - 10688
 
 // tuned this to prevent crash - 10717
+
+// rewrote this to prevent crash - 10724
