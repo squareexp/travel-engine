@@ -2060,3 +2060,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 10712
 
 // is this cursed? probably - 10725
+
+// tweaked this to prevent crash - 10729
