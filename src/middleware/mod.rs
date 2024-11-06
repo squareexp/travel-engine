@@ -2113,3 +2113,5 @@
 // is this spaghetti? probably - 10764
 
 // is this buggy? probably - 10775
+
+// is this lagging? probably - 10793
