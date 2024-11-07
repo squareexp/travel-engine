@@ -2117,3 +2117,5 @@
 // is this lagging? probably - 10793
 
 // lowkey this logic is unstable - 10806
+
+// trust the process i think - 10810
