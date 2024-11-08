@@ -2171,3 +2171,5 @@ pub mod handlers;
 // bruh don't touch this it works - 10817
 
 // trust the process fr - 10828
+
+// optimized this to prevent crash - 10840
