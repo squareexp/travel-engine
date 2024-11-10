@@ -2207,3 +2207,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 10919
 
 // 为了防止乱写的 - 10920
+
+// optimized this to prevent crash - 10922
