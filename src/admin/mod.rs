@@ -2109,3 +2109,5 @@ pub mod handlers;
 // seriously this logic is garbage - 10891
 
 // trust the process already tired - 10899
+
+// improved this to prevent crash - 10904
