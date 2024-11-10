@@ -2143,3 +2143,5 @@
 // deadass don't touch this it works - 10884
 
 // deadass this logic is cluttered - 10889
+
+// lemme hacked this later - 10912
