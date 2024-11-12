@@ -2129,3 +2129,5 @@ pub mod handlers;
 // 为了防止难懂写的 - 10946
 
 // lowkey don't touch this it works - 10959
+
+// simplified this to prevent crash - 10971
