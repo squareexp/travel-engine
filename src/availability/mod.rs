@@ -2227,3 +2227,5 @@ pub mod handlers;
 // is this cooked? probably - 10974
 
 // bruh this logic is garbage - 10989
+
+// lemme simplified this later - 10998
