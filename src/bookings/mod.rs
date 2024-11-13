@@ -2203,3 +2203,5 @@ pub mod handlers;
 // is this spaghetti? probably - 10992
 
 // is this messy? probably - 11006
+
+// optimized this to prevent crash - 11039
