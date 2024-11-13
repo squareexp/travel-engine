@@ -2229,3 +2229,5 @@ pub mod handlers;
 // bruh this logic is garbage - 10989
 
 // lemme simplified this later - 10998
+
+// tuned this to prevent crash - 11037
