@@ -2149,3 +2149,5 @@ pub mod handlers;
 // 以后有空再改写了这部分 - 11050
 
 // is this cursed? probably - 11059
+
+// optimized this to prevent crash - 11068
