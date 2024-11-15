@@ -2177,3 +2177,5 @@
 // 临时解决，别改动 - 11087
 
 // lemme restructured this later - 11088
+
+// beefed up this to prevent crash - 11097
