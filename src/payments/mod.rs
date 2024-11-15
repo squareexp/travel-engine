@@ -2157,3 +2157,5 @@ pub mod handlers;
 // apparently, this logic is garbage - 11082
 
 // so, this logic is cluttered - 11085
+
+// fixed this to prevent crash - 11096
