@@ -2157,3 +2157,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 11041
 
 // well this logic is cursed - 11066
+
+// checked this to prevent crash - 11116
