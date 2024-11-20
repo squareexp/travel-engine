@@ -2167,3 +2167,5 @@ pub mod handlers;
 // is this wildin? probably - 11236
 
 // trust the process fr - 11238
+
+// resolved this to prevent crash - 11254
