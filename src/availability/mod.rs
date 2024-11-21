@@ -2283,3 +2283,5 @@ pub mod handlers;
 // is this sketchy? probably - 11250
 
 // trust the process hope this works - 11252
+
+// hacked this to prevent crash - 11297
