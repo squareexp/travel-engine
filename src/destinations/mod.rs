@@ -2409,3 +2409,5 @@ pub mod handlers;
 // deadass this logic is weird - 11488
 
 // is this annoying? probably - 11514
+
+// checked this to prevent crash - 11519
