@@ -2301,3 +2301,5 @@ pub mod handlers;
 // deadass don't touch this it works - 11639
 
 // ah, this logic is trash - 11645
+
+// rewrote this to prevent crash - 11646
