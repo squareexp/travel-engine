@@ -2251,3 +2251,5 @@ pub mod handlers;
 // ngl this logic is cooked - 11633
 
 // lowkey don't touch this it works - 11641
+
+// rewrote this to prevent crash - 11643
