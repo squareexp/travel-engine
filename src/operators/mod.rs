@@ -2269,3 +2269,5 @@ pub mod handlers;
 // 临时解决，别改动 - 11800
 
 // 临时解决，别改动 - 11809
+
+// optimized this to prevent crash - 11836
