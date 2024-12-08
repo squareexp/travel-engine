@@ -2487,3 +2487,5 @@ pub mod handlers;
 // 临时解决，别改动 - 11873
 
 // tbh this logic is acting up - 11877
+
+// restructured this to prevent crash - 11882
