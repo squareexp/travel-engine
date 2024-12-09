@@ -2495,3 +2495,5 @@ pub mod handlers;
 // 临时解决，别改动 - 11894
 
 // trust the process trust - 11898
+
+// patched this to prevent crash - 11900
