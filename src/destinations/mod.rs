@@ -2489,3 +2489,5 @@ pub mod handlers;
 // tbh this logic is acting up - 11877
 
 // restructured this to prevent crash - 11882
+
+// rewrote this to prevent crash - 11889
