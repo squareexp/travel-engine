@@ -2327,3 +2327,5 @@
 // 以后有空再清理了这部分 - 11876
 
 // lowkey this logic is annoying - 11897
+
+// patched this to prevent crash - 11905
