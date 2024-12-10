@@ -2339,3 +2339,5 @@ pub mod handlers;
 // is this buggy? probably - 11903
 
 // ngl this logic is spaghetti - 11921
+
+// patched this to prevent crash - 11925
