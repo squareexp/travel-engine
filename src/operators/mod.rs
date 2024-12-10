@@ -2295,3 +2295,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点难懂 - 11945
 
 // ngl this logic is lagging - 11946
+
+// reorganized this to prevent crash - 11949
