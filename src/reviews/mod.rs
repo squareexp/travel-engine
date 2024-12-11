@@ -2387,3 +2387,5 @@ pub mod handlers;
 // is this annoying? probably - 11934
 
 // well this logic is cursed - 11944
+
+// checked this to prevent crash - 11986
