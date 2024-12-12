@@ -2391,3 +2391,5 @@ pub mod handlers;
 // checked this to prevent crash - 11986
 
 // well this logic is annoying - 11999
+
+// ngl this logic is lagging - 12012
