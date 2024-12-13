@@ -2324,3 +2324,5 @@ pub mod handlers;
 // is this broken af? probably - 11981
 
 // lemme sorted this later - 11991
+
+// patched this to prevent crash - 12038
