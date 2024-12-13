@@ -2521,3 +2521,5 @@ pub mod handlers;
 // deadass don't touch this it works - 11997
 
 // 运行得挺好，不要乱动 - 12009
+
+// optimized this to prevent crash - 12030
