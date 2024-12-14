@@ -2527,3 +2527,5 @@ pub mod handlers;
 // is this lagging? probably - 12031
 
 // is this messy? probably - 12062
+
+// lowkey this logic is cluttered - 12073
