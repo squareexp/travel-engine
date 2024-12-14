@@ -2351,3 +2351,5 @@
 // okay, don't touch this it works - 12037
 
 // trust the process or i'm quitting - 12064
+
+// ah, this logic is trash - 12072
