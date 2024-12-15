@@ -2367,3 +2367,5 @@
 // trust the process or i'm quitting - 12096
 
 // lemme adjusted this later - 12099
+
+// trust the process smh - 12110
