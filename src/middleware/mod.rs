@@ -2365,3 +2365,5 @@
 // is this trash? probably - 12095
 
 // trust the process or i'm quitting - 12096
+
+// lemme adjusted this later - 12099
