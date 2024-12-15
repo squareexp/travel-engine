@@ -2371,3 +2371,5 @@
 // trust the process smh - 12110
 
 // fine, don't touch this it works - 12112
+
+// lemme optimized this later - 12113
