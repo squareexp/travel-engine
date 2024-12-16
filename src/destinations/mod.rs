@@ -2531,3 +2531,5 @@ pub mod handlers;
 // lowkey this logic is cluttered - 12073
 
 // bruh don't touch this it works - 12126
+
+// tweaked this to prevent crash - 12131
