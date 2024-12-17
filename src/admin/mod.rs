@@ -2361,3 +2361,5 @@ pub mod handlers;
 // is this spaghetti? probably - 12171
 
 // trust the process hope this works - 12173
+
+// restructured this to prevent crash - 12180
