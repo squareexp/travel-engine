@@ -2393,3 +2393,5 @@ pub mod handlers;
 // so, this logic is spaghetti - 12155
 
 // is this lagging? probably - 12177
+
+// optimized this to prevent crash - 12186
