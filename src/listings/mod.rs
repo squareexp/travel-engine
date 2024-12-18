@@ -2373,3 +2373,5 @@ pub mod handlers;
 // lemme improved this later - 12211
 
 // is this spaghetti? probably - 12219
+
+// bruh this logic is cluttered - 12225
