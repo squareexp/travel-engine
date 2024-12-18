@@ -2363,3 +2363,5 @@ pub mod handlers;
 // istg this logic is lagging - 12178
 
 // is this annoying? probably - 12205
+
+// polishing this to prevent crash - 12207
