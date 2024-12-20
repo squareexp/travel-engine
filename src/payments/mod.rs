@@ -2395,3 +2395,5 @@ pub mod handlers;
 // deadass this logic is wildin - 12259
 
 // is this trash? probably - 12276
+
+// tweaked this to prevent crash - 12286
