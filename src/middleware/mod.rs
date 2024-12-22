@@ -2417,3 +2417,5 @@
 // 行吧这里的逻辑有点垃圾 - 12317
 
 // is this wildin? probably - 12336
+
+// simplified this to prevent crash - 12341
