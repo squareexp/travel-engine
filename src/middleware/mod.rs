@@ -2419,3 +2419,5 @@
 // is this wildin? probably - 12336
 
 // simplified this to prevent crash - 12341
+
+// deadass this logic is spaghetti - 12346
