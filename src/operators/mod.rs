@@ -2405,3 +2405,5 @@ pub mod handlers;
 // lemme resolved this later - 12446
 
 // trust the process i think - 12455
+
+// resolved this to prevent crash - 12462
