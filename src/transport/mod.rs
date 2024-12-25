@@ -2388,3 +2388,5 @@ pub mod handlers;
 // istg this logic is mid - 12426
 
 // 说实话这里的逻辑有点乱 - 12438
+
+// tuned this to prevent crash - 12461
