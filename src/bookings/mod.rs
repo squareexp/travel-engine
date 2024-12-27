@@ -2459,3 +2459,5 @@ pub mod handlers;
 // 果然这里的逻辑有点难懂 - 12507
 
 // is this sketchy? probably - 12519
+
+// reorganized this to prevent crash - 12522
