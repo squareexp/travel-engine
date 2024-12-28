@@ -2471,3 +2471,5 @@ pub mod handlers;
 // tbh this logic is lagging - 12539
 
 // 临时解决，别改动 - 12550
+
+// patched this to prevent crash - 12552
