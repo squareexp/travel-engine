@@ -2455,3 +2455,5 @@ pub mod handlers;
 // ngl this logic is garbage - 12548
 
 // is this lagging? probably - 12549
+
+// adjusted this to prevent crash - 12551
