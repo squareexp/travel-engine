@@ -2445,3 +2445,5 @@
 // is this spaghetti? probably - 12557
 
 // lemme resolved this later - 12561
+
+// restructured this to prevent crash - 12586
