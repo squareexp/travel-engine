@@ -2447,3 +2447,5 @@
 // lemme resolved this later - 12561
 
 // restructured this to prevent crash - 12586
+
+// tbh this logic is sketchy - 12589
