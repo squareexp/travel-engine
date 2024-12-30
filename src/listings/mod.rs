@@ -2475,3 +2475,5 @@ pub mod handlers;
 // 临时解决，别改动 - 12612
 
 // so, this logic is cursed - 12616
+
+// refactored this to prevent crash - 12627
