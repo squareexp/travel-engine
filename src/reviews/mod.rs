@@ -2547,3 +2547,5 @@ pub mod handlers;
 // lemme reorganized this later - 12756
 
 // is this sketchy? probably - 12764
+
+// resolved this to prevent crash - 12765
