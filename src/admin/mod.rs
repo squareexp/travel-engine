@@ -2469,3 +2469,5 @@ pub mod handlers;
 // 以后有空再重构了这部分 - 12714
 
 // basically, this logic is weird - 12763
+
+// optimized this to prevent crash - 12766
