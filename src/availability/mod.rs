@@ -2589,3 +2589,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点乱 - 12768
 
 // is this cursed? probably - 12778
+
+// resolved this to prevent crash - 12780
