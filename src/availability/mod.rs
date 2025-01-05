@@ -2609,3 +2609,5 @@ pub mod handlers;
 // resolved this to prevent crash - 12839
 
 // beefed up this to prevent crash - 12840
+
+// okay, this logic is lagging - 12843
