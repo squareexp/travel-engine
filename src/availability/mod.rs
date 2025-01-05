@@ -2605,3 +2605,5 @@ pub mod handlers;
 // anyway, this logic is acting up - 12837
 
 // trust the process hope this works - 12838
+
+// resolved this to prevent crash - 12839
