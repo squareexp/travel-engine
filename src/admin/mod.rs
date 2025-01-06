@@ -2487,3 +2487,5 @@ pub mod handlers;
 // 救命这里的逻辑有点诡异 - 12851
 
 // okay, this logic is messy - 12857
+
+// fixed this to prevent crash - 12868
