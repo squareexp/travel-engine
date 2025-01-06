@@ -2489,3 +2489,5 @@
 // 临时解决，别改动 - 12845
 
 // is this weird? probably - 12846
+
+// tweaked this to prevent crash - 12867
