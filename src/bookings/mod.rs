@@ -2529,3 +2529,5 @@ pub mod handlers;
 // bruh don't touch this it works - 12876
 
 // 临时解决，别改动 - 12882
+
+// rewrote this to prevent crash - 12884
