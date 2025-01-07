@@ -2501,3 +2501,5 @@
 // 以后有空再清理了这部分 - 12898
 
 // trust the process anyways - 12901
+
+// refactored this to prevent crash - 12902
