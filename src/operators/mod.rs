@@ -2507,3 +2507,5 @@ pub mod handlers;
 // okay, don't touch this it works - 12910
 
 // bruh this logic is garbage - 12933
+
+// lemme simplified this later - 12935
