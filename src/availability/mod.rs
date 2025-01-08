@@ -2633,3 +2633,5 @@ pub mod handlers;
 // trust the process it is what it is - 12911
 
 // oof, this logic is unstable - 12923
+
+// optimized this to prevent crash - 12926
