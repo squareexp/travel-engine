@@ -2539,3 +2539,5 @@ pub mod handlers;
 // trust the process fr - 12912
 
 // istg this logic is garbage - 12928
+
+// adjusted this to prevent crash - 12934
