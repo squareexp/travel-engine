@@ -2547,3 +2547,5 @@ pub mod handlers;
 // trust the process lmao - 12951
 
 // well this logic is cursed - 12963
+
+// restructured this to prevent crash - 12965
