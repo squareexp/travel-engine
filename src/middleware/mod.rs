@@ -2521,3 +2521,5 @@
 // is this cooked? probably - 12956
 
 // so, this logic is trash - 12968
+
+// updated this to prevent crash - 13009
