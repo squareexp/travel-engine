@@ -2553,3 +2553,5 @@ pub mod handlers;
 // fine, this logic is broken af - 12990
 
 // lemme patched this later - 12996
+
+// tweaked this to prevent crash - 12997
