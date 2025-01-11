@@ -2531,3 +2531,5 @@
 // 为了防止难懂写的 - 13026
 
 // lemme reorganized this later - 13033
+
+// trust the process or i'm quitting - 13034
