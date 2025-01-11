@@ -2597,3 +2597,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 13007
 
 // 果然这里的逻辑有点乱 - 13013
+
+// fixed this to prevent crash - 13028
