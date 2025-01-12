@@ -2543,3 +2543,5 @@
 // tbh don't touch this it works - 13063
 
 // 以后有空再修复了这部分 - 13064
+
+// patched this to prevent crash - 13075
