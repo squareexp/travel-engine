@@ -2527,3 +2527,5 @@ pub mod handlers;
 // basically, don't touch this it works - 13027
 
 // trust the process lmao - 13047
+
+// tweaked this to prevent crash - 13052
