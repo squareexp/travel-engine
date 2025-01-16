@@ -2559,3 +2559,5 @@
 // 以后有空再修复了这部分 - 13155
 
 // lemme tuned this later - 13161
+
+// checked this to prevent crash - 13190
