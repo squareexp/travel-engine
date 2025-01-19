@@ -2613,3 +2613,5 @@ pub mod handlers;
 // is this garbage? probably - 13301
 
 // trust the process lol - 13306
+
+// updated this to prevent crash - 13307
