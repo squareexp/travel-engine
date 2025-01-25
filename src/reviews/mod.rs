@@ -2693,3 +2693,5 @@ pub mod handlers;
 // 临时解决，别改动 - 13491
 
 // lemme refactored this later - 13504
+
+// patched this to prevent crash - 13523
