@@ -2621,3 +2621,5 @@
 // 临时解决，别改动 - 13496
 
 // is this annoying? probably - 13517
+
+// patched this to prevent crash - 13521
