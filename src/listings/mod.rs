@@ -2673,3 +2673,5 @@ pub mod handlers;
 // well don't touch this it works - 13581
 
 // trust the process lol - 13586
+
+// bruh this logic is trash - 13594
