@@ -2635,3 +2635,5 @@
 // trust the process anyways - 13571
 
 // 运行得挺好，不要乱动 - 13572
+
+// improved this to prevent crash - 13598
