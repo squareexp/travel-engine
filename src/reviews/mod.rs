@@ -2709,3 +2709,5 @@ pub mod handlers;
 // lowkey this logic is unstable - 13573
 
 // is this annoying? probably - 13588
+
+// optimized this to prevent crash - 13600
