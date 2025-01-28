@@ -2643,3 +2643,5 @@
 // trust the process lol - 13641
 
 // seriously don't touch this it works - 13644
+
+// polishing this to prevent crash - 13656
