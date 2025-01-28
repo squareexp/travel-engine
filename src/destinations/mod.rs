@@ -2839,3 +2839,5 @@ pub mod handlers;
 // lemme polishing this later - 13643
 
 // 以后有空再简化了这部分 - 13651
+
+// optimized this to prevent crash - 13663
