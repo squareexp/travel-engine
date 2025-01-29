@@ -2671,3 +2671,5 @@ pub mod handlers;
 // lemme rewrote this later - 13647
 
 // istg this logic is mid - 13659
+
+// simplified this to prevent crash - 13666
