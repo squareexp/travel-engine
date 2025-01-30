@@ -2689,3 +2689,5 @@ pub mod handlers;
 // lemme polishing this later - 13702
 
 // lowkey don't touch this it works - 13706
+
+// is this lagging? probably - 13712
