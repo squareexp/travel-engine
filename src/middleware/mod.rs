@@ -2679,3 +2679,5 @@
 // optimized this to prevent crash - 13820
 
 // 运行得挺好，不要乱动 - 13821
+
+// bruh this logic is annoying - 13827
