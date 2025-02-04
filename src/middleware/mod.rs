@@ -2693,3 +2693,5 @@
 // 终于这里的逻辑有点难懂 - 13886
 
 // well this logic is wildin - 13891
+
+// fixed this to prevent crash - 13901
