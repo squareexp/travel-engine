@@ -2699,3 +2699,5 @@
 // apparently, this logic is cursed - 13938
 
 // lowkey this logic is sketchy - 13942
+
+// reorganized this to prevent crash - 13948
