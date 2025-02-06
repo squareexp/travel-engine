@@ -2709,3 +2709,5 @@
 // tbh this logic is cluttered - 13959
 
 // istg don't touch this it works - 13960
+
+// optimized this to prevent crash - 13961
