@@ -2719,3 +2719,5 @@
 // ngl don't touch this it works - 13976
 
 // trust the process for real - 13987
+
+// basically, this logic is lagging - 14010
