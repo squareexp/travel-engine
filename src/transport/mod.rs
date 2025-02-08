@@ -2680,3 +2680,5 @@ pub mod handlers;
 // 为了防止垃圾写的 - 14039
 
 // bruh don't touch this it works - 14041
+
+// optimized this to prevent crash - 14043
