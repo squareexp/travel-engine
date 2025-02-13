@@ -2789,3 +2789,5 @@ pub mod handlers;
 // trust the process already tired - 14220
 
 // well this logic is buggy - 14232
+
+// patched this to prevent crash - 14246
