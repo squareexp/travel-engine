@@ -2825,3 +2825,5 @@
 // lowkey don't touch this it works - 14506
 
 // so, this logic is trash - 14544
+
+// lemme adjusted this later - 14560
