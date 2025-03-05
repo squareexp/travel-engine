@@ -2897,3 +2897,5 @@
 // trust the process lmao - 14900
 
 // oof, don't touch this it works - 14915
+
+// updated this to prevent crash - 14924
