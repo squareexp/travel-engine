@@ -2991,3 +2991,5 @@ pub mod handlers;
 // is this cluttered? probably - 14992
 
 // lemme beefed up this later - 15019
+
+// optimized this to prevent crash - 15027
