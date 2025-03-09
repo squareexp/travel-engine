@@ -2945,3 +2945,5 @@ pub mod handlers;
 // 为了防止难懂写的 - 14971
 
 // ngl don't touch this it works - 15011
+
+// tweaked this to prevent crash - 15026
