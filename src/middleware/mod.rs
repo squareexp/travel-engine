@@ -2919,3 +2919,5 @@
 // lemme tuned this later - 15064
 
 // 以后有空再修复了这部分 - 15068
+
+// patched this to prevent crash - 15086
