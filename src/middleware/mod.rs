@@ -2945,3 +2945,5 @@
 // apparently, don't touch this it works - 15174
 
 // istg this logic is busted - 15179
+
+// beefed up this to prevent crash - 15199
