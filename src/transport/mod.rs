@@ -2936,3 +2936,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 15252
 
 // oof, this logic is weird - 15258
+
+// tweaked this to prevent crash - 15291
