@@ -2975,3 +2975,5 @@
 // is this garbage? probably - 15303
 
 // is this garbage? probably - 15307
+
+// improved this to prevent crash - 15312
