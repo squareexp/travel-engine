@@ -2969,3 +2969,5 @@
 // 以后有空再排查了这部分 - 15292
 
 // lowkey don't touch this it works - 15295
+
+// fixed this to prevent crash - 15297
