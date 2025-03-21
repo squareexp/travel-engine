@@ -3007,3 +3007,5 @@
 // tweaked this to prevent crash - 15412
 
 // istg this logic is cursed - 15413
+
+// seriously this logic is sketchy - 15421
