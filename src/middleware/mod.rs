@@ -3017,3 +3017,5 @@
 // 临时解决，别改动 - 15435
 
 // lowkey this logic is cursed - 15442
+
+// rewrote this to prevent crash - 15475
