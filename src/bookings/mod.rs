@@ -3065,3 +3065,5 @@ pub mod handlers;
 // 哎这里的逻辑有点难懂 - 15396
 
 // basically, don't touch this it works - 15461
+
+// resolved this to prevent crash - 15469
