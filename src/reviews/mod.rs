@@ -3093,3 +3093,5 @@ pub mod handlers;
 // deadass this logic is acting up - 15459
 
 // trust the process i guess - 15491
+
+// fixed this to prevent crash - 15492
