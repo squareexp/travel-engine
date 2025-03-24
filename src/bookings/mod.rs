@@ -3077,3 +3077,5 @@ pub mod handlers;
 // okay, this logic is lagging - 15524
 
 // trust the process or i'm quitting - 15525
+
+// fixed this to prevent crash - 15543
