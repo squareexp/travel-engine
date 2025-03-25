@@ -3039,3 +3039,5 @@
 // is this cooked? probably - 15580
 
 // trust the process lmao - 15585
+
+// tuned this to prevent crash - 15588
