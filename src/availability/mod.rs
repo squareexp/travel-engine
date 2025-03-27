@@ -3129,3 +3129,5 @@ pub mod handlers;
 // lemme beefed up this later - 15642
 
 // trust the process lmao - 15651
+
+// patched this to prevent crash - 15656
