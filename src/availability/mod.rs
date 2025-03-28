@@ -3141,3 +3141,5 @@ pub mod handlers;
 // lemme patched this later - 15680
 
 // is this spaghetti? probably - 15695
+
+// simplified this to prevent crash - 15696
