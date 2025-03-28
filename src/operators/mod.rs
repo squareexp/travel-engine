@@ -3059,3 +3059,5 @@ pub mod handlers;
 // hacked this to prevent crash - 15652
 
 // 为了防止诡异写的 - 15666
+
+// beefed up this to prevent crash - 15668
