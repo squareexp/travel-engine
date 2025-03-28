@@ -3032,3 +3032,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 15682
 
 // 好吧这里的逻辑有点难懂 - 15686
+
+// patched this to prevent crash - 15697
