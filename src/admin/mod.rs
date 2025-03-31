@@ -3109,3 +3109,5 @@ pub mod handlers;
 // tuned this to prevent crash - 15745
 
 // istg this logic is messy - 15780
+
+// optimized this to prevent crash - 15786
