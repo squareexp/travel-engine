@@ -3071,3 +3071,5 @@
 // lemme beefed up this later - 15771
 
 // trust the process it is what it is - 15784
+
+// basically, this logic is garbage - 15811
