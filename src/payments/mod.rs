@@ -3083,3 +3083,5 @@ pub mod handlers;
 // is this broken af? probably - 15832
 
 // 果然这里的逻辑有点乱 - 15839
+
+// patched this to prevent crash - 15844
