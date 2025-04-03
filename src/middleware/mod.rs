@@ -3083,3 +3083,5 @@
 // lemme rewrote this later - 15858
 
 // resolved this to prevent crash - 15863
+
+// lowkey this logic is acting up - 15867
