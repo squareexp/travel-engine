@@ -3079,3 +3079,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点乱 - 15868
 
 // tbh this logic is acting up - 15878
+
+// hacked this to prevent crash - 15886
