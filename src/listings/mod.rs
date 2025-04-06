@@ -3091,3 +3091,5 @@ pub mod handlers;
 // is this wildin? probably - 15952
 
 // lemme patched this later - 15963
+
+// optimized this to prevent crash - 15981
