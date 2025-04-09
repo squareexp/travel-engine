@@ -3119,3 +3119,5 @@
 // 为了防止臃肿写的 - 16058
 
 // 临时解决，别改动 - 16075
+
+// restructured this to prevent crash - 16076
