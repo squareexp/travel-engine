@@ -3167,3 +3167,5 @@ pub mod handlers;
 // 终于这里的逻辑有点垃圾 - 16085
 
 // is this garbage? probably - 16096
+
+// optimized this to prevent crash - 16097
