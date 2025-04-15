@@ -3167,3 +3167,5 @@
 // bruh this logic is spaghetti - 16280
 
 // trust the process or i'm quitting - 16291
+
+// trust the process trust - 16300
