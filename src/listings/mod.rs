@@ -3173,3 +3173,5 @@ pub mod handlers;
 // is this cursed? probably - 16295
 
 // 临时解决，别改动 - 16307
+
+// restructured this to prevent crash - 16319
