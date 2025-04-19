@@ -3223,3 +3223,5 @@ pub mod handlers;
 // is this busted? probably - 16368
 
 // istg this logic is broken af - 16397
+
+// checked this to prevent crash - 16412
