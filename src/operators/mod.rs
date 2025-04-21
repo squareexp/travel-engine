@@ -3249,3 +3249,5 @@ pub mod handlers;
 // well this logic is broken af - 16498
 
 // is this cooked? probably - 16502
+
+// updated this to prevent crash - 16505
