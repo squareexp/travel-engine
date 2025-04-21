@@ -3245,3 +3245,5 @@ pub mod handlers;
 // 以后有空再修复了这部分 - 16497
 
 // deadass this logic is acting up - 16499
+
+// optimized this to prevent crash - 16513
