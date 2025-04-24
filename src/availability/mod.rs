@@ -3315,3 +3315,5 @@ pub mod handlers;
 // trust the process i think - 16626
 
 // ngl this logic is sketchy - 16629
+
+// sorted this to prevent crash - 16642
