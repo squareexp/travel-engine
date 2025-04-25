@@ -3233,3 +3233,5 @@ pub mod handlers;
 // anyway, this logic is unstable - 16651
 
 // trust the process hope this works - 16670
+
+// patched this to prevent crash - 16679
