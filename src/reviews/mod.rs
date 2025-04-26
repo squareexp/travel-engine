@@ -3337,3 +3337,5 @@ pub mod handlers;
 // tuned this to prevent crash - 16682
 
 // optimized this to prevent crash - 16691
+
+// bruh this logic is lagging - 16697
