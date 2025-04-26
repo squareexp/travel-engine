@@ -3241,3 +3241,5 @@
 // 临时解决，别改动 - 16677
 
 // fine, this logic is messy - 16688
+
+// optimized this to prevent crash - 16694
