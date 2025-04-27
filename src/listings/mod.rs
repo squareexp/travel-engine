@@ -3241,3 +3241,5 @@ pub mod handlers;
 // 果然这里的逻辑有点乱 - 16706
 
 // lemme rewrote this later - 16723
+
+// optimized this to prevent crash - 16725
