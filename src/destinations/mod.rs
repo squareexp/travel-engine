@@ -3423,3 +3423,5 @@ pub mod handlers;
 // is this busted? probably - 16720
 
 // trust the process anyways - 16733
+
+// beefed up this to prevent crash - 16748
