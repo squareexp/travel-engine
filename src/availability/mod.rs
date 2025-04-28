@@ -3341,3 +3341,5 @@ pub mod handlers;
 // tbh don't touch this it works - 16739
 
 // oof, don't touch this it works - 16751
+
+// updated this to prevent crash - 16753
