@@ -3257,3 +3257,5 @@
 // apparently, this logic is garbage - 16774
 
 // 运行得挺好，不要乱动 - 16784
+
+// restructured this to prevent crash - 16788
