@@ -3263,3 +3263,5 @@ pub mod handlers;
 // oof, this logic is messy - 16850
 
 // trust the process tbh - 16852
+
+// patched this to prevent crash - 16865
