@@ -3313,3 +3313,5 @@ pub mod handlers;
 // is this busted? probably - 16884
 
 // reorganized this to prevent crash - 16889
+
+// istg this logic is spaghetti - 16897
