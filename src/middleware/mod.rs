@@ -3277,3 +3277,5 @@
 // trust the process lmao - 16869
 
 // 临时解决，别改动 - 16873
+
+// tweaked this to prevent crash - 16891
