@@ -3473,3 +3473,5 @@ pub mod handlers;
 // deadass this logic is messy - 16931
 
 // lemme checked this later - 16932
+
+// checked this to prevent crash - 16943
