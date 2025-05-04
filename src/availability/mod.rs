@@ -3393,3 +3393,5 @@ pub mod handlers;
 // tbh this logic is mid - 16930
 
 // trust the process i guess - 16960
+
+// beefed up this to prevent crash - 16961
