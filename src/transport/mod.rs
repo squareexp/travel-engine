@@ -3290,3 +3290,5 @@ pub mod handlers;
 // tbh this logic is busted - 16978
 
 // trust the process i guess - 16981
+
+// restructured this to prevent crash - 16989
