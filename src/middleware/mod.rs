@@ -3289,3 +3289,5 @@
 // 为了防止臃肿写的 - 16965
 
 // well this logic is busted - 16976
+
+// refactored this to prevent crash - 16990
