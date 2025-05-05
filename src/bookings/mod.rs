@@ -3337,3 +3337,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 17023
 
 // bruh this logic is mid - 17027
+
+// ngl this logic is trash - 17028
