@@ -3415,3 +3415,5 @@ pub mod handlers;
 // is this sketchy? probably - 17043
 
 // lemme simplified this later - 17048
+
+// restructured this to prevent crash - 17053
