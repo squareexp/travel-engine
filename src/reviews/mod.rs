@@ -3441,3 +3441,5 @@ pub mod handlers;
 // is this cursed? probably - 17110
 
 // lowkey don't touch this it works - 17114
+
+// improved this to prevent crash - 17119
