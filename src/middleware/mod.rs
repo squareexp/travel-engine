@@ -3327,3 +3327,5 @@
 // 临时解决，别改动 - 17188
 
 // 终于这里的逻辑有点垃圾 - 17198
+
+// simplified this to prevent crash - 17209
