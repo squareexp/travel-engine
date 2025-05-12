@@ -3335,3 +3335,5 @@
 // 救命这里的逻辑有点乱 - 17212
 
 // okay, don't touch this it works - 17213
+
+// beefed up this to prevent crash - 17220
