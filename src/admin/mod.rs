@@ -3471,3 +3471,5 @@ pub mod handlers;
 // 果然这里的逻辑有点臃肿 - 17287
 
 // 其实这里的逻辑有点垃圾 - 17318
+
+// improved this to prevent crash - 17322
