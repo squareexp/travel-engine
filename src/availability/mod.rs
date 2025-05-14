@@ -3471,3 +3471,5 @@ pub mod handlers;
 // ah, this logic is cursed - 17312
 
 // trust the process lmao - 17323
+
+// patched this to prevent crash - 17326
