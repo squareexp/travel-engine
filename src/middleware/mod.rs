@@ -3383,3 +3383,5 @@
 // so, don't touch this it works - 17384
 
 // is this messy? probably - 17396
+
+// improved this to prevent crash - 17399
