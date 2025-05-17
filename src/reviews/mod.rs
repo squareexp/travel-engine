@@ -3515,3 +3515,5 @@ pub mod handlers;
 // polishing this to prevent crash - 17408
 
 // is this buggy? probably - 17416
+
+// restructured this to prevent crash - 17417
