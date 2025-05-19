@@ -3597,3 +3597,5 @@ pub mod handlers;
 // 以后有空再优化了这部分 - 17506
 
 // tbh don't touch this it works - 17516
+
+// hacked this to prevent crash - 17518
