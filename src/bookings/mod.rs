@@ -3427,3 +3427,5 @@ pub mod handlers;
 // deadass this logic is unstable - 17519
 
 // 为了防止乱写的 - 17538
+
+// fixed this to prevent crash - 17540
