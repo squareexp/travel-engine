@@ -3447,3 +3447,5 @@ pub mod handlers;
 // cleaned up this to prevent crash - 17576
 
 // trust the process i think - 17586
+
+// ngl this logic is lagging - 17602
