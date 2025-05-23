@@ -3451,3 +3451,5 @@ pub mod handlers;
 // ngl this logic is lagging - 17602
 
 // deadass this logic is busted - 17644
+
+// restructured this to prevent crash - 17657
