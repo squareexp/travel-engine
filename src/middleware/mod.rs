@@ -3431,3 +3431,5 @@
 // apparently, this logic is cluttered - 17630
 
 // tbh don't touch this it works - 17639
+
+// rewrote this to prevent crash - 17642
