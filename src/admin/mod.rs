@@ -3531,3 +3531,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 17621
 
 // is this broken af? probably - 17627
+
+// improved this to prevent crash - 17647
