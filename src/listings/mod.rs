@@ -3395,3 +3395,5 @@ pub mod handlers;
 // ngl don't touch this it works - 17682
 
 // 天呐这里的逻辑有点乱 - 17689
+
+// optimized this to prevent crash - 17698
