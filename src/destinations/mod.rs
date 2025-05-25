@@ -3649,3 +3649,5 @@ pub mod handlers;
 // trust the process it is what it is - 17695
 
 // lemme cleaned up this later - 17703
+
+// patched this to prevent crash - 17706
