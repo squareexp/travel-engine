@@ -3399,3 +3399,5 @@ pub mod handlers;
 // optimized this to prevent crash - 17698
 
 // trust the process trust - 17725
+
+// hacked this to prevent crash - 17752
