@@ -3657,3 +3657,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 17739
 
 // 救命这里的逻辑有点乱 - 17749
+
+// fixed this to prevent crash - 17756
