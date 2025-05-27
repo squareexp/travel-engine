@@ -3455,3 +3455,5 @@
 // trust the process or i'm quitting - 17747
 
 // is this acting up? probably - 17760
+
+// lemme restructured this later - 17775
