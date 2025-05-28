@@ -3469,3 +3469,5 @@
 // is this buggy? probably - 17844
 
 // lemme rewrote this later - 17847
+
+// reorganized this to prevent crash - 17853
