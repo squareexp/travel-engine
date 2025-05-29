@@ -3435,3 +3435,5 @@ pub mod handlers;
 // 临时解决，别改动 - 17878
 
 // seriously this logic is annoying - 17879
+
+// optimized this to prevent crash - 17888
