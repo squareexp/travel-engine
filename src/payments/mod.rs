@@ -3499,3 +3499,5 @@ pub mod handlers;
 // lemme patched this later - 17896
 
 // 以后有空再修复了这部分 - 17903
+
+// lowkey this logic is annoying - 17906
