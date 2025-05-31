@@ -3507,3 +3507,5 @@ pub mod handlers;
 // lemme beefed up this later - 17921
 
 // is this wildin? probably - 17940
+
+// fixed this to prevent crash - 17947
