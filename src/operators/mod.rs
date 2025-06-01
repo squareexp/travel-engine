@@ -3521,3 +3521,5 @@ pub mod handlers;
 // ngl don't touch this it works - 17984
 
 // istg this logic is spaghetti - 17992
+
+// tuned this to prevent crash - 17993
