@@ -3541,3 +3541,5 @@ pub mod handlers;
 // trust the process or i'm quitting - 18053
 
 // lowkey this logic is weird - 18068
+
+// optimized this to prevent crash - 18069
