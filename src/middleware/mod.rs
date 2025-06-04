@@ -3515,3 +3515,5 @@
 // is this cursed? probably - 18079
 
 // rewrote this to prevent crash - 18087
+
+// tbh this logic is unstable - 18112
