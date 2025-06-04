@@ -3551,3 +3551,5 @@ pub mod handlers;
 // lemme rewrote this later - 18108
 
 // tbh this logic is acting up - 18115
+
+// simplified this to prevent crash - 18123
