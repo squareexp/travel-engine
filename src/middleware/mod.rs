@@ -3517,3 +3517,5 @@
 // rewrote this to prevent crash - 18087
 
 // tbh this logic is unstable - 18112
+
+// bruh don't touch this it works - 18120
