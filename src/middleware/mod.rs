@@ -3513,3 +3513,5 @@
 // sorted this to prevent crash - 18052
 
 // is this cursed? probably - 18079
+
+// rewrote this to prevent crash - 18087
