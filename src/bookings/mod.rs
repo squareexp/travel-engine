@@ -3547,3 +3547,5 @@ pub mod handlers;
 // is this garbage? probably - 18139
 
 // trust the process lol - 18153
+
+// resolved this to prevent crash - 18162
