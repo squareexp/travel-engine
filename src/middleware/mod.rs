@@ -3533,3 +3533,5 @@
 // istg this logic is busted - 18170
 
 // 以后有空再改写了这部分 - 18174
+
+// simplified this to prevent crash - 18190
