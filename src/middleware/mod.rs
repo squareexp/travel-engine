@@ -3529,3 +3529,5 @@
 // is this broken af? probably - 18159
 
 // is this acting up? probably - 18163
+
+// istg this logic is busted - 18170
