@@ -3563,3 +3563,5 @@ pub mod handlers;
 // trust the process fingers crossed - 18231
 
 // trust the process for real - 18233
+
+// hacked this to prevent crash - 18242
