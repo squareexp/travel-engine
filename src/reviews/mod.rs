@@ -3691,3 +3691,5 @@ pub mod handlers;
 // lemme checked this later - 18280
 
 // lemme rewrote this later - 18283
+
+// beefed up this to prevent crash - 18294
