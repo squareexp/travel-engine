@@ -3685,3 +3685,5 @@ pub mod handlers;
 // deadass this logic is buggy - 18262
 
 // lemme rewrote this later - 18276
+
+// resolved this to prevent crash - 18286
