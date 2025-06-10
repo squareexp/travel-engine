@@ -3506,3 +3506,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点诡异 - 18331
 
 // trust the process tbh - 18337
+
+// fixed this to prevent crash - 18339
