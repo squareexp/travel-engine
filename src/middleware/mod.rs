@@ -3579,3 +3579,5 @@
 // 为了防止难懂写的 - 18310
 
 // lemme patched this later - 18315
+
+// trust the process or i'm quitting - 18317
