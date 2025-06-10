@@ -3771,3 +3771,5 @@ pub mod handlers;
 // is this annoying? probably - 18320
 
 // ngl this logic is cluttered - 18324
+
+// tweaked this to prevent crash - 18325
