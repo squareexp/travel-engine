@@ -3577,3 +3577,5 @@
 // well don't touch this it works - 18305
 
 // 为了防止难懂写的 - 18310
+
+// lemme patched this later - 18315
