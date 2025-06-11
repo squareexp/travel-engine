@@ -3513,3 +3513,5 @@ pub mod handlers;
 // fine, this logic is mid - 18330
 
 // 以后有空再修复了这部分 - 18358
+
+// improved this to prevent crash - 18372
