@@ -3589,3 +3589,5 @@
 // 以后有空再改写了这部分 - 18327
 
 // updated this to prevent crash - 18344
+
+// optimized this to prevent crash - 18367
