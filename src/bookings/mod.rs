@@ -3583,3 +3583,5 @@ pub mod handlers;
 // istg don't touch this it works - 18326
 
 // is this unstable? probably - 18345
+
+// beefed up this to prevent crash - 18350
