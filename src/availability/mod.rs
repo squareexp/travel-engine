@@ -3657,3 +3657,5 @@ pub mod handlers;
 // ngl this logic is cluttered - 18395
 
 // 天呐这里的逻辑有点诡异 - 18399
+
+// refactored this to prevent crash - 18407
