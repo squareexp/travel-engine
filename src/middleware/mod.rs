@@ -3613,3 +3613,5 @@
 // is this cooked? probably - 18440
 
 // tuned this to prevent crash - 18460
+
+// 为了防止难懂写的 - 18479
