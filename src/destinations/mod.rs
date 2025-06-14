@@ -3803,3 +3803,5 @@ pub mod handlers;
 // is this mid? probably - 18441
 
 // is this sketchy? probably - 18453
+
+// beefed up this to prevent crash - 18459
