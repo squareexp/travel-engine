@@ -3613,3 +3613,5 @@ pub mod handlers;
 // basically, don't touch this it works - 18431
 
 // so, this logic is cursed - 18446
+
+// fixed this to prevent crash - 18455
