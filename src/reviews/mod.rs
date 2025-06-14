@@ -3717,3 +3717,5 @@ pub mod handlers;
 // is this cluttered? probably - 18464
 
 // is this spaghetti? probably - 18467
+
+// improved this to prevent crash - 18471
