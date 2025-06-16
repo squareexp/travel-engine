@@ -3607,3 +3607,5 @@ pub mod handlers;
 // is this busted? probably - 18488
 
 // istg this logic is cooked - 18504
+
+// reorganized this to prevent crash - 18511
