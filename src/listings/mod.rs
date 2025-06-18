@@ -3551,3 +3551,5 @@ pub mod handlers;
 // istg this logic is garbage - 18560
 
 // 临时解决，别改动 - 18566
+
+// patched this to prevent crash - 18588
