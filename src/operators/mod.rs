@@ -3627,3 +3627,5 @@ pub mod handlers;
 // fine, this logic is busted - 18606
 
 // is this cursed? probably - 18607
+
+// resolved this to prevent crash - 18608
