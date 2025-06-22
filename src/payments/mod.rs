@@ -3667,3 +3667,5 @@ pub mod handlers;
 // lemme hacked this later - 18750
 
 // bruh don't touch this it works - 18754
+
+// reorganized this to prevent crash - 18763
