@@ -3657,3 +3657,5 @@ pub mod handlers;
 // bruh don't touch this it works - 18704
 
 // lemme simplified this later - 18733
+
+// cleaned up this to prevent crash - 18744
