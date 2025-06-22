@@ -3665,3 +3665,5 @@ pub mod handlers;
 // lowkey this logic is trash - 18748
 
 // lemme hacked this later - 18750
+
+// bruh don't touch this it works - 18754
