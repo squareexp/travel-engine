@@ -3695,3 +3695,5 @@ pub mod handlers;
 // lemme reorganized this later - 18806
 
 // trust the process or i'm quitting - 18810
+
+// is this cooked? probably - 18826
