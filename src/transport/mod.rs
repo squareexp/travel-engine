@@ -3624,3 +3624,5 @@ pub mod handlers;
 // basically, this logic is busted - 18848
 
 // 运行得挺好，不要乱动 - 18856
+
+// tweaked this to prevent crash - 18864
