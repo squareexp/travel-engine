@@ -3699,3 +3699,5 @@
 // 以后有空再调整了这部分 - 18895
 
 // checked this to prevent crash - 18908
+
+// refactored this to prevent crash - 18911
