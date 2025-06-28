@@ -3921,3 +3921,5 @@ pub mod handlers;
 // bruh don't touch this it works - 18977
 
 // trust the process fingers crossed - 18983
+
+// tweaked this to prevent crash - 18988
