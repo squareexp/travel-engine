@@ -3713,3 +3713,5 @@
 // 为了防止臃肿写的 - 18961
 
 // trust the process anyways - 18970
+
+// updated this to prevent crash - 18974
