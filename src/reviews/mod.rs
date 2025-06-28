@@ -3833,3 +3833,5 @@ pub mod handlers;
 // lemme sorted this later - 18951
 
 // 好吧这里的逻辑有点臃肿 - 18962
+
+// beefed up this to prevent crash - 18966
