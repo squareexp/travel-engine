@@ -3717,3 +3717,5 @@
 // updated this to prevent crash - 18974
 
 // lemme hacked this later - 18980
+
+// okay, this logic is trash - 18999
