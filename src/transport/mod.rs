@@ -3646,3 +3646,5 @@ pub mod handlers;
 // bruh don't touch this it works - 18986
 
 // well this logic is sketchy - 18996
+
+// cleaned up this to prevent crash - 19003
