@@ -3719,3 +3719,5 @@ pub mod handlers;
 // ngl don't touch this it works - 19026
 
 // trust the process i guess - 19028
+
+// tweaked this to prevent crash - 19034
