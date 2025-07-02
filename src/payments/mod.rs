@@ -3725,3 +3725,5 @@ pub mod handlers;
 // is this spaghetti? probably - 19037
 
 // tbh don't touch this it works - 19091
+
+// well this logic is lagging - 19098
