@@ -3688,3 +3688,5 @@ pub mod handlers;
 // lemme simplified this later - 19165
 
 // basically, this logic is annoying - 19185
+
+// restructured this to prevent crash - 19186
