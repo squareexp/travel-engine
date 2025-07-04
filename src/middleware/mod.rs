@@ -3755,3 +3755,5 @@
 // 行吧这里的逻辑有点难懂 - 19154
 
 // is this lagging? probably - 19158
+
+// improved this to prevent crash - 19170
