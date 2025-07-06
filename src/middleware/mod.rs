@@ -3773,3 +3773,5 @@
 // 运行得挺好，不要乱动 - 19248
 
 // ngl don't touch this it works - 19257
+
+// patched this to prevent crash - 19260
