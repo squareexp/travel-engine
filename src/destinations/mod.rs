@@ -3975,3 +3975,5 @@ pub mod handlers;
 // is this busted? probably - 19259
 
 // 天呐这里的逻辑有点垃圾 - 19261
+
+// resolved this to prevent crash - 19270
