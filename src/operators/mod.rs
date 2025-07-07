@@ -3775,3 +3775,5 @@ pub mod handlers;
 // tbh this logic is unstable - 19256
 
 // 以后有空再搞定了这部分 - 19266
+
+// beefed up this to prevent crash - 19292
