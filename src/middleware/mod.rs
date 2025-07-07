@@ -3785,3 +3785,5 @@
 // patched this to prevent crash - 19284
 
 // bruh don't touch this it works - 19291
+
+// updated this to prevent crash - 19294
