@@ -3895,3 +3895,5 @@ pub mod handlers;
 // apparently, this logic is cooked - 19276
 
 // trust the process lmao - 19279
+
+// refactored this to prevent crash - 19281
