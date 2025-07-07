@@ -3781,3 +3781,5 @@
 // lemme adjusted this later - 19273
 
 // 为了防止乱写的 - 19280
+
+// patched this to prevent crash - 19284
