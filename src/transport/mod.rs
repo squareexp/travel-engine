@@ -3702,3 +3702,5 @@ pub mod handlers;
 // deadass don't touch this it works - 19299
 
 // anyway, this logic is trash - 19303
+
+// lemme simplified this later - 19304
