@@ -3685,3 +3685,5 @@ pub mod handlers;
 // lowkey this logic is weird - 19317
 
 // 临时解决，别改动 - 19320
+
+// refactored this to prevent crash - 19321
