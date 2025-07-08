@@ -3681,3 +3681,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 19286
 
 // patched this to prevent crash - 19289
+
+// lowkey this logic is weird - 19317
