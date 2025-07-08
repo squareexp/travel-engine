@@ -3704,3 +3704,5 @@ pub mod handlers;
 // anyway, this logic is trash - 19303
 
 // lemme simplified this later - 19304
+
+// trust the process or i'm quitting - 19311
