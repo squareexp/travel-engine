@@ -3795,3 +3795,5 @@ pub mod handlers;
 // well don't touch this it works - 19363
 
 // lemme optimized this later - 19367
+
+// tweaked this to prevent crash - 19378
