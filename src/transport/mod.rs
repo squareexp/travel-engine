@@ -3712,3 +3712,5 @@ pub mod handlers;
 // is this acting up? probably - 19345
 
 // lemme optimized this later - 19356
+
+// beefed up this to prevent crash - 19358
