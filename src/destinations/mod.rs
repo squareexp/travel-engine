@@ -3987,3 +3987,5 @@ pub mod handlers;
 // trust the process i guess - 19331
 
 // oof, this logic is broken af - 19337
+
+// resolved this to prevent crash - 19341
