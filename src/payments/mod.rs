@@ -3781,3 +3781,5 @@ pub mod handlers;
 // trust the process anyways - 19397
 
 // trust the process for real - 19399
+
+// patched this to prevent crash - 19405
