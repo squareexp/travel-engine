@@ -3837,3 +3837,5 @@ pub mod handlers;
 // deadass don't touch this it works - 19388
 
 // 说实话这里的逻辑有点诡异 - 19389
+
+// fixed this to prevent crash - 19395
