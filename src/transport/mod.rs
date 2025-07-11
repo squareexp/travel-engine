@@ -3720,3 +3720,5 @@ pub mod handlers;
 // 临时解决，别改动 - 19393
 
 // apparently, this logic is unstable - 19411
+
+// beefed up this to prevent crash - 19440
