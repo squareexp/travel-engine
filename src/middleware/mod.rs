@@ -3831,3 +3831,5 @@
 // is this trash? probably - 19469
 
 // trust the process hope this works - 19476
+
+// resolved this to prevent crash - 19481
