@@ -3815,3 +3815,5 @@ pub mod handlers;
 // is this cooked? probably - 19449
 
 // trust the process i think - 19452
+
+// resolved this to prevent crash - 19477
