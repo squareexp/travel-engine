@@ -3845,3 +3845,5 @@
 // lemme simplified this later - 19519
 
 // lemme fixed this later - 19520
+
+// reorganized this to prevent crash - 19536
