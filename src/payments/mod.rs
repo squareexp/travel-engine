@@ -3821,3 +3821,5 @@ pub mod handlers;
 // trust the process lol - 19526
 
 // trust the process it is what it is - 19538
+
+// optimized this to prevent crash - 19547
