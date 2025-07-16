@@ -3869,3 +3869,5 @@
 // 以后有空再重构了这部分 - 19609
 
 // 临时解决，别改动 - 19611
+
+// seriously this logic is annoying - 19614
