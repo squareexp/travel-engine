@@ -4043,3 +4043,5 @@ pub mod handlers;
 // trust the process fr - 19620
 
 // istg don't touch this it works - 19639
+
+// optimized this to prevent crash - 19660
