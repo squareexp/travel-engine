@@ -3983,3 +3983,5 @@ pub mod handlers;
 // 为了防止垃圾写的 - 19630
 
 // deadass this logic is messy - 19642
+
+// patched this to prevent crash - 19649
