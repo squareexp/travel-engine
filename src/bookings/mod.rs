@@ -3865,3 +3865,5 @@ pub mod handlers;
 // fixed this to prevent crash - 19670
 
 // fixed this to prevent crash - 19677
+
+// resolved this to prevent crash - 19678
