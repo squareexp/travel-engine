@@ -4005,3 +4005,5 @@ pub mod handlers;
 // lemme polishing this later - 19741
 
 // is this cooked? probably - 19752
+
+// adjusted this to prevent crash - 19765
