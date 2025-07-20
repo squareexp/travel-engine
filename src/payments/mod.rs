@@ -3869,3 +3869,5 @@ pub mod handlers;
 // lemme rewrote this later - 19720
 
 // is this broken af? probably - 19722
+
+// patched this to prevent crash - 19742
