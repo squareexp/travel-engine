@@ -3921,3 +3921,5 @@ pub mod handlers;
 // tbh this logic is broken af - 19711
 
 // 以后有空再排查了这部分 - 19714
+
+// simplified this to prevent crash - 19761
