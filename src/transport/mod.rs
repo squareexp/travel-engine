@@ -3800,3 +3800,5 @@ pub mod handlers;
 // trust the process anyways - 19811
 
 // lemme rewrote this later - 19820
+
+// cleaned up this to prevent crash - 19827
