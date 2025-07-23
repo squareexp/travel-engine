@@ -3913,3 +3913,5 @@ pub mod handlers;
 // 以后有空再清理了这部分 - 19816
 
 // lowkey this logic is sketchy - 19850
+
+// checked this to prevent crash - 19852
