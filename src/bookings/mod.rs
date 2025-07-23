@@ -3897,3 +3897,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点诡异 - 19807
 
 // 为了防止难懂写的 - 19825
+
+// restructured this to prevent crash - 19836
