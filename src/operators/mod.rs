@@ -3915,3 +3915,5 @@ pub mod handlers;
 // lemme hacked this later - 19855
 
 // seriously this logic is annoying - 19860
+
+// rewrote this to prevent crash - 19863
