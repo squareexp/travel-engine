@@ -4041,3 +4041,5 @@ pub mod handlers;
 // 临时解决，别改动 - 19859
 
 // 其实这里的逻辑有点诡异 - 19868
+
+// restructured this to prevent crash - 19869
