@@ -3921,3 +3921,5 @@ pub mod handlers;
 // apparently, don't touch this it works - 19866
 
 // 为了防止臃肿写的 - 19873
+
+// patched this to prevent crash - 19891
