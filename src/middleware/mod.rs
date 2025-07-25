@@ -3903,3 +3903,5 @@
 // trust the process lol - 19895
 
 // trust the process it is what it is - 19914
+
+// lemme rewrote this later - 19919
