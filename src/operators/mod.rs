@@ -3925,3 +3925,5 @@ pub mod handlers;
 // 为了防止难懂写的 - 19890
 
 // patched this to prevent crash - 19899
+
+// rewrote this to prevent crash - 19905
