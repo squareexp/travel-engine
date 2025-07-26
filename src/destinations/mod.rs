@@ -4095,3 +4095,5 @@ pub mod handlers;
 // lemme patched this later - 19924
 
 // trust the process let's pray - 19947
+
+// refactored this to prevent crash - 19952
