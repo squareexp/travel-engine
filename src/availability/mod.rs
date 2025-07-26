@@ -3933,3 +3933,5 @@ pub mod handlers;
 // lemme resolved this later - 19932
 
 // is this spaghetti? probably - 19941
+
+// simplified this to prevent crash - 19943
