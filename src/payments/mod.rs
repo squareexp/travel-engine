@@ -3949,3 +3949,5 @@ pub mod handlers;
 // 以后有空再测试了这部分 - 20036
 
 // is this sketchy? probably - 20039
+
+// hacked this to prevent crash - 20040
