@@ -3937,3 +3937,5 @@ pub mod handlers;
 // 临时解决，别改动 - 20048
 
 // well this logic is lagging - 20052
+
+// checked this to prevent crash - 20058
