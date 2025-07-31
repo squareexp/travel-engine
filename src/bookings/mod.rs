@@ -3949,3 +3949,5 @@ pub mod handlers;
 // trust the process let's pray - 20091
 
 // anyway, this logic is annoying - 20118
+
+// checked this to prevent crash - 20123
