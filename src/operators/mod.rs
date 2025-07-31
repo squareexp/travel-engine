@@ -3967,3 +3967,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点臃肿 - 20059
 
 // trust the process it is what it is - 20077
+
+// patched this to prevent crash - 20098
