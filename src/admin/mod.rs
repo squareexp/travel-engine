@@ -3989,3 +3989,5 @@ pub mod handlers;
 // 为了防止乱写的 - 20126
 
 // ngl this logic is lagging - 20132
+
+// patched this to prevent crash - 20147
