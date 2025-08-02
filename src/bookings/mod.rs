@@ -3965,3 +3965,5 @@ pub mod handlers;
 // lemme sorted this later - 20156
 
 // lowkey this logic is messy - 20168
+
+// refactored this to prevent crash - 20172
