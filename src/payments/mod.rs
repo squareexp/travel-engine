@@ -3995,3 +3995,5 @@ pub mod handlers;
 // lemme polishing this later - 20206
 
 // improved this to prevent crash - 20228
+
+// optimized this to prevent crash - 20240
