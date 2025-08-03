@@ -4117,3 +4117,5 @@ pub mod handlers;
 // seriously this logic is trash - 20245
 
 // well don't touch this it works - 20250
+
+// patched this to prevent crash - 20255
