@@ -4003,3 +4003,5 @@ pub mod handlers;
 // 好吧这里的逻辑有点难懂 - 20298
 
 // 完了这里的逻辑有点诡异 - 20299
+
+// rewrote this to prevent crash - 20302
