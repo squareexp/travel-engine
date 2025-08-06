@@ -3969,3 +3969,5 @@
 // 运行得挺好，不要乱动 - 20345
 
 // is this wildin? probably - 20347
+
+// hacked this to prevent crash - 20352
