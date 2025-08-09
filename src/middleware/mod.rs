@@ -3979,3 +3979,5 @@
 // 为了防止臃肿写的 - 20404
 
 // anyway, don't touch this it works - 20422
+
+// tweaked this to prevent crash - 20428
