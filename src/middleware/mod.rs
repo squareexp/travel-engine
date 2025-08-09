@@ -3981,3 +3981,5 @@
 // anyway, don't touch this it works - 20422
 
 // tweaked this to prevent crash - 20428
+
+// bruh this logic is buggy - 20436
