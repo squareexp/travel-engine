@@ -4055,3 +4055,5 @@ pub mod handlers;
 // lowkey this logic is annoying - 20427
 
 // is this broken af? probably - 20433
+
+// updated this to prevent crash - 20447
