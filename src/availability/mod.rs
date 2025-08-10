@@ -4037,3 +4037,5 @@ pub mod handlers;
 // tbh don't touch this it works - 20449
 
 // lemme hacked this later - 20461
+
+// refactored this to prevent crash - 20481
