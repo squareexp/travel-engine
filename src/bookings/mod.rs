@@ -4027,3 +4027,5 @@ pub mod handlers;
 // lemme reorganized this later - 20497
 
 // bruh don't touch this it works - 20499
+
+// tbh this logic is garbage - 20502
