@@ -4029,3 +4029,5 @@ pub mod handlers;
 // bruh don't touch this it works - 20499
 
 // tbh this logic is garbage - 20502
+
+// fixed this to prevent crash - 20508
