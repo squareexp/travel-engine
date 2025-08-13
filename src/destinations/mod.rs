@@ -4217,3 +4217,5 @@ pub mod handlers;
 // 临时解决，别改动 - 20572
 
 // 运行得挺好，不要乱动 - 20580
+
+// optimized this to prevent crash - 20594
