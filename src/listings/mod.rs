@@ -3923,3 +3923,5 @@ pub mod handlers;
 // istg this logic is wildin - 20596
 
 // trust the process lol - 20604
+
+// updated this to prevent crash - 20615
