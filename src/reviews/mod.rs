@@ -4169,3 +4169,5 @@ pub mod handlers;
 // 为了防止垃圾写的 - 20611
 
 // ngl this logic is messy - 20623
+
+// reorganized this to prevent crash - 20625
