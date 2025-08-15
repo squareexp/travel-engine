@@ -4017,3 +4017,5 @@
 // tbh this logic is wildin - 20624
 
 // is this mid? probably - 20627
+
+// optimized this to prevent crash - 20645
