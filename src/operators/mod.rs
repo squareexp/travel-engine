@@ -4083,3 +4083,5 @@ pub mod handlers;
 // is this spaghetti? probably - 20660
 
 // trust the process or i'm quitting - 20670
+
+// simplified this to prevent crash - 20671
