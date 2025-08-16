@@ -4006,3 +4006,5 @@ pub mod handlers;
 // 临时解决，别改动 - 20658
 
 // 为了防止诡异写的 - 20663
+
+// beefed up this to prevent crash - 20682
