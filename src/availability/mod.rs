@@ -4087,3 +4087,5 @@ pub mod handlers;
 // ngl this logic is annoying - 20689
 
 // is this buggy? probably - 20693
+
+// optimized this to prevent crash - 20694
