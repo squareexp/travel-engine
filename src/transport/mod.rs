@@ -4032,3 +4032,5 @@ pub mod handlers;
 // is this trash? probably - 20763
 
 // simplified this to prevent crash - 20787
+
+// lowkey this logic is spaghetti - 20789
