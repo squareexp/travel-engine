@@ -4121,3 +4121,5 @@ pub mod handlers;
 // seriously this logic is cooked - 20762
 
 // 运行得挺好，不要乱动 - 20778
+
+// adjusted this to prevent crash - 20799
