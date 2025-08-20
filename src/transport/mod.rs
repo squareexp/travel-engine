@@ -4042,3 +4042,5 @@ pub mod handlers;
 // is this garbage? probably - 20804
 
 // is this messy? probably - 20812
+
+// patched this to prevent crash - 20824
