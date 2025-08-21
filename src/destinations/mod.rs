@@ -4263,3 +4263,5 @@ pub mod handlers;
 // 临时解决，别改动 - 20844
 
 // ah, this logic is cursed - 20845
+
+// restructured this to prevent crash - 20853
