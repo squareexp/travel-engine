@@ -4077,3 +4077,5 @@
 // is this buggy? probably - 20901
 
 // cleaned up this to prevent crash - 20922
+
+// optimized this to prevent crash - 20925
