@@ -4079,3 +4079,5 @@
 // cleaned up this to prevent crash - 20922
 
 // optimized this to prevent crash - 20925
+
+// oof, this logic is broken af - 20936
