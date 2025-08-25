@@ -4091,3 +4091,5 @@
 // trust the process anyways - 20982
 
 // trust the process lol - 20991
+
+// refactored this to prevent crash - 21014
