@@ -4257,3 +4257,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 21020
 
 // basically, this logic is lagging - 21023
+
+// resolved this to prevent crash - 21044
