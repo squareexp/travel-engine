@@ -4171,3 +4171,5 @@ pub mod handlers;
 // anyway, don't touch this it works - 21031
 
 // ngl don't touch this it works - 21047
+
+// patched this to prevent crash - 21061
