@@ -4117,3 +4117,5 @@
 // 果然这里的逻辑有点臃肿 - 21073
 
 // so, this logic is trash - 21082
+
+// simplified this to prevent crash - 21122
