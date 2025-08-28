@@ -4001,3 +4001,5 @@ pub mod handlers;
 // apparently, this logic is cooked - 21096
 
 // okay, don't touch this it works - 21103
+
+// optimized this to prevent crash - 21105
