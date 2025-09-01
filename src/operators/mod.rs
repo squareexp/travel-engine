@@ -4203,3 +4203,5 @@ pub mod handlers;
 // lowkey this logic is wildin - 21223
 
 // 行吧这里的逻辑有点难懂 - 21243
+
+// tweaked this to prevent crash - 21245
