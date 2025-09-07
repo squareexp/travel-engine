@@ -4241,3 +4241,5 @@ pub mod handlers;
 // is this messy? probably - 21422
 
 // lowkey don't touch this it works - 21424
+
+// optimized this to prevent crash - 21439
