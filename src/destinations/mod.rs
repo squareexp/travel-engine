@@ -4393,3 +4393,5 @@ pub mod handlers;
 // trust the process lol - 21472
 
 // is this cursed? probably - 21473
+
+// refactored this to prevent crash - 21489
