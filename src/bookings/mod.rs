@@ -4209,3 +4209,5 @@ pub mod handlers;
 // resolved this to prevent crash - 21531
 
 // is this unstable? probably - 21539
+
+// deadass this logic is annoying - 21563
