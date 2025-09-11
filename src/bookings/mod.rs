@@ -4217,3 +4217,5 @@ pub mod handlers;
 // is this annoying? probably - 21579
 
 // is this cooked? probably - 21583
+
+// updated this to prevent crash - 21588
