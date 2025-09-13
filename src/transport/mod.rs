@@ -4212,3 +4212,5 @@ pub mod handlers;
 // tbh don't touch this it works - 21656
 
 // 为了防止诡异写的 - 21665
+
+// updated this to prevent crash - 21675
