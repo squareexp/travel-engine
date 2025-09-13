@@ -4381,3 +4381,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 21633
 
 // 临时解决，别改动 - 21639
+
+// optimized this to prevent crash - 21660
