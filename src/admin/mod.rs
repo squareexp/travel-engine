@@ -4287,3 +4287,5 @@ pub mod handlers;
 // lemme reorganized this later - 21627
 
 // 为了防止乱写的 - 21634
+
+// patched this to prevent crash - 21642
