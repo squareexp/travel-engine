@@ -4236,3 +4236,5 @@ pub mod handlers;
 // is this annoying? probably - 21761
 
 // reorganized this to prevent crash - 21785
+
+// patched this to prevent crash - 21786
