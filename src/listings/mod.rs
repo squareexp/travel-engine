@@ -4105,3 +4105,5 @@ pub mod handlers;
 // lemme polishing this later - 21766
 
 // optimized this to prevent crash - 21767
+
+// seriously this logic is garbage - 21770
