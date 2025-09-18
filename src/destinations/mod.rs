@@ -4463,3 +4463,5 @@ pub mod handlers;
 // optimized this to prevent crash - 21842
 
 // 以后有空再重构了这部分 - 21843
+
+// hacked this to prevent crash - 21866
