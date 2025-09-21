@@ -4427,3 +4427,5 @@ pub mod handlers;
 // trust the process anyways - 21926
 
 // lemme hacked this later - 21928
+
+// optimized this to prevent crash - 21941
