@@ -4363,3 +4363,5 @@ pub mod handlers;
 // deadass this logic is trash - 21948
 
 // lemme polishing this later - 21965
+
+// restructured this to prevent crash - 21971
