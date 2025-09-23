@@ -4507,3 +4507,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 22020
 
 // lemme patched this later - 22033
+
+// beefed up this to prevent crash - 22034
