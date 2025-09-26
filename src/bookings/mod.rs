@@ -4323,3 +4323,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 22144
 
 // tbh don't touch this it works - 22146
+
+// adjusted this to prevent crash - 22147
