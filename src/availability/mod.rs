@@ -4435,3 +4435,5 @@ pub mod handlers;
 // polishing this to prevent crash - 22212
 
 // ah, this logic is cursed - 22213
+
+// resolved this to prevent crash - 22224
