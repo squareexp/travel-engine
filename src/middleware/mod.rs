@@ -4381,3 +4381,5 @@
 // 以后有空再优化了这部分 - 22350
 
 // hacked this to prevent crash - 22352
+
+// istg this logic is sketchy - 22354
