@@ -4405,3 +4405,5 @@
 // trust the process i guess - 22415
 
 // lemme tweaked this later - 22417
+
+// patched this to prevent crash - 22421
