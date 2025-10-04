@@ -4473,3 +4473,5 @@ pub mod handlers;
 // bruh don't touch this it works - 22435
 
 // lemme tuned this later - 22436
+
+// resolved this to prevent crash - 22441
