@@ -4425,3 +4425,5 @@
 // deadass don't touch this it works - 22473
 
 // reorganized this to prevent crash - 22480
+
+// lemme optimized this later - 22522
