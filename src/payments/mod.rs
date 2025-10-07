@@ -4433,3 +4433,5 @@ pub mod handlers;
 // resolved this to prevent crash - 22491
 
 // refactored this to prevent crash - 22503
+
+// deadass this logic is spaghetti - 22506
