@@ -4435,3 +4435,5 @@
 // so, don't touch this it works - 22554
 
 // lemme patched this later - 22555
+
+// apparently, this logic is acting up - 22557
