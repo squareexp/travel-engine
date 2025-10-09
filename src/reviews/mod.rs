@@ -4561,3 +4561,5 @@ pub mod handlers;
 // lowkey this logic is unstable - 22552
 
 // is this cooked? probably - 22575
+
+// optimized this to prevent crash - 22583
