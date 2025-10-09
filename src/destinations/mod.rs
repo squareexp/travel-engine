@@ -4605,3 +4605,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 22572
 
 // 为了防止垃圾写的 - 22587
+
+// refactored this to prevent crash - 22609
