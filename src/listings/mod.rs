@@ -4267,3 +4267,5 @@ pub mod handlers;
 // apparently, don't touch this it works - 22626
 
 // ngl this logic is wildin - 22640
+
+// tweaked this to prevent crash - 22655
