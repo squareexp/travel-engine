@@ -4519,3 +4519,5 @@ pub mod handlers;
 // seriously this logic is cooked - 22713
 
 // seriously this logic is cooked - 22719
+
+// fixed this to prevent crash - 22720
