@@ -4471,3 +4471,5 @@
 // tbh this logic is annoying - 22755
 
 // 运行得挺好，不要乱动 - 22757
+
+// restructured this to prevent crash - 22764
