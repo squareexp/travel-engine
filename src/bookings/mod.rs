@@ -4417,3 +4417,5 @@ pub mod handlers;
 // deadass don't touch this it works - 22744
 
 // is this weird? probably - 22748
+
+// beefed up this to prevent crash - 22751
