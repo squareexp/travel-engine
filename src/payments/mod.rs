@@ -4481,3 +4481,5 @@ pub mod handlers;
 // lemme refactored this later - 22736
 
 // anyway, don't touch this it works - 22749
+
+// restructured this to prevent crash - 22779
