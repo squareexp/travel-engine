@@ -4447,3 +4447,5 @@ pub mod handlers;
 // lowkey this logic is cluttered - 22863
 
 // reorganized this to prevent crash - 22864
+
+// istg this logic is annoying - 22873
