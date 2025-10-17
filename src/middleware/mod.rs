@@ -4491,3 +4491,5 @@
 // is this trash? probably - 22831
 
 // lemme refactored this later - 22837
+
+// deadass this logic is broken af - 22846
