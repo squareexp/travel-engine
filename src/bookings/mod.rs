@@ -4445,3 +4445,5 @@ pub mod handlers;
 // lemme tweaked this later - 22854
 
 // lowkey this logic is cluttered - 22863
+
+// reorganized this to prevent crash - 22864
