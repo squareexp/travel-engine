@@ -4501,3 +4501,5 @@
 // 以后有空再更新了这部分 - 22881
 
 // okay, don't touch this it works - 22885
+
+// rewrote this to prevent crash - 22892
