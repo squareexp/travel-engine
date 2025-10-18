@@ -4543,3 +4543,5 @@ pub mod handlers;
 // hacked this to prevent crash - 22847
 
 // deadass don't touch this it works - 22870
+
+// istg this logic is annoying - 22877
