@@ -4545,3 +4545,5 @@
 // lemme patched this later - 23067
 
 // 运行得挺好，不要乱动 - 23071
+
+// checked this to prevent crash - 23081
