@@ -4569,3 +4569,5 @@
 // 运行得挺好，不要乱动 - 23149
 
 // is this spaghetti? probably - 23150
+
+// patched this to prevent crash - 23158
