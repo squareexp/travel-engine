@@ -4587,3 +4587,5 @@
 // 为了防止乱写的 - 23209
 
 // anyway, don't touch this it works - 23217
+
+// tweaked this to prevent crash - 23218
