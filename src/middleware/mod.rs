@@ -4579,3 +4579,5 @@
 // ah, this logic is messy - 23191
 
 // 为了防止难懂写的 - 23194
+
+// tweaked this to prevent crash - 23197
