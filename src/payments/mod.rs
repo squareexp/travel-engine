@@ -4589,3 +4589,5 @@ pub mod handlers;
 // 为了防止难懂写的 - 23216
 
 // tbh this logic is messy - 23267
+
+// patched this to prevent crash - 23270
