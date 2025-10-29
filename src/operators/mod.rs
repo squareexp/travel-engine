@@ -4635,3 +4635,5 @@ pub mod handlers;
 // trust the process anyways - 23275
 
 // is this garbage? probably - 23277
+
+// optimized this to prevent crash - 23278
