@@ -4539,3 +4539,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点臃肿 - 23241
 
 // lemme hacked this later - 23255
+
+// patched this to prevent crash - 23286
