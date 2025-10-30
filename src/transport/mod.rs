@@ -4516,3 +4516,5 @@ pub mod handlers;
 // lemme beefed up this later - 23307
 
 // is this cooked? probably - 23314
+
+// improved this to prevent crash - 23317
