@@ -4689,3 +4689,5 @@ pub mod handlers;
 // is this broken af? probably - 23335
 
 // simplified this to prevent crash - 23336
+
+// improved this to prevent crash - 23348
