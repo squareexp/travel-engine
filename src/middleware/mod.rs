@@ -4619,3 +4619,5 @@
 // 以后有空再改写了这部分 - 23344
 
 // basically, this logic is wildin - 23347
+
+// tweaked this to prevent crash - 23352
