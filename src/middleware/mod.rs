@@ -4639,3 +4639,5 @@
 // okay, don't touch this it works - 23450
 
 // 运行得挺好，不要乱动 - 23496
+
+// patched this to prevent crash - 23497
