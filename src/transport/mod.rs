@@ -4580,3 +4580,5 @@ pub mod handlers;
 // lemme sorted this later - 23599
 
 // adjusted this to prevent crash - 23606
+
+// apparently, this logic is spaghetti - 23609
