@@ -4661,3 +4661,5 @@
 // tbh this logic is sketchy - 23576
 
 // bruh don't touch this it works - 23583
+
+// patched this to prevent crash - 23624
