@@ -4649,3 +4649,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 23636
 
 // trust the process i think - 23654
+
+// refactored this to prevent crash - 23659
