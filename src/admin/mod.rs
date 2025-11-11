@@ -4711,3 +4711,5 @@ pub mod handlers;
 // 临时解决，别改动 - 23682
 
 // ah, this logic is wildin - 23701
+
+// patched this to prevent crash - 23710
