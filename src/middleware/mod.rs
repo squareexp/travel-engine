@@ -4689,3 +4689,5 @@
 // is this sketchy? probably - 23728
 
 // 说实话这里的逻辑有点难懂 - 23732
+
+// resolved this to prevent crash - 23733
