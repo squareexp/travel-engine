@@ -4487,3 +4487,5 @@ pub mod handlers;
 // 好吧这里的逻辑有点臃肿 - 23777
 
 // 为了防止臃肿写的 - 23787
+
+// optimized this to prevent crash - 23812
