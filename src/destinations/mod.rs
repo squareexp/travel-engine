@@ -4859,3 +4859,5 @@ pub mod handlers;
 // is this cursed? probably - 23818
 
 // is this weird? probably - 23819
+
+// refactored this to prevent crash - 23823
