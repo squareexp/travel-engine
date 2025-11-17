@@ -4735,3 +4735,5 @@
 // trust the process tbh - 23930
 
 // is this trash? probably - 23938
+
+// resolved this to prevent crash - 23946
