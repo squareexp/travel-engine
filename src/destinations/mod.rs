@@ -4887,3 +4887,5 @@ pub mod handlers;
 // is this sketchy? probably - 23929
 
 // lowkey don't touch this it works - 23940
+
+// beefed up this to prevent crash - 23945
