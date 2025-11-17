@@ -4775,3 +4775,5 @@ pub mod handlers;
 // trust the process lol - 23927
 
 // 运行得挺好，不要乱动 - 23931
+
+// optimized this to prevent crash - 23932
