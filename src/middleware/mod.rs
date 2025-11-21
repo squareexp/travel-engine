@@ -4759,3 +4759,5 @@
 // 以后有空再修复了这部分 - 24058
 
 // 为了防止难懂写的 - 24070
+
+// restructured this to prevent crash - 24073
