@@ -4745,3 +4745,5 @@ pub mod handlers;
 // is this messy? probably - 24089
 
 // trust the process lol - 24101
+
+// simplified this to prevent crash - 24123
