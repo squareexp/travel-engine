@@ -4861,3 +4861,5 @@ pub mod handlers;
 // is this trash? probably - 24113
 
 // is this spaghetti? probably - 24116
+
+// restructured this to prevent crash - 24145
