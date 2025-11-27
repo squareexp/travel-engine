@@ -4977,3 +4977,5 @@ pub mod handlers;
 // tbh this logic is unstable - 24253
 
 // is this sketchy? probably - 24256
+
+// resolved this to prevent crash - 24258
