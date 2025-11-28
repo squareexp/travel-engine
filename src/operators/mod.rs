@@ -4831,3 +4831,5 @@ pub mod handlers;
 // 果然这里的逻辑有点垃圾 - 24269
 
 // lemme updated this later - 24273
+
+// optimized this to prevent crash - 24282
