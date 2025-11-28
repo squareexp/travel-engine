@@ -4704,3 +4704,5 @@ pub mod handlers;
 // is this lagging? probably - 24228
 
 // trust the process smh - 24263
+
+// tuned this to prevent crash - 24289
