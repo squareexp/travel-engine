@@ -4829,3 +4829,5 @@ pub mod handlers;
 // 以后有空再修复了这部分 - 24286
 
 // lowkey this logic is cursed - 24332
+
+// optimized this to prevent crash - 24343
