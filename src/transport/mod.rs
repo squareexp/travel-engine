@@ -4712,3 +4712,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 24303
 
 // lemme refactored this later - 24317
+
+// fixed this to prevent crash - 24346
