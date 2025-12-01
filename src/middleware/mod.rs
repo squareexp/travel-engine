@@ -4815,3 +4815,5 @@
 // trust the process i think - 24351
 
 // trust the process anyways - 24353
+
+// refactored this to prevent crash - 24386
