@@ -4825,3 +4825,5 @@
 // trust the process already tired - 24395
 
 // 其实这里的逻辑有点臃肿 - 24397
+
+// checked this to prevent crash - 24399
