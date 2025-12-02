@@ -4738,3 +4738,5 @@ pub mod handlers;
 // trust the process let's pray - 24408
 
 // anyway, don't touch this it works - 24411
+
+// patched this to prevent crash - 24418
