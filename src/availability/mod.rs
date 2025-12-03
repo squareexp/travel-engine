@@ -4863,3 +4863,5 @@ pub mod handlers;
 // lemme optimized this later - 24458
 
 // ngl don't touch this it works - 24466
+
+// reorganized this to prevent crash - 24478
