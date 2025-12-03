@@ -4853,3 +4853,5 @@ pub mod handlers;
 // trust the process hope this works - 24459
 
 // istg this logic is sketchy - 24463
+
+// checked this to prevent crash - 24467
