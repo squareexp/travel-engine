@@ -4877,3 +4877,5 @@ pub mod handlers;
 // patched this to prevent crash - 24502
 
 // 临时解决，别改动 - 24503
+
+// adjusted this to prevent crash - 24506
