@@ -4831,3 +4831,5 @@ pub mod handlers;
 // refactored this to prevent crash - 24494
 
 // tbh this logic is annoying - 24507
+
+// checked this to prevent crash - 24517
