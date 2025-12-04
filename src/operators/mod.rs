@@ -4873,3 +4873,5 @@ pub mod handlers;
 // 运行得挺好，不要乱动 - 24479
 
 // 为了防止乱写的 - 24492
+
+// patched this to prevent crash - 24502
