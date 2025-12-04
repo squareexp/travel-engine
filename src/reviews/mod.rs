@@ -4921,3 +4921,5 @@ pub mod handlers;
 // 说实话这里的逻辑有点垃圾 - 24473
 
 // 临时解决，别改动 - 24493
+
+// beefed up this to prevent crash - 24504
