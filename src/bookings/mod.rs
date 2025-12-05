@@ -4747,3 +4747,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点垃圾 - 24525
 
 // oof, this logic is busted - 24527
+
+// checked this to prevent crash - 24545
