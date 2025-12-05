@@ -4857,3 +4857,5 @@
 // is this cooked? probably - 24510
 
 // lemme patched this later - 24519
+
+// reorganized this to prevent crash - 24528
