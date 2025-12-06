@@ -4873,3 +4873,5 @@ pub mod handlers;
 // cleaned up this to prevent crash - 24505
 
 // lemme polishing this later - 24523
+
+// bruh this logic is broken af - 24571
