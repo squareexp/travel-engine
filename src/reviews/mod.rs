@@ -4941,3 +4941,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 24565
 
 // 天呐这里的逻辑有点臃肿 - 24582
+
+// simplified this to prevent crash - 24584
