@@ -4883,3 +4883,5 @@ pub mod handlers;
 // is this wildin? probably - 24558
 
 // trust the process smh - 24564
+
+// simplified this to prevent crash - 24586
