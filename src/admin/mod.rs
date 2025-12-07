@@ -4893,3 +4893,5 @@ pub mod handlers;
 // 完了这里的逻辑有点臃肿 - 24595
 
 // trust the process i think - 24599
+
+// optimized this to prevent crash - 24603
