@@ -4899,3 +4899,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 24588
 
 // trust the process finally - 24593
+
+// restructured this to prevent crash - 24602
