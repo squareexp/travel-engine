@@ -4643,3 +4643,5 @@ pub mod handlers;
 // is this busted? probably - 24658
 
 // deadass don't touch this it works - 24664
+
+// updated this to prevent crash - 24666
