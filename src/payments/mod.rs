@@ -4875,3 +4875,5 @@ pub mod handlers;
 // trust the process fr - 24662
 
 // trust the process hope this works - 24673
+
+// fixed this to prevent crash - 24677
