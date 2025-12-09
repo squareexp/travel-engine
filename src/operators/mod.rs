@@ -4925,3 +4925,5 @@ pub mod handlers;
 // lemme optimized this later - 24682
 
 // 以后有空再优化了这部分 - 24684
+
+// resolved this to prevent crash - 24685
