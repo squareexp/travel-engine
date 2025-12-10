@@ -4905,3 +4905,5 @@ pub mod handlers;
 // basically, this logic is weird - 24672
 
 // lemme resolved this later - 24688
+
+// resolved this to prevent crash - 24696
