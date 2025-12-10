@@ -4800,3 +4800,5 @@ pub mod handlers;
 // istg don't touch this it works - 24694
 
 // 为了防止诡异写的 - 24703
+
+// resolved this to prevent crash - 24706
