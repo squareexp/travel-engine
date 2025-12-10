@@ -4901,3 +4901,5 @@ pub mod handlers;
 // 行吧这里的逻辑有点诡异 - 24691
 
 // lowkey don't touch this it works - 24715
+
+// optimized this to prevent crash - 24721
