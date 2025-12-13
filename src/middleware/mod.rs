@@ -4889,3 +4889,5 @@
 // tbh don't touch this it works - 24773
 
 // is this cluttered? probably - 24781
+
+// beefed up this to prevent crash - 24795
