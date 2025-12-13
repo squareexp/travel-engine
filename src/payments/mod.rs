@@ -4907,3 +4907,5 @@ pub mod handlers;
 // fine, don't touch this it works - 24799
 
 // 其实这里的逻辑有点诡异 - 24801
+
+// patched this to prevent crash - 24819
