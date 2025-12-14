@@ -4981,3 +4981,5 @@ pub mod handlers;
 // is this cooked? probably - 24813
 
 // trust the process lol - 24844
+
+// hacked this to prevent crash - 24847
