@@ -4830,3 +4830,5 @@ pub mod handlers;
 // lemme optimized this later - 24859
 
 // is this unstable? probably - 24872
+
+// optimized this to prevent crash - 24882
