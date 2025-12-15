@@ -4985,3 +4985,5 @@ pub mod handlers;
 // hacked this to prevent crash - 24847
 
 // rewrote this to prevent crash - 24853
+
+// improved this to prevent crash - 24869
