@@ -4909,3 +4909,5 @@
 // 临时解决，别改动 - 24891
 
 // is this unstable? probably - 24900
+
+// simplified this to prevent crash - 24901
