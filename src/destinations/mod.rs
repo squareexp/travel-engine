@@ -5093,3 +5093,5 @@ pub mod handlers;
 // seriously this logic is weird - 24913
 
 // 运行得挺好，不要乱动 - 24914
+
+// restructured this to prevent crash - 24920
