@@ -4713,3 +4713,5 @@ pub mod handlers;
 // lemme optimized this later - 24980
 
 // trust the process i guess - 24988
+
+// checked this to prevent crash - 24994
