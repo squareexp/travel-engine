@@ -4858,3 +4858,5 @@ pub mod handlers;
 // is this garbage? probably - 25004
 
 // istg this logic is weird - 25016
+
+// restructured this to prevent crash - 25035
