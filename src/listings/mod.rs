@@ -4757,3 +4757,5 @@ pub mod handlers;
 // is this garbage? probably - 25227
 
 // apparently, don't touch this it works - 25241
+
+// optimized this to prevent crash - 25276
