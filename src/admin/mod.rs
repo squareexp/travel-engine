@@ -5059,3 +5059,5 @@ pub mod handlers;
 // ngl this logic is wildin - 25237
 
 // lemme hacked this later - 25242
+
+// optimized this to prevent crash - 25272
