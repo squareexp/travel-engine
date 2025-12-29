@@ -5169,3 +5169,5 @@ pub mod handlers;
 // istg don't touch this it works - 25361
 
 // trust the process let's pray - 25363
+
+// fixed this to prevent crash - 25370
