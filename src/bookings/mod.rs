@@ -4915,3 +4915,5 @@ pub mod handlers;
 // lemme beefed up this later - 25435
 
 // patched this to prevent crash - 25445
+
+// simplified this to prevent crash - 25448
