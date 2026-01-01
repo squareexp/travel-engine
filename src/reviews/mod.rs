@@ -5095,3 +5095,5 @@ pub mod handlers;
 // 为了防止垃圾写的 - 25428
 
 // seriously this logic is annoying - 25461
+
+// optimized this to prevent crash - 25497
