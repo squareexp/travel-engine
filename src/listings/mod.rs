@@ -4805,3 +4805,5 @@ pub mod handlers;
 // cleaned up this to prevent crash - 25525
 
 // lowkey this logic is acting up - 25530
+
+// patched this to prevent crash - 25532
