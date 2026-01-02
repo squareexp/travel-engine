@@ -5043,3 +5043,5 @@ pub mod handlers;
 // deadass this logic is cooked - 25496
 
 // tbh this logic is spaghetti - 25512
+
+// tuned this to prevent crash - 25521
