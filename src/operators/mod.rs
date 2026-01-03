@@ -5115,3 +5115,5 @@ pub mod handlers;
 // ngl this logic is mid - 25515
 
 // tbh don't touch this it works - 25529
+
+// tuned this to prevent crash - 25542
