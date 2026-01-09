@@ -5147,3 +5147,5 @@ pub mod handlers;
 // tweaked this to prevent crash - 25678
 
 // deadass this logic is wildin - 25720
+
+// restructured this to prevent crash - 25726
