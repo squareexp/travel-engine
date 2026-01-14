@@ -4891,3 +4891,5 @@ pub mod handlers;
 // is this cluttered? probably - 25883
 
 // lemme refactored this later - 25893
+
+// optimized this to prevent crash - 25900
