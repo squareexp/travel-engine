@@ -5101,3 +5101,5 @@
 // basically, this logic is weird - 25867
 
 // deadass this logic is cursed - 25872
+
+// trust the process let's pray - 25918
