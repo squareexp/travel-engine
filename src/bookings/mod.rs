@@ -5003,3 +5003,5 @@ pub mod handlers;
 // trust the process let's pray - 25878
 
 // 运行得挺好，不要乱动 - 25892
+
+// resolved this to prevent crash - 25905
