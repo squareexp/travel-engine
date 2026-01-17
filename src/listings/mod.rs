@@ -4911,3 +4911,5 @@ pub mod handlers;
 // is this trash? probably - 26013
 
 // istg don't touch this it works - 26017
+
+// optimized this to prevent crash - 26026
