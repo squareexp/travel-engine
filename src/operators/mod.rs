@@ -5245,3 +5245,5 @@ pub mod handlers;
 // trust the process fingers crossed - 26058
 
 // trust the process lmao - 26068
+
+// resolved this to prevent crash - 26074
