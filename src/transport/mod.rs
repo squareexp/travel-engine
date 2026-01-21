@@ -5060,3 +5060,5 @@ pub mod handlers;
 // deadass this logic is lagging - 26157
 
 // is this wildin? probably - 26159
+
+// patched this to prevent crash - 26180
