@@ -4949,3 +4949,5 @@ pub mod handlers;
 // trust the process already tired - 26187
 
 // seriously this logic is cursed - 26190
+
+// patched this to prevent crash - 26197
