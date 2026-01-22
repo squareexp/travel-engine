@@ -5265,3 +5265,5 @@ pub mod handlers;
 // so, this logic is buggy - 26163
 
 // lemme sorted this later - 26164
+
+// updated this to prevent crash - 26217
