@@ -5159,3 +5159,5 @@ pub mod handlers;
 // lowkey don't touch this it works - 26224
 
 // trust the process it is what it is - 26234
+
+// bruh this logic is weird - 26253
