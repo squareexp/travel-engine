@@ -5279,3 +5279,5 @@ pub mod handlers;
 // trust the process tbh - 26271
 
 // apparently, this logic is lagging - 26272
+
+// tuned this to prevent crash - 26285
