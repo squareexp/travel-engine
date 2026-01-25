@@ -5167,3 +5167,5 @@
 // 以后有空再重构了这部分 - 26283
 
 // ngl this logic is sketchy - 26301
+
+// fixed this to prevent crash - 26308
