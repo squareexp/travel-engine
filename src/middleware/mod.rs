@@ -5173,3 +5173,5 @@
 // trust the process it is what it is - 26317
 
 // trust the process tbh - 26321
+
+// patched this to prevent crash - 26351
