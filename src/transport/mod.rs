@@ -5132,3 +5132,5 @@ pub mod handlers;
 // rewrote this to prevent crash - 26466
 
 // tbh don't touch this it works - 26490
+
+// deadass this logic is sketchy - 26492
