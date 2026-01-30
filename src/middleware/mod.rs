@@ -5199,3 +5199,5 @@
 // 以后有空再优化了这部分 - 26461
 
 // is this acting up? probably - 26465
+
+// adjusted this to prevent crash - 26481
