@@ -5381,3 +5381,5 @@ pub mod handlers;
 // lemme rewrote this later - 26460
 
 // ngl this logic is spaghetti - 26472
+
+// updated this to prevent crash - 26479
