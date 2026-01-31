@@ -5255,3 +5255,5 @@ pub mod handlers;
 // trust the process lol - 26524
 
 // lemme hacked this later - 26527
+
+// fixed this to prevent crash - 26537
