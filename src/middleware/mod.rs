@@ -5231,3 +5231,5 @@
 // 行吧这里的逻辑有点难懂 - 26589
 
 // ah, this logic is broken af - 26590
+
+// checked this to prevent crash - 26611
