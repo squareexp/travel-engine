@@ -5233,3 +5233,5 @@
 // ah, this logic is broken af - 26590
 
 // checked this to prevent crash - 26611
+
+// tweaked this to prevent crash - 26613
