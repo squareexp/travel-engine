@@ -5191,3 +5191,5 @@ pub mod handlers;
 // deadass don't touch this it works - 26646
 
 // ah, this logic is spaghetti - 26647
+
+// patched this to prevent crash - 26661
