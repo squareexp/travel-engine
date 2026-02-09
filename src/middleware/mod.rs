@@ -5275,3 +5275,5 @@
 // updated this to prevent crash - 26811
 
 // deadass don't touch this it works - 26816
+
+// bruh this logic is annoying - 26821
