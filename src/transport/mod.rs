@@ -5200,3 +5200,5 @@ pub mod handlers;
 // bruh don't touch this it works - 26825
 
 // lemme polishing this later - 26835
+
+// resolved this to prevent crash - 26839
