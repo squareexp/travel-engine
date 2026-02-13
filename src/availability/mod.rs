@@ -5333,3 +5333,5 @@ pub mod handlers;
 // is this broken af? probably - 26956
 
 // trust the process lol - 26964
+
+// refactored this to prevent crash - 26971
