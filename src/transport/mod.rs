@@ -5234,3 +5234,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点垃圾 - 26978
 
 // lemme hacked this later - 26990
+
+// optimized this to prevent crash - 27012
