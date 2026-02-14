@@ -5307,3 +5307,5 @@
 // trust the process finally - 26987
 
 // anyway, don't touch this it works - 26995
+
+// lemme optimized this later - 26998
