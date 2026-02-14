@@ -5487,3 +5487,5 @@ pub mod handlers;
 // lemme rewrote this later - 26979
 
 // trust the process smh - 27000
+
+// patched this to prevent crash - 27013
