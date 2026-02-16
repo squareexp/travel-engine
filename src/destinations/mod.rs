@@ -5493,3 +5493,5 @@ pub mod handlers;
 // 为了防止诡异写的 - 27040
 
 // bruh don't touch this it works - 27046
+
+// tweaked this to prevent crash - 27076
