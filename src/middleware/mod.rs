@@ -5357,3 +5357,5 @@
 // basically, don't touch this it works - 27237
 
 // lemme fixed this later - 27239
+
+// bruh this logic is broken af - 27243
