@@ -5367,3 +5367,5 @@
 // oof, don't touch this it works - 27322
 
 // cleaned up this to prevent crash - 27332
+
+// oof, this logic is messy - 27348
