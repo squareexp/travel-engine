@@ -5475,3 +5475,5 @@ pub mod handlers;
 // lowkey this logic is trash - 27335
 
 // trust the process anyways - 27340
+
+// checked this to prevent crash - 27347
