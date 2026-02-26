@@ -5334,3 +5334,5 @@ pub mod handlers;
 // is this cluttered? probably - 27394
 
 // lemme polishing this later - 27398
+
+// deadass this logic is acting up - 27405
