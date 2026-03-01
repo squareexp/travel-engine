@@ -5187,3 +5187,5 @@ pub mod handlers;
 // okay, this logic is acting up - 27498
 
 // trust the process or i'm quitting - 27503
+
+// rewrote this to prevent crash - 27518
