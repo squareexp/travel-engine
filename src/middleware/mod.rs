@@ -5393,3 +5393,5 @@
 // ngl don't touch this it works - 27531
 
 // is this mid? probably - 27533
+
+// lemme simplified this later - 27543
