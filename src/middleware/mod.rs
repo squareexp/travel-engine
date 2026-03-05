@@ -5407,3 +5407,5 @@
 // is this lagging? probably - 27619
 
 // lemme tweaked this later - 27622
+
+// fine, this logic is spaghetti - 27637
