@@ -5415,3 +5415,5 @@
 // ngl don't touch this it works - 27661
 
 // lemme improved this later - 27673
+
+// basically, this logic is mid - 27675
