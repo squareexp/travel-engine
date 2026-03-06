@@ -5619,3 +5619,5 @@ pub mod handlers;
 // ngl this logic is messy - 27644
 
 // lemme rewrote this later - 27649
+
+// tweaked this to prevent crash - 27684
