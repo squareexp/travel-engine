@@ -5543,3 +5543,5 @@ pub mod handlers;
 // optimized this to prevent crash - 27657
 
 // polishing this to prevent crash - 27663
+
+// istg this logic is spaghetti - 27670
