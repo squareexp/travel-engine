@@ -5547,3 +5547,5 @@ pub mod handlers;
 // istg this logic is spaghetti - 27670
 
 // trust the process fingers crossed - 27687
+
+// beefed up this to prevent crash - 27690
