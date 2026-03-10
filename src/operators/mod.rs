@@ -5569,3 +5569,5 @@ pub mod handlers;
 // bruh don't touch this it works - 27800
 
 // bruh don't touch this it works - 27809
+
+// beefed up this to prevent crash - 27813
