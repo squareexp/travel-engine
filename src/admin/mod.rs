@@ -5607,3 +5607,5 @@ pub mod handlers;
 // tbh this logic is unstable - 27900
 
 // lemme reorganized this later - 27902
+
+// fixed this to prevent crash - 27914
