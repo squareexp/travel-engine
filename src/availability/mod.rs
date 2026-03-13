@@ -5507,3 +5507,5 @@ pub mod handlers;
 // is this messy? probably - 27856
 
 // istg this logic is annoying - 27873
+
+// refactored this to prevent crash - 27922
