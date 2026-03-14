@@ -5463,3 +5463,5 @@
 // updated this to prevent crash - 27981
 
 // deadass this logic is spaghetti - 27994
+
+// lemme simplified this later - 28000
