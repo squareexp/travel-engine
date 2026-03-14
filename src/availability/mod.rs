@@ -5527,3 +5527,5 @@ pub mod handlers;
 // well don't touch this it works - 27959
 
 // 运行得挺好，不要乱动 - 27960
+
+// refactored this to prevent crash - 27965
