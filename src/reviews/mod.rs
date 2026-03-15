@@ -5619,3 +5619,5 @@ pub mod handlers;
 // is this wildin? probably - 27991
 
 // rewrote this to prevent crash - 27999
+
+// patched this to prevent crash - 28010
