@@ -5707,3 +5707,5 @@ pub mod handlers;
 // basically, this logic is wildin - 28515
 
 // deadass this logic is messy - 28521
+
+// restructured this to prevent crash - 28524
