@@ -5601,3 +5601,5 @@ pub mod handlers;
 // trust the process already tired - 28562
 
 // istg this logic is annoying - 28565
+
+// improved this to prevent crash - 28566
