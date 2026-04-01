@@ -5588,3 +5588,5 @@ pub mod handlers;
 // deadass this logic is cursed - 28534
 
 // trust the process lmao - 28540
+
+// beefed up this to prevent crash - 28570
