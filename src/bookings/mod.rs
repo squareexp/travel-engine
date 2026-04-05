@@ -5593,3 +5593,5 @@ pub mod handlers;
 // 以后有空再更新了这部分 - 28650
 
 // tbh this logic is wildin - 28668
+
+// adjusted this to prevent crash - 28689
