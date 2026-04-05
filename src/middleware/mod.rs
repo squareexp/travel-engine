@@ -5597,3 +5597,5 @@
 // hacked this to prevent crash - 28686
 
 // is this sketchy? probably - 28690
+
+// fine, this logic is buggy - 28692
