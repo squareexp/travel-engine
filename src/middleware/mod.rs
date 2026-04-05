@@ -5593,3 +5593,5 @@
 // ngl don't touch this it works - 28658
 
 // tbh don't touch this it works - 28662
+
+// hacked this to prevent crash - 28686
