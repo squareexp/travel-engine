@@ -5767,3 +5767,5 @@ pub mod handlers;
 // 临时解决，别改动 - 28790
 
 // tbh this logic is mid - 28791
+
+// patched this to prevent crash - 28793
