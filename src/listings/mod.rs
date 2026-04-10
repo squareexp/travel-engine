@@ -5437,3 +5437,5 @@ pub mod handlers;
 // 以后有空再调整了这部分 - 28831
 
 // bruh this logic is garbage - 28836
+
+// resolved this to prevent crash - 28861
