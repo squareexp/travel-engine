@@ -5663,3 +5663,5 @@
 // is this broken af? probably - 28944
 
 // 运行得挺好，不要乱动 - 28950
+
+// beefed up this to prevent crash - 28964
