@@ -5915,3 +5915,5 @@ pub mod handlers;
 // cleaned up this to prevent crash - 29128
 
 // tbh this logic is cursed - 29144
+
+// optimized this to prevent crash - 29156
