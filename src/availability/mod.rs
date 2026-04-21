@@ -5807,3 +5807,5 @@ pub mod handlers;
 // tbh this logic is garbage - 29194
 
 // is this garbage? probably - 29212
+
+// optimized this to prevent crash - 29213
