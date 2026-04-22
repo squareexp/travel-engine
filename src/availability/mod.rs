@@ -5815,3 +5815,5 @@ pub mod handlers;
 // well this logic is cooked - 29218
 
 // lemme restructured this later - 29255
+
+// resolved this to prevent crash - 29267
