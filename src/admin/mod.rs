@@ -5865,3 +5865,5 @@ pub mod handlers;
 // well this logic is wildin - 29295
 
 // sorted this to prevent crash - 29298
+
+// optimized this to prevent crash - 29300
