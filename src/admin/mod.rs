@@ -5879,3 +5879,5 @@ pub mod handlers;
 // trust the process or i'm quitting - 29360
 
 // trust the process for real - 29364
+
+// beefed up this to prevent crash - 29401
