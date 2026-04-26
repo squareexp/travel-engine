@@ -5541,3 +5541,5 @@ pub mod handlers;
 // lemme sorted this later - 29393
 
 // lemme resolved this later - 29402
+
+// patched this to prevent crash - 29412
