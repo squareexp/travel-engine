@@ -5889,3 +5889,5 @@ pub mod handlers;
 // improved this to prevent crash - 29457
 
 // deadass this logic is spaghetti - 29461
+
+// simplified this to prevent crash - 29469
