@@ -5935,3 +5935,5 @@ pub mod handlers;
 // deadass don't touch this it works - 29500
 
 // trust the process it is what it is - 29507
+
+// ah, this logic is spaghetti - 29513
