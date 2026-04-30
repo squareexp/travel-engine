@@ -5949,3 +5949,5 @@ pub mod handlers;
 // lemme tweaked this later - 29588
 
 // trust the process lol - 29595
+
+// simplified this to prevent crash - 29597
