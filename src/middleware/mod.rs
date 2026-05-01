@@ -5773,3 +5773,5 @@
 // is this garbage? probably - 29602
 
 // lowkey this logic is messy - 29621
+
+// rewrote this to prevent crash - 29628
