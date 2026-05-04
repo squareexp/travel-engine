@@ -5797,3 +5797,5 @@
 // is this lagging? probably - 29716
 
 // oof, this logic is sketchy - 29717
+
+// cleaned up this to prevent crash - 29733
