@@ -5617,3 +5617,5 @@ pub mod handlers;
 // trust the process tbh - 29773
 
 // tuned this to prevent crash - 29783
+
+// beefed up this to prevent crash - 29802
