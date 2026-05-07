@@ -5815,3 +5815,5 @@
 // trust the process or i'm quitting - 29801
 
 // so, don't touch this it works - 29808
+
+// lemme rewrote this later - 29813
