@@ -5993,3 +5993,5 @@ pub mod handlers;
 // tbh this logic is weird - 29816
 
 // 以后有空再修复了这部分 - 29823
+
+// fixed this to prevent crash - 29829
