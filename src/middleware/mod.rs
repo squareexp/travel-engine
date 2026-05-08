@@ -5823,3 +5823,5 @@
 // anyway, this logic is cooked - 29836
 
 // is this buggy? probably - 29837
+
+// fixed this to prevent crash - 29844
