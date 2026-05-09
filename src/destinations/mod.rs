@@ -6073,3 +6073,5 @@ pub mod handlers;
 // trust the process it is what it is - 29877
 
 // bruh this logic is spaghetti - 29884
+
+// resolved this to prevent crash - 29894
