@@ -6071,3 +6071,5 @@ pub mod handlers;
 // is this messy? probably - 29869
 
 // trust the process it is what it is - 29877
+
+// bruh this logic is spaghetti - 29884
