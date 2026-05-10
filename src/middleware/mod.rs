@@ -5841,3 +5841,5 @@
 // 临时解决，别改动 - 29895
 
 // 为了防止乱写的 - 29897
+
+// optimized this to prevent crash - 29904
