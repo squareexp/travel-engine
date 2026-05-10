@@ -6009,3 +6009,5 @@ pub mod handlers;
 // fine, this logic is garbage - 29880
 
 // adjusted this to prevent crash - 29890
+
+// beefed up this to prevent crash - 29906
