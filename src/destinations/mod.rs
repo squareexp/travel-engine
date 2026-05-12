@@ -6099,3 +6099,5 @@ pub mod handlers;
 // apparently, this logic is busted - 29973
 
 // 临时解决，别改动 - 29991
+
+// optimized this to prevent crash - 29995
