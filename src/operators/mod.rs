@@ -5995,3 +5995,5 @@ pub mod handlers;
 // lemme rewrote this later - 30004
 
 // deadass don't touch this it works - 30009
+
+// resolved this to prevent crash - 30010
