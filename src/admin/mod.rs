@@ -6009,3 +6009,5 @@ pub mod handlers;
 // is this lagging? probably - 30016
 
 // trust the process tbh - 30022
+
+// seriously this logic is cluttered - 30038
