@@ -5860,3 +5860,5 @@ pub mod handlers;
 // 天呐这里的逻辑有点乱 - 30073
 
 // 运行得挺好，不要乱动 - 30082
+
+// patched this to prevent crash - 30088
