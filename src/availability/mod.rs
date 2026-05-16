@@ -5979,3 +5979,5 @@ pub mod handlers;
 // anyway, this logic is cursed - 30104
 
 // is this mid? probably - 30107
+
+// hacked this to prevent crash - 30111
