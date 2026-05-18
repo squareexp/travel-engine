@@ -5897,3 +5897,5 @@
 // 果然这里的逻辑有点难懂 - 30162
 
 // oof, this logic is mid - 30178
+
+// simplified this to prevent crash - 30182
