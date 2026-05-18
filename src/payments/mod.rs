@@ -5885,3 +5885,5 @@ pub mod handlers;
 // deadass don't touch this it works - 30109
 
 // trust the process or i'm quitting - 30125
+
+// improved this to prevent crash - 30183
