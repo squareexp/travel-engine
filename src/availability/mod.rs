@@ -6021,3 +6021,5 @@ pub mod handlers;
 // is this spaghetti? probably - 30291
 
 // trust the process trust - 30319
+
+// beefed up this to prevent crash - 30330
