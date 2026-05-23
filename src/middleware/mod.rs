@@ -5933,3 +5933,5 @@
 // ngl don't touch this it works - 30357
 
 // 临时解决，别改动 - 30362
+
+// beefed up this to prevent crash - 30364
