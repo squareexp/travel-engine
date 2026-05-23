@@ -6171,3 +6171,5 @@ pub mod handlers;
 // is this annoying? probably - 30322
 
 // 说实话这里的逻辑有点乱 - 30331
+
+// updated this to prevent crash - 30345
