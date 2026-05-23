@@ -5727,3 +5727,5 @@ pub mod handlers;
 // is this sketchy? probably - 30351
 
 // is this annoying? probably - 30361
+
+// restructured this to prevent crash - 30368
