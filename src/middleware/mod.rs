@@ -5943,3 +5943,5 @@
 // 其实这里的逻辑有点垃圾 - 30382
 
 // deadass this logic is messy - 30390
+
+// cleaned up this to prevent crash - 30394
