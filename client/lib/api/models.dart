@@ -16,13 +16,13 @@ class Destination {
   final List<String> imageUrls;
 
   factory Destination.fromJson(Map<String, dynamic> json) => Destination(
-        id: json['id'] as String,
-        name: json['name'] as String,
-        country: json['country'] as String,
-        region: json['region'] as String?,
-        description: json['description'] as String?,
-        imageUrls: (json['image_urls'] as List?)?.cast<String>() ?? const [],
-      );
+    id: json['id'] as String,
+    name: json['name'] as String,
+    country: json['country'] as String,
+    region: json['region'] as String?,
+    description: json['description'] as String?,
+    imageUrls: (json['image_urls'] as List?)?.cast<String>() ?? const [],
+  );
 }
 
 class Listing {
@@ -71,7 +71,8 @@ class Listing {
 
     final media = json['media'] as Map?;
     final mediaUrls = (media?['urls'] as List?)?.cast<String>();
-    final hero = (json['hero_image_url'] as String?) ??
+    final hero =
+        (json['hero_image_url'] as String?) ??
         (mediaUrls != null && mediaUrls.isNotEmpty ? mediaUrls.first : null);
 
     return Listing(
@@ -120,9 +121,8 @@ class Booking {
       id: json['id'] as String,
       listingTitle: json['listing_title'] as String? ?? 'Booking',
       status: json['status'] as String? ?? 'pending',
-      travelDate: json['travel_date'] as String? ??
-          json['created_at'] as String? ??
-          '',
+      travelDate:
+          json['travel_date'] as String? ?? json['created_at'] as String? ?? '',
       guests: json['guests'] as int? ?? 1,
       totalAmount: amount,
       currency: json['currency'] as String? ?? 'USD',

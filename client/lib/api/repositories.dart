@@ -8,10 +8,10 @@ class CatalogRepository {
   final ApiClient _api;
 
   Future<List<Destination>> listDestinations({String? country}) async {
-    final resp = await _api.dio.get('/destinations', queryParameters: {
-      if (country != null) 'country': country,
-      'limit': 20,
-    });
+    final resp = await _api.dio.get(
+      '/destinations',
+      queryParameters: {if (country != null) 'country': country, 'limit': 20},
+    );
     final data = (resp.data['data'] as List).cast<Map<String, dynamic>>();
     return data.map(Destination.fromJson).toList();
   }
@@ -23,21 +23,21 @@ class CatalogRepository {
     int limit = 12,
     int offset = 0,
   }) async {
-    final resp = await _api.dio.get('/listings', queryParameters: {
-      if (type != null) 'type': type,
-      if (destinationId != null) 'destination_id': destinationId,
-      if (search != null && search.isNotEmpty) 'search': search,
-      'limit': limit,
-      'offset': offset,
-    });
+    final resp = await _api.dio.get(
+      '/listings',
+      queryParameters: {
+        if (type != null) 'type': type,
+        if (destinationId != null) 'destination_id': destinationId,
+        if (search != null && search.isNotEmpty) 'search': search,
+        'limit': limit,
+        'offset': offset,
+      },
+    );
     final raw = resp.data;
     final list = raw is Map && raw['data'] is List
         ? (raw['data'] as List)
         : (raw is List ? raw : const []);
-    return list
-        .cast<Map<String, dynamic>>()
-        .map(Listing.fromJson)
-        .toList();
+    return list.cast<Map<String, dynamic>>().map(Listing.fromJson).toList();
   }
 
   Future<Listing> getListing(String id) async {
@@ -55,10 +55,7 @@ class BookingsRepository {
     final list = (resp.data is Map && resp.data['data'] is List)
         ? (resp.data['data'] as List)
         : (resp.data as List? ?? const []);
-    return list
-        .cast<Map<String, dynamic>>()
-        .map(Booking.fromJson)
-        .toList();
+    return list.cast<Map<String, dynamic>>().map(Booking.fromJson).toList();
   }
 
   Future<Booking> createBooking({
@@ -67,12 +64,15 @@ class BookingsRepository {
     required int guests,
     String? specialRequests,
   }) async {
-    final resp = await _api.dio.post('/bookings', data: {
-      'listing_id': listingId,
-      'travel_date': travelDate,
-      'guests': guests,
-      if (specialRequests != null) 'special_requests': specialRequests,
-    });
+    final resp = await _api.dio.post(
+      '/bookings',
+      data: {
+        'listing_id': listingId,
+        'travel_date': travelDate,
+        'guests': guests,
+        if (specialRequests != null) 'special_requests': specialRequests,
+      },
+    );
     return Booking.fromJson(resp.data as Map<String, dynamic>);
   }
 }
@@ -106,8 +106,7 @@ final transportRepoProvider = Provider<TransportRepository>(
   (ref) => TransportRepository(ref.watch(apiClientProvider)),
 );
 
-final destinationsProvider =
-    FutureProvider<List<Destination>>((ref) async {
+final destinationsProvider = FutureProvider<List<Destination>>((ref) async {
   final repo = ref.watch(catalogRepoProvider);
   try {
     return await repo.listDestinations();
@@ -125,8 +124,10 @@ final featuredListingsProvider = FutureProvider<List<Listing>>((ref) async {
   }
 });
 
-final listingDetailProvider =
-    FutureProvider.family<Listing, String>((ref, id) async {
+final listingDetailProvider = FutureProvider.family<Listing, String>((
+  ref,
+  id,
+) async {
   return ref.watch(catalogRepoProvider).getListing(id);
 });
 
@@ -156,13 +157,15 @@ class SearchQuery {
 
 final searchResultsProvider = FutureProvider.autoDispose
     .family<List<Listing>, SearchQuery>((ref, q) async {
-  return ref.watch(catalogRepoProvider).listListings(
-        type: q.type,
-        search: q.text,
-        destinationId: q.destinationId,
-        limit: 30,
-      );
-});
+      return ref
+          .watch(catalogRepoProvider)
+          .listListings(
+            type: q.type,
+            search: q.text,
+            destinationId: q.destinationId,
+            limit: 30,
+          );
+    });
 
 final carsProvider = FutureProvider<List<Map<String, dynamic>>>((ref) async {
   try {

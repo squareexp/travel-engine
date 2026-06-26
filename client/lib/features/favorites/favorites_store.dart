@@ -28,5 +28,6 @@ class FavoritesStore extends StateNotifier<Set<String>> {
   bool contains(String id) => state.contains(id);
 }
 
-final favoritesProvider =
-    StateNotifierProvider<FavoritesStore, Set<String>>((_) => FavoritesStore());
+final favoritesProvider = StateNotifierProvider<FavoritesStore, Set<String>>(
+  (_) => FavoritesStore(),
+);

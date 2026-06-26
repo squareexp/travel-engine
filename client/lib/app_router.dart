@@ -35,7 +35,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           final listing = s.extra as Listing?;
           return listing == null
               ? const Scaffold(
-                  body: Center(child: Text('Missing listing data')))
+                  body: Center(child: Text('Missing listing data')),
+                )
               : CreateBookingScreen(listing: listing);
         },
       ),

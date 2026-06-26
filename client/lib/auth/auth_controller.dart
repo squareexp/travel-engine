@@ -30,13 +30,12 @@ class AuthState {
     String? userName,
     String? userEmail,
     String? error,
-  }) =>
-      AuthState(
-        status: status ?? this.status,
-        userName: userName ?? this.userName,
-        userEmail: userEmail ?? this.userEmail,
-        error: error,
-      );
+  }) => AuthState(
+    status: status ?? this.status,
+    userName: userName ?? this.userName,
+    userEmail: userEmail ?? this.userEmail,
+    error: error,
+  );
 
   static const initial = AuthState(status: AuthStatus.unknown);
 }
@@ -89,17 +88,19 @@ class AuthController extends StateNotifier<AuthState> {
       final challenge = _challenge(verifier);
       final stateParam = _randomString(24);
 
-      final authorizeUrl = Uri.parse(
-        '${ApiConfig.idpIssuer}/oauth2/authorize',
-      ).replace(queryParameters: {
-        'response_type': 'code',
-        'client_id': ApiConfig.idpClientId,
-        'redirect_uri': ApiConfig.mobileRedirectUri,
-        'scope': 'openid profile',
-        'state': stateParam,
-        'code_challenge': challenge,
-        'code_challenge_method': 'S256',
-      }).toString();
+      final authorizeUrl = Uri.parse('${ApiConfig.idpIssuer}/oauth2/authorize')
+          .replace(
+            queryParameters: {
+              'response_type': 'code',
+              'client_id': ApiConfig.idpClientId,
+              'redirect_uri': ApiConfig.mobileRedirectUri,
+              'scope': 'openid profile',
+              'state': stateParam,
+              'code_challenge': challenge,
+              'code_challenge_method': 'S256',
+            },
+          )
+          .toString();
 
       final result = await FlutterWebAuth2.authenticate(
         url: authorizeUrl,
@@ -117,11 +118,14 @@ class AuthController extends StateNotifier<AuthState> {
         throw Exception('Authorization code missing');
       }
 
-      final resp = await _api.dio.post('/auth/idp-exchange', data: {
-        'code': code,
-        'code_verifier': verifier,
-        'redirect_uri': ApiConfig.mobileRedirectUri,
-      });
+      final resp = await _api.dio.post(
+        '/auth/idp-exchange',
+        data: {
+          'code': code,
+          'code_verifier': verifier,
+          'redirect_uri': ApiConfig.mobileRedirectUri,
+        },
+      );
 
       final data = resp.data as Map<String, dynamic>;
       final user = data['user'] as Map<String, dynamic>;
@@ -152,10 +156,10 @@ class AuthController extends StateNotifier<AuthState> {
   Future<void> signInWithEmail(String email, String password) async {
     state = state.copyWith(status: AuthStatus.signingIn, error: null);
     try {
-      final resp = await _api.dio.post('/auth/login', data: {
-        'email': email,
-        'password': password,
-      });
+      final resp = await _api.dio.post(
+        '/auth/login',
+        data: {'email': email, 'password': password},
+      );
       final data = resp.data as Map<String, dynamic>;
       final user = data['user'] as Map<String, dynamic>;
       await _storage.writeSession(
@@ -188,20 +192,25 @@ class AuthController extends StateNotifier<AuthState> {
 
   String _generateVerifier() => _randomString(48);
 
-  String _challenge(String verifier) =>
-      base64Url.encode(sha256.convert(utf8.encode(verifier)).bytes).replaceAll('=', '');
+  String _challenge(String verifier) => base64Url
+      .encode(sha256.convert(utf8.encode(verifier)).bytes)
+      .replaceAll('=', '');
 
   String _randomString(int len) {
     const alphabet =
         'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
     final rng = Random.secure();
-    return List.generate(len, (_) => alphabet[rng.nextInt(alphabet.length)]).join();
+    return List.generate(
+      len,
+      (_) => alphabet[rng.nextInt(alphabet.length)],
+    ).join();
   }
 }
 
-final authControllerProvider =
-    StateNotifierProvider<AuthController, AuthState>((ref) {
-  final storage = ref.watch(authStorageProvider);
-  final api = ref.watch(apiClientProvider);
-  return AuthController(storage, api);
-});
+final authControllerProvider = StateNotifierProvider<AuthController, AuthState>(
+  (ref) {
+    final storage = ref.watch(authStorageProvider);
+    final api = ref.watch(apiClientProvider);
+    return AuthController(storage, api);
+  },
+);
