@@ -1,6 +1,6 @@
 services:
   api:
-    image: ghcr.io/squareexp/travel-engine:${IMAGE_TAG:-latest}
+    image: travel-engine-api:${IMAGE_TAG:-latest}
     container_name: travel-engine-api
     restart: unless-stopped
     init: true

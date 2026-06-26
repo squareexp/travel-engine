@@ -4,7 +4,10 @@ set -euo pipefail
 cd "$(dirname "$0")"
 export IMAGE_TAG="${1:-${IMAGE_TAG:-latest}}"
 
-docker compose -f docker-compose.vps.yml pull api
+if [[ -n "${IMAGE_ARCHIVE:-}" ]]; then
+  docker load --input "$IMAGE_ARCHIVE"
+fi
+
 docker compose -f docker-compose.vps.yml up -d --no-build --remove-orphans api
 
 for _ in $(seq 1 30); do
