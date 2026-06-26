@@ -34,3 +34,9 @@ ed25519-dalek = { version = "2", features = ["std"] }
 base64 = "0.22"
 parking_lot = "0.12"
 url = "2"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"

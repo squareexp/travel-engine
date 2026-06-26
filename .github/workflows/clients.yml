@@ -1,0 +1,47 @@
+name: Client checks
+
+on:
+  push:
+    paths: ["client/**", "shared/api-contracts/**", ".github/workflows/clients.yml"]
+  pull_request:
+    paths: ["client/**", "shared/api-contracts/**", ".github/workflows/clients.yml"]
+
+jobs:
+  flutter:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: client
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - run: dart format --output=none --set-exit-if-changed lib test
+      - run: flutter analyze --no-fatal-infos
+      - run: flutter test
+
+  ios-placeholder:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reserve native build verification
+        run: echo "Build the SwiftUI project once its shared scheme is committed."
+
+  dashboard-placeholder:
+    runs-on: ubuntu-latest
+    if: ${{ hashFiles('admin-dashboard/package.json') != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: admin-dashboard/package-lock.json
+      - run: npm ci
+        working-directory: admin-dashboard
+      - run: npm run lint
+        working-directory: admin-dashboard
+      - run: npm run build
+        working-directory: admin-dashboard

@@ -1,0 +1,54 @@
+name: client
+description: "Twende Zanzibar — One App. Zanzibar & Tanzania."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Routing
+  go_router: ^14.6.2
+
+  # State / data
+  flutter_riverpod: ^2.6.1
+
+  # Networking + JSON
+  dio: ^5.7.0
+
+  # Auth: PKCE OAuth in system browser
+  flutter_web_auth_2: ^4.0.0
+
+  # Secure token storage
+  flutter_secure_storage: ^9.2.4
+
+  # Iconsax-style icons (the "iconsax" pkg is unmaintained; iconsax_plus is current)
+  iconsax_plus: ^1.0.0
+
+  # Cached network images
+  cached_network_image: ^3.4.1
+
+  # Dates / numbers
+  intl: ^0.20.1
+
+  # PKCE helpers (sha256, random)
+  crypto: ^3.0.6
+
+  # Google fonts (Playfair Display for wordmark, Inter for body)
+  google_fonts: ^6.2.1
+
+  shared_preferences: ^2.3.3
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

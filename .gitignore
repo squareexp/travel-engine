@@ -1,3 +1,30 @@
-target/
+# Secrets and local configuration
 .env
-generate_fast_import.py
+.env.*
+!.env.example
+
+# Rust
+**/target/
+**/*.rs.bk
+
+# Node / Next.js
+**/node_modules/
+**/.next/
+**/out/
+
+# Swift / Xcode
+**/.build/
+**/DerivedData/
+**/xcuserdata/
+**/*.xcuserstate
+
+# Flutter / Dart
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/build/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
