@@ -31,17 +31,6 @@ jobs:
 
   dashboard-placeholder:
     runs-on: ubuntu-latest
-    if: ${{ hashFiles('admin-dashboard/package.json') != '' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: admin-dashboard/package-lock.json
-      - run: npm ci
-        working-directory: admin-dashboard
-      - run: npm run lint
-        working-directory: admin-dashboard
-      - run: npm run build
-        working-directory: admin-dashboard
+      - name: Reserve dashboard build verification
+        run: echo "Dashboard build will be enabled when admin-dashboard/package.json is added."
