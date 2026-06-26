@@ -42,6 +42,7 @@ pub struct PaymentsConfig {
 
 #[derive(Clone)]
 pub struct ServerConfig {
+    pub host: String,
     pub port: u16,
 }
 
@@ -95,6 +96,7 @@ impl Config {
                 webhook_secret: optional_var("PAYMENTS_WEBHOOK_SECRET"),
             },
             server: ServerConfig {
+                host: optional_var("SERVER_HOST").unwrap_or_else(|| "0.0.0.0".to_string()),
                 port: optional_var("SERVER_PORT")
                     .unwrap_or_else(|| "8090".to_string())
                     .parse()

@@ -11,7 +11,7 @@ fi
 docker compose -f docker-compose.vps.yml up -d --no-build --remove-orphans api
 
 for _ in $(seq 1 30); do
-  if curl --fail --silent --show-error http://127.0.0.1:18090/healthz >/dev/null; then
+  if curl --fail --silent --show-error http://127.0.0.1:8090/healthz >/dev/null; then
     docker compose -f docker-compose.vps.yml ps
     exit 0
   fi

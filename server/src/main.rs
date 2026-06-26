@@ -65,7 +65,7 @@ async fn main() -> Result<()> {
     };
 
     let router = app::build_router(state);
-    let addr = format!("0.0.0.0:{}", config.server.port);
+    let addr = format!("{}:{}", config.server.host, config.server.port);
     info!("Listening on http://{}", addr);
 
     let listener = tokio::net::TcpListener::bind(&addr).await?;

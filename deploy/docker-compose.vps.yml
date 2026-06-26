@@ -6,10 +6,7 @@ services:
     init: true
     env_file:
       - .env
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    ports:
-      - "127.0.0.1:18090:8090"
+    network_mode: host
     read_only: true
     tmpfs:
       - /tmp:rw,noexec,nosuid,size=16m
