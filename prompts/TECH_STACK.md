@@ -1,6 +1,6 @@
-# Twende Zanzibar — Recommended Tech Stack
+# Twende Travel Engine — Backend Tech Stack
 
-The client's investor deck already commits to a backend architecture (Rust, PostgreSQL, Redis, Axum + SQLx — see deck slide 11). This document keeps that foundation, since it's already part of the client's plan and investor narrative, and fills in everything around it with modern, production-proven choices suited to a fast, lean MVP team.
+This repository is now the Rust backend source of truth. Keep the stack lean, backend-first, and deployable on a small VPS without bundling frontend apps into this repo.
 
 ## Backend
 
@@ -29,27 +29,13 @@ A gateway abstraction (`PaymentGateway` trait) that supports two providers from 
 
 Either way, webhook handling must be idempotent (unique `gateway_reference`) — this is built into the schema and the Payments service prompt.
 
-## Mobile
-
-| Platform | Choice | Why |
-|---|---|---|
-| iOS | **Native SwiftUI**, MVVM, Swift Concurrency (async/await) | Per the founder's explicit choice — best native performance and platform feel. |
-| Android | **Flutter** | Per the founder's explicit choice. |
-| Shared contract | **OpenAPI 3.1 spec** as the single source of truth, with generated/mirrored clients on both platforms | This is what lets two different languages/frameworks stay in lockstep without sharing code — see Prompt 47. |
-| Push notifications | **Firebase Cloud Messaging** (covers Android natively, routes to APNs for iOS) | One notification backend for both platforms. |
-| Maps SDKs | Google Maps SDK for iOS / `google_maps_flutter` for Android | Matches the backend's Google Maps choice so routes look identical across platforms. |
-
-## Admin Dashboard & Operator Portal
-
-**Next.js + TypeScript**, Tailwind/shadcn-ui for fast, clean UI. A typed API client generated from the same OpenAPI spec used by mobile, so the dashboard never hand-diverges from the backend contract either.
-
 ## Infrastructure & DevOps
 
 | Need | Choice |
 |---|---|
 | Local dev | Docker Compose (Postgres, Redis, MinIO) |
 | CI | GitHub Actions — lint, test, build on every PR |
-| Deployment (MVP stage) | Dockerized services on a simple managed host (Fly.io, Hetzner, or a DigitalOcean droplet with Docker Compose) — no need for Kubernetes until traffic actually demands it |
+| Deployment (MVP stage) | Dockerized Rust service on a simple managed host or VPS — no need for Kubernetes until traffic actually demands it |
 | Migrations | SQLx migrations versioned with application code, applied automatically in CI/CD, per deck slide 12 |
 | Backups | Daily automated Postgres backups with a periodically *tested* restore procedure — not just backups that have never been restored |
 
@@ -66,10 +52,9 @@ Either way, webhook handling must be idempotent (unique `gateway_reference`) —
 
 ## Notifications
 
-- **Firebase Cloud Messaging** for push (both platforms).
 - Email via a transactional provider (e.g., Postmark, SES).
-- **WhatsApp Business API** (via Twilio or Meta's Cloud API) for itinerary and transport updates — WhatsApp is the dominant messaging channel for this market, and the deck's own customer journey (slide 7) anticipates this kind of real-time, during-trip communication.
+- WhatsApp Business API (via Twilio or Meta's Cloud API) for itinerary and transport updates.
 
 ## Why this combination
 
-Every piece either matches what's already committed in the client's investor deck (Rust/Axum/SQLx/Postgres/Redis), was explicitly requested by the founder (Postgres, Google Maps, SwiftUI, Flutter), or is the lowest-overhead modern option that keeps a small team able to ship an MVP in 0–3 months without taking on infrastructure they don't yet need (no Kubernetes, no separate search cluster, no microservices split before there's traffic to justify it).
+Every piece either matches the existing backend direction (Rust/Axum/SQLx/Postgres/Redis) or keeps the server lean enough to ship and run on modest infrastructure without dragging frontend code into the same repository.

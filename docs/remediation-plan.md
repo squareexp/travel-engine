@@ -1,10 +1,10 @@
 # Prompt remediation plan
 
-This plan records the verified state of the existing implementation and the remaining work from prompts 01-50. It is intentionally staged so operational foundations and marketplace correctness land before additional user interfaces.
+This plan records the verified state of the server work. The repository has been narrowed to the Rust backend, so the remaining scope is backend, deployment, and operational hardening.
 
 ## Phase 0: foundations (prompts 01-07)
 
-The shared documentation, local Docker services, secret-handling policy, OpenAPI contract, CI workflow skeletons, and ERD are now in place. The existing `server/`, Flutter client, and SwiftUI client remain in place; moving them to the original empty-repo names would create churn without improving build isolation.
+The shared documentation, local Docker services, secret-handling policy, OpenAPI contract, CI workflow skeletons, and ERD are now in place.
 
 ## Phase 1: harden the existing backend (prompts 08-29)
 
@@ -14,10 +14,6 @@ The database schema, auth, operators, destinations, listing types, availability,
 
 Add Google Maps geocoding/routing behind an adapter; durable notification delivery for email, FCM, and WhatsApp; Redis-backed caching/rate limiting; and an analytics event pipeline. Each must have configuration, failure handling, and test doubles.
 
-## Phase 3: operations surfaces (prompts 35-39)
+## Out of repo
 
-Build a Next.js admin dashboard and operator portal from the OpenAPI contract, then wire real verification, listing moderation, refunds/audit logs, and KPI views. These do not currently exist as independent applications.
-
-## Phase 4: mobile and release readiness (prompts 40-50)
-
-Complete map and notification features in Flutter and SwiftUI, add generated-client contract-drift verification, build backend/database/E2E coverage, add privacy-safe observability and backup drills, then use the launch and Zanzibar pilot documents as evidence-based go/no-go gates.
+The original prompt set also included admin, iOS, and Android work. Those frontend surfaces are now treated as separate efforts and are not part of this backend repository.
