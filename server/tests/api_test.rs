@@ -33,3 +33,10 @@ fn test_api_check_38() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_api_check_45() {
+    let val = true;
+    assert!(val);
+}
