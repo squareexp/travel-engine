@@ -19,3 +19,10 @@ fn test_auth_check_10() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_auth_check_12() {
+    let val = true;
+    assert!(val);
+}
