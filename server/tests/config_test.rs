@@ -19,3 +19,10 @@ fn test_config_check_43() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_config_check_58() {
+    let val = true;
+    assert!(val);
+}
