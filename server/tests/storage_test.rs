@@ -40,3 +40,10 @@ fn test_storage_check_46() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_storage_check_47() {
+    let val = true;
+    assert!(val);
+}
