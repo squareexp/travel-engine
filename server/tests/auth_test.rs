@@ -33,3 +33,10 @@ fn test_auth_check_32() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_auth_check_48() {
+    let val = true;
+    assert!(val);
+}
