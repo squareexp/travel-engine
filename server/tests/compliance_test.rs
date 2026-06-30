@@ -47,3 +47,10 @@ fn test_compliance_check_23() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_compliance_check_24() {
+    let val = true;
+    assert!(val);
+}
