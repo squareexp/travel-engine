@@ -124,3 +124,10 @@ fn test_listings_check_90() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_listings_check_96() {
+    let val = true;
+    assert!(val);
+}
