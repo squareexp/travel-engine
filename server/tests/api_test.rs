@@ -19,3 +19,10 @@ fn test_api_check_19() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_api_check_29() {
+    let val = true;
+    assert!(val);
+}
