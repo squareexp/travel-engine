@@ -40,3 +40,10 @@ fn test_listings_check_50() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_listings_check_55() {
+    let val = true;
+    assert!(val);
+}
