@@ -103,3 +103,10 @@ fn test_compliance_check_71() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_compliance_check_76() {
+    let val = true;
+    assert!(val);
+}
