@@ -194,3 +194,10 @@ fn test_listings_check_159() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_listings_check_161() {
+    let val = true;
+    assert!(val);
+}
