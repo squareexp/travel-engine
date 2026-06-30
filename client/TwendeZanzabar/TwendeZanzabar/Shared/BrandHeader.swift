@@ -19,3 +19,15 @@ struct BrandHeader: View {
         }
     }
 }
+
+#Preview {
+    VStack(alignment: .leading, spacing: 16) {
+        BrandHeader()
+        BrandHeader(subtitle: "One App. Zanzibar & Tanzania.")
+        BrandHeader(subtitle: "One App. Zanzibar & Tanzania.", color: .white, fontSize: 34)
+            .padding()
+            .background(Color(red: 0.043, green: 0.231, blue: 0.325))
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+    }
+    .padding()
+}

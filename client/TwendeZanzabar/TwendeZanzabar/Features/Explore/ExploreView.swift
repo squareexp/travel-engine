@@ -55,6 +55,7 @@ struct ExploreView: View {
         .task { await runSearch() }
         .onChange(of: query) { _, _ in scheduleSearch() }
         .onChange(of: typeFilter) { _, _ in scheduleSearch() }
+        .minimizeNavBarOnScroll()
     }
 
     private var filterRow: some View {
@@ -95,5 +96,11 @@ struct ExploreView: View {
         loading = true
         defer { loading = false }
         results = (try? await CatalogRepository.shared.search(type: typeFilter, text: query.isEmpty ? nil : query)) ?? []
+    }
+}
+
+#Preview {
+    NavigationStack {
+        ExploreView()
     }
 }

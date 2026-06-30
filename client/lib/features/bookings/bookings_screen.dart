@@ -66,7 +66,7 @@ class _BookingsScreenState extends ConsumerState<BookingsScreen> {
                 loading: () => const Center(
                   child: CircularProgressIndicator(color: TwendeColors.accent),
                 ),
-                error: (_, __) => const _TripEmpty(
+                error: (_, _) => const _TripEmpty(
                   icon: IconsaxPlusLinear.warning_2,
                   title: 'We could not load your trip',
                   detail: 'Pull to refresh and try again.',
@@ -163,7 +163,7 @@ class _BookingList extends StatelessWidget {
       : ListView.separated(
           padding: const EdgeInsets.all(TwendeSpacing.xl),
           itemCount: items.length,
-          separatorBuilder: (_, __) => const SizedBox(height: TwendeSpacing.md),
+          separatorBuilder: (_, _) => const SizedBox(height: TwendeSpacing.md),
           itemBuilder: (_, i) => AppSurface(
             child: Row(
               children: [

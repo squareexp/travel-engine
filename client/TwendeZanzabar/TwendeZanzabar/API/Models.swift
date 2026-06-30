@@ -70,6 +70,7 @@ struct BookingList: Codable {
 /// Server returns numbers as either JSON numbers or strings (BigDecimal serialization).
 struct AnyNumber: Codable {
     let value: Double
+    init(_ value: Double) { self.value = value }
     init(from decoder: Decoder) throws {
         let c = try decoder.singleValueContainer()
         if let d = try? c.decode(Double.self) { self.value = d; return }
@@ -82,3 +83,46 @@ struct AnyNumber: Codable {
         try c.encode(value)
     }
 }
+
+#if DEBUG
+extension Listing {
+    static var preview: Listing {
+        Listing(id: "preview-1", title: "Nungwi Snorkeling Adventure", listing_type: "experience",
+                base_price: AnyNumber(45), currency: "USD",
+                description: "Explore the coral reefs of northern Zanzibar with certified local guides.",
+                destination_name: "Nungwi, Zanzibar", average_rating: AnyNumber(4.8),
+                review_count: 124, capacity: 12, duration_hours: 3,
+                inclusions: ["Snorkel gear", "Boat transfer", "Guide", "Refreshments"])
+    }
+    static var previewSafari: Listing {
+        Listing(id: "preview-2", title: "Selous Safari Day Trip", listing_type: "safari",
+                base_price: AnyNumber(180), currency: "USD", description: nil,
+                destination_name: "Selous Game Reserve", average_rating: AnyNumber(4.9),
+                review_count: 87, capacity: 8, duration_hours: 8, inclusions: nil)
+    }
+}
+
+extension Destination {
+    static var preview: Destination {
+        Destination(id: "d-preview", name: "Nungwi", country: "Tanzania",
+                    region: "Zanzibar North", description: nil, image_urls: nil)
+    }
+    static var previewStone: Destination {
+        Destination(id: "d-preview-2", name: "Stone Town", country: "Tanzania",
+                    region: "Zanzibar West", description: nil, image_urls: nil)
+    }
+}
+
+extension Booking {
+    static var preview: Booking {
+        Booking(id: "b-preview", listing_title: "Stone Town Walking Tour",
+                status: "confirmed", travel_date: "2027-08-15", guests: 2,
+                total_amount: AnyNumber(90), currency: "USD")
+    }
+    static var previewPending: Booking {
+        Booking(id: "b-preview-2", listing_title: "Nungwi Snorkeling Adventure",
+                status: "pending", travel_date: "2027-09-01", guests: 4,
+                total_amount: AnyNumber(180), currency: "USD")
+    }
+}
+#endif

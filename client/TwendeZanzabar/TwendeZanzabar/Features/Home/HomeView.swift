@@ -23,13 +23,21 @@ struct HomeView: View {
         .navigationTitle("Discover")
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Alerts", systemImage: "bell") { }
-                    .accessibilityLabel("Travel alerts")
+            if #available(iOS 27, *) {
+                ToolbarItem(placement: .topBarPinnedTrailing) {
+                    Button("Alerts", systemImage: "bell") { }
+                        .accessibilityLabel("Travel alerts")
+                }
+            } else {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Alerts", systemImage: "bell") { }
+                        .accessibilityLabel("Travel alerts")
+                }
             }
         }
         .task { await reload() }
         .refreshable { await reload() }
+        .minimizeNavBarOnScroll()
     }
 
     private var welcome: some View {
@@ -146,5 +154,11 @@ struct HomeView: View {
         destinations = await fetchedDestinations
         listings = await fetchedListings
         loading = false
+    }
+}
+
+#Preview {
+    NavigationStack {
+        HomeView()
     }
 }

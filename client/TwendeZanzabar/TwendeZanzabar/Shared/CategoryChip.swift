@@ -21,3 +21,12 @@ struct CategoryChip: View {
         .clipShape(RoundedRectangle(cornerRadius: TwendeSpacing.radiusMd, style: .continuous))
     }
 }
+
+#Preview {
+    HStack(spacing: 8) {
+        CategoryChip(label: "Beaches", systemImage: "sun.max.fill", selected: true)
+        CategoryChip(label: "Safari", systemImage: "leaf.fill")
+        CategoryChip(label: "Hotels", systemImage: "bed.double.fill")
+    }
+    .padding()
+}

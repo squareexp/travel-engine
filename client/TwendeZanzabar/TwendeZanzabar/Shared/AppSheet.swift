@@ -102,3 +102,16 @@ struct AppAlertSheet: View {
         }
     }
 }
+
+#Preview("Alert Sheet") {
+    Color.gray.opacity(0.1).ignoresSafeArea()
+        .sheet(isPresented: .constant(true)) {
+            AppAlertSheet(alert: AppAlert(
+                title: "Booking confirmed",
+                message: "Your trip to Nungwi Snorkeling Adventure is reserved.",
+                kind: .success,
+                primaryLabel: "View bookings",
+                secondaryLabel: "Close"
+            ))
+        }
+}

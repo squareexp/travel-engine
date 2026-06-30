@@ -162,3 +162,8 @@ struct SignInView: View {
         .padding(TwendeSpacing.xxl)
     }
 }
+
+#Preview {
+    SignInView()
+        .environmentObject(AuthController())
+}

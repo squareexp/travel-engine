@@ -11,14 +11,14 @@ class TwendeTheme {
     final base = ThemeData.light(useMaterial3: true);
     return base.copyWith(
       colorScheme: const ColorScheme.light(
-        primary: TwendeColors.accent,
+        primary: TwendeColors.primary,
         onPrimary: TwendeColors.textInverse,
-        secondary: TwendeColors.primary,
-        onSecondary: TwendeColors.textInverse,
+        secondary: TwendeColors.surfaceMuted,
+        onSecondary: TwendeColors.textPrimary,
         surface: TwendeColors.surface,
         onSurface: TwendeColors.textPrimary,
         surfaceContainerHighest: TwendeColors.surfaceMuted,
-        outline: TwendeColors.border,
+        outline: TwendeColors.surfaceMuted,
         error: TwendeColors.danger,
       ),
       scaffoldBackgroundColor: TwendeColors.background,
@@ -66,13 +66,32 @@ class TwendeTheme {
       iconTheme: const IconThemeData(color: TwendeColors.textPrimary, size: 22),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: TwendeColors.accent,
+          backgroundColor: TwendeColors.primary,
           foregroundColor: TwendeColors.textInverse,
+          disabledBackgroundColor: TwendeColors.surfaceMuted,
+          disabledForegroundColor: TwendeColors.textTertiary,
           elevation: 0,
-          minimumSize: const Size(double.infinity, 52),
+          shadowColor: Colors.transparent,
+          minimumSize: const Size(double.infinity, 56),
           padding: const EdgeInsets.symmetric(
-            horizontal: TwendeSpacing.xl,
-            vertical: TwendeSpacing.md,
+            horizontal: TwendeSpacing.xxl,
+            vertical: TwendeSpacing.lg,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(TwendeSpacing.radiusPill),
+          ),
+          textStyle: TwendeTypography.button,
+        ),
+      ),
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          backgroundColor: TwendeColors.surfaceMuted,
+          foregroundColor: TwendeColors.textPrimary,
+          elevation: 0,
+          minimumSize: const Size(double.infinity, 56),
+          padding: const EdgeInsets.symmetric(
+            horizontal: TwendeSpacing.xxl,
+            vertical: TwendeSpacing.lg,
           ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(TwendeSpacing.radiusPill),
@@ -82,18 +101,19 @@ class TwendeTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          foregroundColor: TwendeColors.primary,
-          side: const BorderSide(color: TwendeColors.border, width: 1.2),
-          minimumSize: const Size(double.infinity, 52),
+          backgroundColor: TwendeColors.surfaceMuted,
+          foregroundColor: TwendeColors.textPrimary,
+          side: BorderSide.none,
+          minimumSize: const Size(double.infinity, 56),
           padding: const EdgeInsets.symmetric(
-            horizontal: TwendeSpacing.xl,
-            vertical: TwendeSpacing.md,
+            horizontal: TwendeSpacing.xxl,
+            vertical: TwendeSpacing.lg,
           ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(TwendeSpacing.radiusPill),
           ),
           textStyle: TwendeTypography.button.copyWith(
-            color: TwendeColors.accent,
+            color: TwendeColors.textPrimary,
           ),
         ),
       ),
@@ -122,7 +142,7 @@ class TwendeTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(TwendeSpacing.radiusMd),
-          borderSide: const BorderSide(color: TwendeColors.primary, width: 1.5),
+          borderSide: BorderSide.none,
         ),
         hintStyle: TwendeTypography.body.copyWith(
           color: TwendeColors.textTertiary,

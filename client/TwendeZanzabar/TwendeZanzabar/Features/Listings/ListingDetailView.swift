@@ -192,3 +192,9 @@ struct ListingDetailView: View {
         loading = false
     }
 }
+
+#Preview {
+    NavigationStack {
+        ListingDetailView(listingId: Listing.preview.id)
+    }
+}

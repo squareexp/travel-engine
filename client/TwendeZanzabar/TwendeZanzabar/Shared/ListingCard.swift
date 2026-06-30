@@ -45,6 +45,17 @@ struct ListingCard: View {
     }
 }
 
+#Preview {
+    HStack(spacing: 12) {
+        ListingCard(listing: .preview)
+            .frame(width: 180)
+        ListingCard(listing: .previewSafari)
+            .frame(width: 180)
+    }
+    .padding()
+    .background(Color(red: 0.988, green: 0.980, blue: 0.961))
+}
+
 extension Listing {
     /// Pick a fallback Unsplash photo based on listing_type when the API doesn't return media.
     var heroImageURL: String {

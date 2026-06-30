@@ -208,3 +208,9 @@ struct CreateBookingView: View {
         }
     }
 }
+
+#Preview {
+    NavigationStack {
+        CreateBookingView(listing: .preview)
+    }
+}

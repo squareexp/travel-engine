@@ -59,4 +59,40 @@ extension View {
         .clipShape(RoundedRectangle(cornerRadius: radius, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: radius, style: .continuous).strokeBorder(TwendeColor.borderSubtle))
     }
+
+    /// Minimizes the navigation bar on scroll-down on iOS 27+; no-op on older OS.
+    @ViewBuilder
+    func minimizeNavBarOnScroll() -> some View {
+        if #available(iOS 27, *) {
+            toolbarMinimizeBehavior(.onScrollDown, for: .navigationBar)
+        } else {
+            self
+        }
+    }
+
+    /// Enables swipe actions in a ScrollView with LazyVGrid/LazyVStack on iOS 27+.
+    @ViewBuilder
+    func swipeContainer() -> some View {
+        if #available(iOS 27, *) {
+            swipeActionsContainer()
+        } else {
+            self
+        }
+    }
+}
+
+#Preview("Surfaces") {
+    VStack(spacing: 16) {
+        AppSurface {
+            Text("Standard surface").font(.system(size: 15, weight: .semibold))
+        }
+        AppSurface(emphasis: true) {
+            Text("Emphasis surface").font(.system(size: 15, weight: .semibold)).foregroundStyle(.white)
+        }
+        GlassAction {
+            Image(systemName: "heart.fill").foregroundStyle(.pink).frame(width: 24, height: 24)
+        }
+    }
+    .padding()
+    .background(Color(red: 0.988, green: 0.980, blue: 0.961))
 }

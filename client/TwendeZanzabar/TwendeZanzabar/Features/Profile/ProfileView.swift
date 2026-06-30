@@ -91,3 +91,12 @@ struct ProfileView: View {
         .accessibilityHint("Opens \(title)")
     }
 }
+
+#Preview {
+    let auth = AuthController()
+    auth.signInAsDev()
+    return NavigationStack {
+        ProfileView()
+            .environmentObject(auth)
+    }
+}

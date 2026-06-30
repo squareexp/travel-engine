@@ -99,7 +99,7 @@ class _ExploreScreenState extends ConsumerState<ExploreScreen> {
                   horizontal: TwendeSpacing.xl,
                 ),
                 itemCount: _filters.length,
-                separatorBuilder: (_, __) =>
+                separatorBuilder: (_, _) =>
                     const SizedBox(width: TwendeSpacing.sm),
                 itemBuilder: (_, i) {
                   final (label, value, icon) = _filters[i];
@@ -151,7 +151,7 @@ class _ExploreScreenState extends ConsumerState<ExploreScreen> {
                 loading: () => const Center(
                   child: CircularProgressIndicator(color: TwendeColors.primary),
                 ),
-                error: (_, __) => const _Empty(
+                error: (_, _) => const _Empty(
                   icon: IconsaxPlusLinear.warning_2,
                   text: 'Couldn\'t load search results',
                 ),

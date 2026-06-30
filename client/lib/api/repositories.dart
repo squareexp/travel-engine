@@ -10,7 +10,7 @@ class CatalogRepository {
   Future<List<Destination>> listDestinations({String? country}) async {
     final resp = await _api.dio.get(
       '/destinations',
-      queryParameters: {if (country != null) 'country': country, 'limit': 20},
+      queryParameters: {'country': ?country, 'limit': 20},
     );
     final data = (resp.data['data'] as List).cast<Map<String, dynamic>>();
     return data.map(Destination.fromJson).toList();
@@ -26,8 +26,8 @@ class CatalogRepository {
     final resp = await _api.dio.get(
       '/listings',
       queryParameters: {
-        if (type != null) 'type': type,
-        if (destinationId != null) 'destination_id': destinationId,
+        'type': ?type,
+        'destination_id': ?destinationId,
         if (search != null && search.isNotEmpty) 'search': search,
         'limit': limit,
         'offset': offset,
@@ -70,7 +70,7 @@ class BookingsRepository {
         'listing_id': listingId,
         'travel_date': travelDate,
         'guests': guests,
-        if (specialRequests != null) 'special_requests': specialRequests,
+        'special_requests': ?specialRequests,
       },
     );
     return Booking.fromJson(resp.data as Map<String, dynamic>);

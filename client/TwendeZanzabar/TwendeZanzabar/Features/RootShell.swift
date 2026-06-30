@@ -79,3 +79,10 @@ struct BookListing: Hashable {
 }
 
 enum ProfileRoute: Hashable { case favorites }
+
+#Preview {
+    let auth = AuthController()
+    auth.signInAsDev()
+    return RootShell()
+        .environmentObject(auth)
+}

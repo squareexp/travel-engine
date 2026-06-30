@@ -58,9 +58,9 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                   imageUrl:
                       'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=1200',
                   fit: BoxFit.cover,
-                  placeholder: (_, __) =>
+                  placeholder: (_, _) =>
                       Container(color: TwendeColors.surfaceMuted),
-                  errorWidget: (_, __, ___) =>
+                  errorWidget: (_, _, _) =>
                       Container(color: TwendeColors.surfaceMuted),
                 ),
                 Container(color: const Color(0x55000000)),

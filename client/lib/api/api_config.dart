@@ -6,15 +6,15 @@ import 'package:flutter/foundation.dart';
 class ApiConfig {
   ApiConfig._();
 
-  /// Twende backend, picked per-platform so the same dart build works on both
-  /// iOS Simulator (uses host loopback) and Android Emulator (uses 10.0.2.2).
+  /// Production backend. Override with --dart-define=TWENDE_BACKEND_URL=...
+  /// for local development.
+  static const String _productionUrl =
+      'https://api.travelengine.zhio.dev/api/v1';
+
   static String get backendBaseUrl {
     const override = String.fromEnvironment('TWENDE_BACKEND_URL');
     if (override.isNotEmpty) return override;
-    if (!kIsWeb && Platform.isAndroid) {
-      return 'http://10.0.2.2:8090/api/v1';
-    }
-    return 'http://localhost:8090/api/v1';
+    return _productionUrl;
   }
 
   /// Base-IdP issuer.

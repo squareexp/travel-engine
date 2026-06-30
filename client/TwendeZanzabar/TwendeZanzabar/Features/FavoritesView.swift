@@ -45,9 +45,17 @@ struct FavoritesView: View {
                                 ListingCard(listing: l)
                             }
                             .buttonStyle(.plain)
+                            .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                Button(role: .destructive) {
+                                    favorites.toggle(l.id)
+                                } label: {
+                                    Label("Remove", systemImage: "heart.slash")
+                                }
+                            }
                         }
                     }
                 }
+                .swipeContainer()
             }
         }
         .padding(TwendeSpacing.xl)
@@ -60,5 +68,11 @@ struct FavoritesView: View {
         loading = true
         listings = (try? await CatalogRepository.shared.featuredListings()) ?? []
         loading = false
+    }
+}
+
+#Preview {
+    NavigationStack {
+        FavoritesView()
     }
 }

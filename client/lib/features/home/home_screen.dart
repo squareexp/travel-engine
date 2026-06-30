@@ -109,7 +109,7 @@ class HomeScreen extends ConsumerWidget {
                 sliver: SliverToBoxAdapter(
                   child: destinations.when(
                     loading: () => _LoadingRow(),
-                    error: (_, __) =>
+                    error: (_, _) =>
                         const _EmptyHint(text: 'Couldn\'t load destinations'),
                     data: (items) => items.isEmpty
                         ? const _EmptyHint(text: 'No destinations yet')
@@ -118,7 +118,7 @@ class HomeScreen extends ConsumerWidget {
                             child: ListView.separated(
                               scrollDirection: Axis.horizontal,
                               itemCount: items.length,
-                              separatorBuilder: (_, __) =>
+                              separatorBuilder: (_, _) =>
                                   const SizedBox(width: TwendeSpacing.md),
                               itemBuilder: (_, i) {
                                 final d = items[i];
@@ -148,7 +148,7 @@ class HomeScreen extends ConsumerWidget {
               ),
               listings.when(
                 loading: () => SliverToBoxAdapter(child: _LoadingRow()),
-                error: (_, __) => const SliverToBoxAdapter(
+                error: (_, _) => const SliverToBoxAdapter(
                   child: _EmptyHint(text: 'Couldn\'t load listings'),
                 ),
                 data: (items) => items.isEmpty
@@ -238,7 +238,7 @@ class _CategoryRow extends StatelessWidget {
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
-        separatorBuilder: (_, __) => const SizedBox(width: TwendeSpacing.md),
+        separatorBuilder: (_, _) => const SizedBox(width: TwendeSpacing.md),
         itemBuilder: (_, i) {
           final (label, icon) = categories[i];
           return CategoryChip(label: label, icon: icon);
@@ -295,8 +295,8 @@ class _DestinationTile extends StatelessWidget {
           CachedNetworkImage(
             imageUrl: imageUrl,
             fit: BoxFit.cover,
-            placeholder: (_, __) => Container(color: TwendeColors.surfaceMuted),
-            errorWidget: (_, __, ___) =>
+            placeholder: (_, _) => Container(color: TwendeColors.surfaceMuted),
+            errorWidget: (_, _, _) =>
                 Container(color: TwendeColors.surfaceMuted),
           ),
           Positioned(
@@ -346,8 +346,8 @@ class _LoadingRow extends StatelessWidget {
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: TwendeSpacing.md),
-        itemBuilder: (_, __) => Container(
+        separatorBuilder: (_, _) => const SizedBox(width: TwendeSpacing.md),
+        itemBuilder: (_, _) => Container(
           width: 180,
           decoration: BoxDecoration(
             color: TwendeColors.surfaceMuted,

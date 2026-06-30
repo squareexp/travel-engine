@@ -33,9 +33,16 @@ struct BookingsView: View {
         .navigationTitle("My trip")
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Share", systemImage: "square.and.arrow.up") { }
-                    .accessibilityLabel("Share trip")
+            if #available(iOS 27, *) {
+                ToolbarItem(placement: .topBarPinnedTrailing) {
+                    Button("Share", systemImage: "square.and.arrow.up") { }
+                        .accessibilityLabel("Share trip")
+                }
+            } else {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Share", systemImage: "square.and.arrow.up") { }
+                        .accessibilityLabel("Share trip")
+                }
             }
         }
         .task { await reload() }
@@ -95,9 +102,18 @@ struct BookingsView: View {
             if bookings.isEmpty {
                 ContentUnavailableView("No bookings yet", systemImage: "ticket", description: Text("Your confirmed experiences will live here."))
             } else {
-                List(bookings) { BookingTile(booking: $0) }
-                    .listStyle(.plain)
-                    .scrollContentBackground(.hidden)
+                List(bookings) { booking in
+                    BookingTile(booking: booking)
+                        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                            Button(role: .destructive) {
+                                bookings.removeAll { $0.id == booking.id }
+                            } label: {
+                                Label("Remove", systemImage: "xmark.circle")
+                            }
+                        }
+                }
+                .listStyle(.plain)
+                .scrollContentBackground(.hidden)
             }
         }
     }
@@ -135,6 +151,12 @@ struct BookingsView: View {
     }
 }
 
+#Preview("Bookings — loaded") {
+    NavigationStack {
+        BookingsView()
+    }
+}
+
 struct BookingTile: View {
     let booking: Booking
 
@@ -167,4 +189,12 @@ struct BookingTile: View {
         default: return TwendeColor.warning
         }
     }
+}
+
+#Preview("BookingTile") {
+    List {
+        BookingTile(booking: .preview)
+        BookingTile(booking: .previewPending)
+    }
+    .listStyle(.plain)
 }

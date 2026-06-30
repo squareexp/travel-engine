@@ -31,3 +31,12 @@ struct DestinationTile: View {
         .clipShape(RoundedRectangle(cornerRadius: TwendeSpacing.radiusLg, style: .continuous))
     }
 }
+
+#Preview {
+    HStack(spacing: 12) {
+        DestinationTile(destination: .preview)
+        DestinationTile(destination: .previewStone)
+    }
+    .padding()
+    .background(Color(red: 0.988, green: 0.980, blue: 0.961))
+}

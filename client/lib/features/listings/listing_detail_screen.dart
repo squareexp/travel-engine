@@ -72,7 +72,7 @@ class ListingDetailScreen extends ConsumerWidget {
                       listing.heroImageUrl ??
                       'https://images.unsplash.com/photo-1580973193083-c2b8a37d6a6a?w=1200',
                   fit: BoxFit.cover,
-                  errorWidget: (_, __, ___) =>
+                  errorWidget: (_, _, _) =>
                       Container(color: TwendeColors.surfaceMuted),
                 ),
               ),

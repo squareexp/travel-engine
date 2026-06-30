@@ -23,8 +23,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
-      GoRoute(path: '/', builder: (_, __) => const RootShell()),
-      GoRoute(path: '/sign-in', builder: (_, __) => const SignInScreen()),
+      GoRoute(path: '/', builder: (_, _) => const RootShell()),
+      GoRoute(path: '/sign-in', builder: (_, _) => const SignInScreen()),
       GoRoute(
         path: '/listings/:id',
         builder: (_, s) => ListingDetailScreen(id: s.pathParameters['id']!),
@@ -46,7 +46,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 
 class _AuthRouterNotifier extends ChangeNotifier {
   _AuthRouterNotifier(this._ref) {
-    _ref.listen<AuthState>(authControllerProvider, (_, __) {
+    _ref.listen<AuthState>(authControllerProvider, (_, _) {
       notifyListeners();
     });
   }

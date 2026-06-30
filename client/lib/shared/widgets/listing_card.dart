@@ -33,9 +33,9 @@ class ListingCard extends StatelessWidget {
                   child: CachedNetworkImage(
                     imageUrl: listing.heroImageUrl ?? fallback,
                     fit: BoxFit.cover,
-                    placeholder: (_, __) =>
+                    placeholder: (_, _) =>
                         Container(color: TwendeColors.surfaceMuted),
-                    errorWidget: (_, __, ___) => Container(
+                    errorWidget: (_, _, _) => Container(
                       color: TwendeColors.surfaceMuted,
                       child: const Icon(
                         IconsaxPlusLinear.gallery_slash,

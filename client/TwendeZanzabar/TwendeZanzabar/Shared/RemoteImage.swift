@@ -27,3 +27,15 @@ struct RemoteImage: View {
         TwendeColor.surfaceMuted
     }
 }
+
+#Preview {
+    VStack(spacing: 12) {
+        RemoteImage(url: "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600")
+            .frame(width: 300, height: 180)
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        RemoteImage(url: nil)
+            .frame(width: 300, height: 100)
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+    }
+    .padding()
+}

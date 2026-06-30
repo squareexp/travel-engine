@@ -17,6 +17,15 @@ class TwendeTypography {
     letterSpacing: -0.3,
   );
 
+  static const TextStyle display = TextStyle(
+    fontFamily: bodyFamily,
+    fontSize: 34,
+    fontWeight: FontWeight.w700,
+    color: TwendeColors.textPrimary,
+    height: 1.15,
+    letterSpacing: -0.6,
+  );
+
   static const TextStyle h1 = TextStyle(
     fontFamily: bodyFamily,
     fontSize: 28,

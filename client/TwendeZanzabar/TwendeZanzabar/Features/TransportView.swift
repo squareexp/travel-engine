@@ -112,3 +112,7 @@ struct TransportView: View {
         loading = false
     }
 }
+
+#Preview {
+    TransportView()
+}
