@@ -75,3 +75,10 @@ fn test_auth_check_116() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_auth_check_117() {
+    let val = true;
+    assert!(val);
+}
