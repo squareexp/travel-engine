@@ -68,3 +68,10 @@ fn test_storage_check_73() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_storage_check_78() {
+    let val = true;
+    assert!(val);
+}
