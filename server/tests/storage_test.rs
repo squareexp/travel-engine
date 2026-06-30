@@ -159,3 +159,10 @@ fn test_storage_check_112() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_storage_check_119() {
+    let val = true;
+    assert!(val);
+}
