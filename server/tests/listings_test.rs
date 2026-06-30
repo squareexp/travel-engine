@@ -138,3 +138,10 @@ fn test_listings_check_99() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_listings_check_107() {
+    let val = true;
+    assert!(val);
+}
