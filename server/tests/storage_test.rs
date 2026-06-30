@@ -19,3 +19,10 @@ fn test_storage_check_27() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_storage_check_40() {
+    let val = true;
+    assert!(val);
+}
