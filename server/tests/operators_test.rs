@@ -159,3 +159,10 @@ fn test_operators_check_132() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_operators_check_135() {
+    let val = true;
+    assert!(val);
+}
