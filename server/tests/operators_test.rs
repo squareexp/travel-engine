@@ -75,3 +75,10 @@ fn test_operators_check_56() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_operators_check_57() {
+    let val = true;
+    assert!(val);
+}
