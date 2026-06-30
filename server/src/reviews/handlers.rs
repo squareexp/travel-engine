@@ -25,6 +25,11 @@ pub struct ReviewsQuery {
     pub offset: Option<i64>,
 }
 
+#[derive(Deserialize)]
+pub struct ReplyReviewRequest {
+    pub reply: String,
+}
+
 pub async fn create_review(
     State(state): State<AppState>,
     auth: AuthUser,
@@ -104,7 +109,8 @@ pub async fn listing_reviews(
     let offset = params.offset.unwrap_or(0);
 
     let rows = sqlx::query(
-        r#"SELECT r.id, r.rating, r.comment,
+        r#"SELECT r.id, r.rating, r.comment, r.operator_reply,
+                  r.operator_replied_at::text as operator_replied_at,
                   r.moderation_status::text as moderation_status,
                   r.created_at::text as created_at,
                   u.full_name as reviewer_name
@@ -140,6 +146,8 @@ pub async fn listing_reviews(
                 "id": r.try_get::<Uuid, _>("id").ok(),
                 "rating": r.try_get::<i16, _>("rating").unwrap_or(0),
                 "comment": r.try_get::<Option<String>, _>("comment").unwrap_or_default(),
+                "operator_reply": r.try_get::<Option<String>, _>("operator_reply").unwrap_or_default(),
+                "operator_replied_at": r.try_get::<Option<String>, _>("operator_replied_at").unwrap_or_default(),
                 "reviewer_name": r.try_get::<String, _>("reviewer_name").unwrap_or_default(),
                 "created_at": r.try_get::<String, _>("created_at").unwrap_or_default()
             })
@@ -152,6 +160,54 @@ pub async fn listing_reviews(
         "average_rating": avg.map(|v| (v * 10.0).round() / 10.0),
         "limit": limit,
         "offset": offset
+    })))
+}
+
+pub async fn operator_reply_review(
+    State(state): State<AppState>,
+    auth: AuthUser,
+    Path((listing_id, review_id)): Path<(Uuid, Uuid)>,
+    Json(req): Json<ReplyReviewRequest>,
+) -> AppResult<Json<Value>> {
+    auth.require_operator()?;
+
+    let reply = req.reply.trim();
+    if reply.is_empty() {
+        return Err(AppError::BadRequest("Reply cannot be empty".to_string()));
+    }
+
+    let owner: Option<Uuid> =
+        sqlx::query_scalar("SELECT operator_id FROM listings WHERE id = $1 AND deleted_at IS NULL")
+            .bind(listing_id)
+            .fetch_optional(&state.db)
+            .await?;
+
+    match owner {
+        None => return Err(AppError::NotFound("Listing not found".to_string())),
+        Some(oid) if auth.role != "admin" && oid != auth.id => {
+            return Err(AppError::Forbidden("Not your listing".to_string()))
+        }
+        _ => {}
+    }
+
+    let row = sqlx::query(
+        r#"UPDATE reviews
+           SET operator_reply = $3, operator_replied_at = now(), updated_at = now()
+           WHERE id = $1 AND listing_id = $2
+           RETURNING id, listing_id, operator_reply, operator_replied_at::text as operator_replied_at"#,
+    )
+    .bind(review_id)
+    .bind(listing_id)
+    .bind(reply)
+    .fetch_optional(&state.db)
+    .await?
+    .ok_or_else(|| AppError::NotFound("Review not found".to_string()))?;
+
+    Ok(Json(json!({
+        "id": row.try_get::<Uuid, _>("id").ok(),
+        "listing_id": row.try_get::<Uuid, _>("listing_id").ok(),
+        "operator_reply": row.try_get::<Option<String>, _>("operator_reply").unwrap_or_default(),
+        "operator_replied_at": row.try_get::<Option<String>, _>("operator_replied_at").unwrap_or_default()
     })))
 }
 

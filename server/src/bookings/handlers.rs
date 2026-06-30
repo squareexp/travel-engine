@@ -382,7 +382,11 @@ pub async fn cancel_booking(
     Path(id): Path<Uuid>,
 ) -> AppResult<Json<Value>> {
     let row = sqlx::query(
-        "SELECT user_id, listing_id, availability_id, guests, status::text as status FROM bookings WHERE id = $1",
+        r#"SELECT b.user_id, b.listing_id, b.availability_id, b.guests,
+                  b.status::text as status, l.operator_id
+           FROM bookings b
+           JOIN listings l ON l.id = b.listing_id
+           WHERE b.id = $1"#,
     )
     .bind(id)
     .fetch_optional(&state.db)
@@ -393,7 +397,11 @@ pub async fn cancel_booking(
         .try_get::<Uuid, _>("user_id")
         .ok()
         .unwrap_or(Uuid::nil());
-    if auth.role != "admin" && user_id != auth.id {
+    let operator_id = row
+        .try_get::<Uuid, _>("operator_id")
+        .ok()
+        .unwrap_or(Uuid::nil());
+    if auth.role != "admin" && user_id != auth.id && operator_id != auth.id {
         return Err(AppError::Forbidden("Not your booking".to_string()));
     }
 

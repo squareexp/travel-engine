@@ -85,6 +85,8 @@ pub struct UpdateListingRequest {
     pub status: Option<String>,
     pub image_urls: Option<Vec<String>>,
     pub tags: Option<Vec<String>>,
+    pub capacity: Option<i32>,
+    pub duration_hours: Option<f64>,
 }
 
 fn row_to_listing(r: &sqlx::postgres::PgRow) -> Value {
@@ -104,6 +106,8 @@ fn row_to_listing(r: &sqlx::postgres::PgRow) -> Value {
         "status": r.try_get::<String, _>("status").unwrap_or_default(),
         "image_urls": r.try_get::<Option<Vec<String>>, _>("image_urls").unwrap_or_default().unwrap_or_default(),
         "tags": r.try_get::<Option<Vec<String>>, _>("tags").unwrap_or_default().unwrap_or_default(),
+        "capacity": r.try_get::<Option<i32>, _>("capacity").unwrap_or_default(),
+        "duration_hours": r.try_get::<Option<f64>, _>("duration_hours").unwrap_or_default(),
         "created_at": r.try_get::<String, _>("created_at").unwrap_or_default()
     })
 }
@@ -121,10 +125,15 @@ pub async fn list_listings(
                   l.title, l.description, l.base_price, l.currency,
                   l.status::text as status, l.image_urls, l.tags, l.created_at::text as created_at,
                   d.name as destination_name, d.country as destination_country,
-                  u.full_name as operator_name
+                  u.full_name as operator_name,
+                  COALESCE(sd.max_capacity, ed.max_participants, td.max_participants) as capacity,
+                  COALESCE(sd.duration_hours, ed.duration_hours, td.duration_days::float * 24.0) as duration_hours
            FROM listings l
            JOIN destinations d ON d.id = l.destination_id
            JOIN users u ON u.id = l.operator_id
+           LEFT JOIN site_details sd ON sd.listing_id = l.id
+           LEFT JOIN experience_details ed ON ed.listing_id = l.id
+           LEFT JOIN trip_details td ON td.listing_id = l.id
            WHERE l.deleted_at IS NULL
              AND l.status = $1::listing_status
              AND ($2::text IS NULL OR l.listing_type::text = $2)
@@ -170,10 +179,15 @@ pub async fn get_listing(
                   l.title, l.description, l.base_price, l.currency,
                   l.status::text as status, l.image_urls, l.tags, l.created_at::text as created_at,
                   d.name as destination_name, d.country as destination_country,
-                  u.full_name as operator_name
+                  u.full_name as operator_name,
+                  COALESCE(sd.max_capacity, ed.max_participants, td.max_participants) as capacity,
+                  COALESCE(sd.duration_hours, ed.duration_hours, td.duration_days::float * 24.0) as duration_hours
            FROM listings l
            JOIN destinations d ON d.id = l.destination_id
            JOIN users u ON u.id = l.operator_id
+           LEFT JOIN site_details sd ON sd.listing_id = l.id
+           LEFT JOIN experience_details ed ON ed.listing_id = l.id
+           LEFT JOIN trip_details td ON td.listing_id = l.id
            WHERE l.id = $1 AND l.deleted_at IS NULL"#,
     )
     .bind(id)
@@ -296,24 +310,28 @@ pub async fn create_listing(
     }
 
     if auth.role != "admin" {
-        let vs: Option<String> = sqlx::query_scalar(
-            "SELECT verification_status::text FROM operator_profiles WHERE user_id = $1",
+        let exists: i64 = sqlx::query_scalar(
+            "SELECT COUNT(*) FROM operator_profiles WHERE user_id = $1",
         )
         .bind(auth.id)
-        .fetch_optional(&state.db)
+        .fetch_one(&state.db)
         .await?;
+        if exists == 0 {
+            return Err(AppError::Forbidden(
+                "Operator profile not set up".to_string(),
+            ));
+        }
 
-        match vs.as_deref() {
-            None => {
-                return Err(AppError::Forbidden(
-                    "Operator profile not set up".to_string(),
-                ))
-            }
-            Some("verified") => {}
-            _ => {
-                return Err(AppError::Forbidden(
-                    "Operator must be verified to create listings".to_string(),
-                ))
+        // Listing quota is driven by document-completion percentage, not by
+        // admin approval — operators can start posting before manual review.
+        let compliance = crate::operators::handlers::compute_compliance(&state, auth.id).await?;
+        let quota = compliance["listing_quota"].as_i64();
+        if let Some(quota) = quota {
+            let listings_used = compliance["listings_used"].as_i64().unwrap_or(0);
+            if listings_used >= quota {
+                return Err(AppError::Forbidden(format!(
+                    "Listing limit reached ({listings_used}/{quota}). Upload more compliance documents to unlock more listings."
+                )));
             }
         }
     }
@@ -477,6 +495,14 @@ pub async fn update_listing(
         }
     }
 
+    let listing_type: String = sqlx::query_scalar(
+        "SELECT listing_type::text FROM listings WHERE id = $1 AND deleted_at IS NULL",
+    )
+    .bind(id)
+    .fetch_optional(&state.db)
+    .await?
+    .ok_or_else(|| AppError::NotFound("Listing not found".to_string()))?;
+
     sqlx::query(
         r#"UPDATE listings SET
              title = COALESCE($2, title),
@@ -497,6 +523,54 @@ pub async fn update_listing(
     .bind(req.tags.as_deref())
     .execute(&state.db)
     .await?;
+
+    if req.capacity.is_some() || req.duration_hours.is_some() {
+        match listing_type.as_str() {
+            "site" => {
+                sqlx::query(
+                    r#"UPDATE site_details SET
+                         max_capacity = COALESCE($2, max_capacity),
+                         duration_hours = COALESCE($3, duration_hours)
+                       WHERE listing_id = $1"#,
+                )
+                .bind(id)
+                .bind(req.capacity)
+                .bind(req.duration_hours)
+                .execute(&state.db)
+                .await?;
+            }
+            "experience" => {
+                sqlx::query(
+                    r#"UPDATE experience_details SET
+                         max_participants = COALESCE($2, max_participants),
+                         duration_hours = COALESCE($3, duration_hours)
+                       WHERE listing_id = $1"#,
+                )
+                .bind(id)
+                .bind(req.capacity)
+                .bind(req.duration_hours)
+                .execute(&state.db)
+                .await?;
+            }
+            "trip" => {
+                let duration_days = req
+                    .duration_hours
+                    .map(|h| (h / 24.0).ceil().max(1.0) as i32);
+                sqlx::query(
+                    r#"UPDATE trip_details SET
+                         max_participants = COALESCE($2, max_participants),
+                         duration_days = COALESCE($3, duration_days)
+                       WHERE listing_id = $1"#,
+                )
+                .bind(id)
+                .bind(req.capacity)
+                .bind(duration_days)
+                .execute(&state.db)
+                .await?;
+            }
+            _ => {}
+        }
+    }
 
     get_listing(State(state), Path(id)).await
 }
@@ -550,10 +624,15 @@ pub async fn operator_listings(
                   l.base_price, l.currency, l.status::text as status,
                   l.image_urls, l.created_at::text as created_at,
                   d.name as destination_name, d.country as destination_country,
-                  u.full_name as operator_name, l.destination_id, l.tags, l.description
+                  u.full_name as operator_name, l.destination_id, l.tags, l.description,
+                  COALESCE(sd.max_capacity, ed.max_participants, td.max_participants) as capacity,
+                  COALESCE(sd.duration_hours, ed.duration_hours, td.duration_days::float * 24.0) as duration_hours
            FROM listings l
            JOIN destinations d ON d.id = l.destination_id
            JOIN users u ON u.id = l.operator_id
+           LEFT JOIN site_details sd ON sd.listing_id = l.id
+           LEFT JOIN experience_details ed ON ed.listing_id = l.id
+           LEFT JOIN trip_details td ON td.listing_id = l.id
            WHERE l.operator_id = $1 AND l.deleted_at IS NULL
            ORDER BY l.created_at DESC
            LIMIT $2 OFFSET $3"#,

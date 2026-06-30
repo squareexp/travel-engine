@@ -151,3 +151,51 @@ pub async fn update_availability(
 
     Ok(Json(row_to_avail(&row)))
 }
+
+pub async fn delete_availability(
+    State(state): State<AppState>,
+    auth: AuthUser,
+    Path((listing_id, avail_id)): Path<(Uuid, Uuid)>,
+) -> AppResult<Json<Value>> {
+    if auth.role != "admin" {
+        let owner: Option<Uuid> = sqlx::query_scalar(
+            "SELECT operator_id FROM listings WHERE id = $1 AND deleted_at IS NULL",
+        )
+        .bind(listing_id)
+        .fetch_optional(&state.db)
+        .await?;
+        match owner {
+            None => return Err(AppError::NotFound("Listing not found".to_string())),
+            Some(oid) if oid != auth.id => {
+                return Err(AppError::Forbidden("Not your listing".to_string()))
+            }
+            _ => {}
+        }
+    }
+
+    let row =
+        sqlx::query("SELECT capacity_booked FROM availability WHERE id = $1 AND listing_id = $2")
+            .bind(avail_id)
+            .bind(listing_id)
+            .fetch_optional(&state.db)
+            .await?
+            .ok_or_else(|| AppError::NotFound("Availability slot not found".to_string()))?;
+
+    let capacity_booked = row.try_get::<i32, _>("capacity_booked").unwrap_or(0);
+    if capacity_booked > 0 {
+        return Err(AppError::BadRequest(
+            "Cannot delete a slot with existing bookings".to_string(),
+        ));
+    }
+
+    sqlx::query("DELETE FROM availability WHERE id = $1 AND listing_id = $2")
+        .bind(avail_id)
+        .bind(listing_id)
+        .execute(&state.db)
+        .await?;
+
+    Ok(Json(json!({
+        "message": "Availability slot deleted",
+        "id": avail_id
+    })))
+}
