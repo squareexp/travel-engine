@@ -47,3 +47,10 @@ fn test_config_check_152() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_config_check_158() {
+    let val = true;
+    assert!(val);
+}
