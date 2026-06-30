@@ -11,6 +11,7 @@ pub struct Config {
     pub transport: TransportConfig,
     pub logging: LoggingConfig,
     pub base_idp: BaseIdpConfig,
+    pub gcs: GcsConfig,
 }
 
 #[derive(Clone)]
@@ -65,6 +66,12 @@ pub struct BaseIdpConfig {
     pub mobile_redirect_uri: String,
 }
 
+#[derive(Clone)]
+pub struct GcsConfig {
+    pub bucket: Option<String>,
+    pub credentials_path: Option<String>,
+}
+
 impl Config {
     pub fn from_env() -> Result<Self> {
         let database_url = required_var("DATABASE_URL")?;
@@ -72,10 +79,6 @@ impl Config {
         let jwt_refresh_secret = required_secret("JWT_REFRESH_SECRET")?;
         let base_idp_client_id = optional_var("BASE_IDP_CLIENT_ID");
         let base_idp_client_secret = optional_var("BASE_IDP_CLIENT_SECRET");
-
-        if base_idp_client_id.is_some() != base_idp_client_secret.is_some() {
-            bail!("BASE_IDP_CLIENT_ID and BASE_IDP_CLIENT_SECRET must be set together");
-        }
 
         Ok(Self {
             database: DatabaseConfig {
@@ -110,13 +113,17 @@ impl Config {
             },
             base_idp: BaseIdpConfig {
                 issuer: optional_var("BASE_IDP_ISSUER")
-                    .unwrap_or_else(|| "http://localhost:8080".to_string()),
+                    .unwrap_or_else(|| "https://authlayer.squareexp.com".to_string()),
                 client_id: base_idp_client_id,
                 client_secret: base_idp_client_secret,
                 audience: optional_var("BASE_IDP_AUDIENCE")
-                    .unwrap_or_else(|| "square-experience".to_string()),
+                    .unwrap_or_else(|| "TravelEngine".to_string()),
                 mobile_redirect_uri: optional_var("BASE_IDP_MOBILE_REDIRECT_URI")
-                    .unwrap_or_else(|| "twende://auth/callback".to_string()),
+                    .unwrap_or_else(|| "partners://auth/callback".to_string()),
+            },
+            gcs: GcsConfig {
+                bucket: optional_var("GCS_BUCKET"),
+                credentials_path: optional_var("GOOGLE_APPLICATION_CREDENTIALS"),
             },
         })
     }

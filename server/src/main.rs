@@ -1,8 +1,11 @@
+#![recursion_limit = "256"]
+
 mod admin;
 mod app;
 mod auth;
 mod availability;
 mod bookings;
+mod compliance;
 mod config;
 mod db;
 mod destinations;
@@ -12,6 +15,7 @@ mod middleware;
 mod operators;
 mod payments;
 mod reviews;
+mod storage;
 mod transport;
 
 use anyhow::Result;
@@ -37,19 +41,20 @@ async fn main() -> Result<()> {
     let db = db::create_pool(&config.database.direct_url).await?;
     info!("Database pool connected");
 
-    // Run migrations
-    sqlx::migrate!("./migrations").run(&db).await?;
-    info!("Migrations applied");
+    // Run migrations unless explicitly disabled for local diagnostics.
+    if std::env::var("SKIP_MIGRATIONS").as_deref() == Ok("true") {
+        info!("Migrations skipped because SKIP_MIGRATIONS=true");
+    } else {
+        sqlx::migrate!("./migrations").run(&db).await?;
+        info!("Migrations applied");
+    }
 
-    let base_idp = if let (Some(client_id), Some(client_secret)) = (
-        config.base_idp.client_id.clone(),
-        config.base_idp.client_secret.clone(),
-    ) {
+    let base_idp = if let Some(client_id) = config.base_idp.client_id.clone() {
         info!("Base-IdP configured (issuer={})", config.base_idp.issuer);
         Some(auth::base_idp::BaseIdpClient::new(
             config.base_idp.issuer.clone(),
             client_id,
-            client_secret,
+            config.base_idp.client_secret.clone().unwrap_or_default(),
             config.base_idp.audience.clone(),
             config.base_idp.mobile_redirect_uri.clone(),
         ))
@@ -58,10 +63,27 @@ async fn main() -> Result<()> {
         None
     };
 
+    let gcs = if let Some(bucket) = config.gcs.bucket.clone() {
+        match storage::GcsClient::from_env(bucket.clone()) {
+            Ok(client) => {
+                info!("GCS configured (bucket={})", bucket);
+                Some(Arc::new(client))
+            }
+            Err(e) => {
+                tracing::warn!("GCS not available: {e}; document uploads disabled");
+                None
+            }
+        }
+    } else {
+        info!("GCS not configured (no GCS_BUCKET); document uploads disabled");
+        None
+    };
+
     let state = app::AppState {
         db,
         config: Arc::new(config.clone()),
         base_idp,
+        gcs,
     };
 
     let router = app::build_router(state);

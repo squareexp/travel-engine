@@ -1,0 +1,19 @@
+
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    env_file:
+      - .env
+    develop:
+      watch:
+        - action: rebuild
+          path: src
+        - action: rebuild
+          path: Cargo.toml
+        - action: rebuild
+          path: migrations

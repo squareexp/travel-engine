@@ -5,8 +5,6 @@ on:
     branches: [main]
     paths:
       - "server/**"
-      - "Dockerfile"
-      - ".dockerignore"
       - ".github/workflows/release-api.yml"
   workflow_dispatch:
 
@@ -43,7 +41,8 @@ jobs:
       - uses: docker/setup-buildx-action@v3
       - uses: docker/build-push-action@v6
         with:
-          context: .
+          context: server
+          file: server/Dockerfile
           tags: travel-engine-api:${{ github.sha }}
           outputs: type=docker,dest=/tmp/travel-engine-api.tar
           cache-from: type=gha

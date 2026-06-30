@@ -1,3 +1,4 @@
 target/
 .env
 generate_fast_import.py
+Assets/

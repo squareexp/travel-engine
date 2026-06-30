@@ -1,7 +1,7 @@
 FROM rust:1.88-bookworm AS builder
 
 WORKDIR /workspace/server
-COPY server/ ./
+COPY . ./
 RUN cargo build --release --locked && strip target/release/twende-server
 
 FROM gcr.io/distroless/cc-debian12:nonroot

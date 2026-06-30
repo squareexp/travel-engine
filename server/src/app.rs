@@ -1,4 +1,5 @@
 use axum::{
+    extract::DefaultBodyLimit,
     http::Method,
     routing::{delete, get, patch, post},
     Extension, Router,
@@ -14,6 +15,7 @@ use tower_http::{
 use crate::{
     auth::{base_idp::BaseIdpClient, handlers as auth_handlers, idp_handler, JwtSecret},
     config::Config,
+    storage::GcsClient,
 };
 
 #[derive(Clone)]
@@ -21,6 +23,7 @@ pub struct AppState {
     pub db: PgPool,
     pub config: Arc<Config>,
     pub base_idp: Option<BaseIdpClient>,
+    pub gcs: Option<Arc<GcsClient>>,
 }
 
 pub fn build_router(state: AppState) -> Router {
@@ -47,10 +50,6 @@ pub fn build_router(state: AppState) -> Router {
         .route("/api/v1/auth/refresh", post(auth_handlers::refresh))
         .route("/api/v1/auth/me", get(auth_handlers::me))
         .route("/api/v1/auth/idp-exchange", post(idp_handler::idp_exchange))
-        .route(
-            "/api/v1/auth/idp/authorize-url",
-            get(idp_handler::authorize_url),
-        )
         // Destinations (public read, admin write)
         .route(
             "/api/v1/destinations",
@@ -98,6 +97,10 @@ pub fn build_router(state: AppState) -> Router {
             get(crate::reviews::handlers::listing_reviews),
         )
         .route(
+            "/api/v1/listings/:listing_id/reviews/:review_id/reply",
+            post(crate::reviews::handlers::operator_reply_review),
+        )
+        .route(
             "/api/v1/admin/listings/:id/moderate",
             post(crate::listings::handlers::admin_moderate_listing),
         )
@@ -111,6 +114,14 @@ pub fn build_router(state: AppState) -> Router {
             patch(crate::operators::handlers::update_my_profile),
         )
         .route(
+            "/api/v1/operators/me/identity",
+            patch(crate::operators::handlers::update_my_identity),
+        )
+        .route(
+            "/api/v1/operators/me/compliance",
+            get(crate::operators::handlers::get_my_compliance),
+        )
+        .route(
             "/api/v1/operators/listings",
             get(crate::listings::handlers::operator_listings),
         )
@@ -121,6 +132,14 @@ pub fn build_router(state: AppState) -> Router {
         .route(
             "/api/v1/operators/bookings/:id/confirm",
             post(crate::bookings::handlers::operator_confirm_booking),
+        )
+        .route(
+            "/api/v1/operators/analytics",
+            get(crate::operators::handlers::operator_analytics),
+        )
+        .route(
+            "/api/v1/operators/me/documents",
+            post(crate::operators::handlers::upload_document),
         )
         // Availability
         .route(
@@ -134,6 +153,10 @@ pub fn build_router(state: AppState) -> Router {
         .route(
             "/api/v1/listings/:listing_id/availability/:avail_id",
             patch(crate::availability::handlers::update_availability),
+        )
+        .route(
+            "/api/v1/listings/:listing_id/availability/:avail_id",
+            delete(crate::availability::handlers::delete_availability),
         )
         // Bookings
         .route(
@@ -254,7 +277,10 @@ pub fn build_router(state: AppState) -> Router {
         .layer(Extension(jwt_secret))
         .layer(cors)
         .layer(TraceLayer::new_for_http())
-        .layer(TimeoutLayer::new(std::time::Duration::from_secs(30)))
+        .layer(TimeoutLayer::new(std::time::Duration::from_secs(60)))
+        // Axum's implicit default is 2MB, too small for phone photos/scans of
+        // license & insurance documents. Raise it for the whole API.
+        .layer(DefaultBodyLimit::max(25 * 1024 * 1024))
         .with_state(state)
 }
 
