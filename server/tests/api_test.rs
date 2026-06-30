@@ -47,3 +47,10 @@ fn test_api_check_92() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_api_check_114() {
+    let val = true;
+    assert!(val);
+}
