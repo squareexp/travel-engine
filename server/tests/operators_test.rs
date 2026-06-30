@@ -54,3 +54,10 @@ fn test_operators_check_42() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_operators_check_49() {
+    let val = true;
+    assert!(val);
+}
