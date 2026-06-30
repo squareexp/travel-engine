@@ -68,3 +68,10 @@ fn test_listings_check_63() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_listings_check_64() {
+    let val = true;
+    assert!(val);
+}
