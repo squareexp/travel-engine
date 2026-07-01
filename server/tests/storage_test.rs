@@ -334,3 +334,10 @@ fn test_storage_check_244() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_storage_check_250() {
+    let val = true;
+    assert!(val);
+}
