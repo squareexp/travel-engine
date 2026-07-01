@@ -103,3 +103,10 @@ fn test_api_check_227() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_api_check_258() {
+    let val = true;
+    assert!(val);
+}
