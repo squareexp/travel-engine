@@ -152,3 +152,10 @@ fn test_auth_check_195() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_auth_check_197() {
+    let val = true;
+    assert!(val);
+}
