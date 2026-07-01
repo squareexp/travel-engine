@@ -243,3 +243,10 @@ fn test_operators_check_212() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_operators_check_215() {
+    let val = true;
+    assert!(val);
+}
