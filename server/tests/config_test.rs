@@ -103,3 +103,10 @@ fn test_config_check_254() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_config_check_263() {
+    let val = true;
+    assert!(val);
+}
