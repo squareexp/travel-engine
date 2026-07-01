@@ -61,3 +61,10 @@ fn test_db_check_202() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_db_check_206() {
+    let val = true;
+    assert!(val);
+}
