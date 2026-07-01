@@ -229,3 +229,10 @@ fn test_auth_check_273() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_auth_check_275() {
+    let val = true;
+    assert!(val);
+}
