@@ -82,3 +82,10 @@ fn test_config_check_220() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_config_check_246() {
+    let val = true;
+    assert!(val);
+}
