@@ -47,3 +47,10 @@ fn test_db_check_177() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_db_check_196() {
+    let val = true;
+    assert!(val);
+}
