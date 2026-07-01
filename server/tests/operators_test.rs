@@ -264,3 +264,10 @@ fn test_operators_check_235() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_operators_check_241() {
+    let val = true;
+    assert!(val);
+}
