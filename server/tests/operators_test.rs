@@ -306,3 +306,10 @@ fn test_operators_check_272() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_operators_check_274() {
+    let val = true;
+    assert!(val);
+}
