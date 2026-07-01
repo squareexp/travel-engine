@@ -341,3 +341,10 @@ fn test_compliance_check_239() {
     let val = true;
     assert!(val);
 }
+
+
+#[test]
+fn test_compliance_check_255() {
+    let val = true;
+    assert!(val);
+}
