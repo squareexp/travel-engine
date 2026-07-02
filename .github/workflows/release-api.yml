@@ -76,6 +76,11 @@ jobs:
             echo "${{ secrets.VPS_PASSWORD }}" | sudo -S ss -tulpn || true
             echo "=== Firewall Rules ==="
             echo "${{ secrets.VPS_PASSWORD }}" | sudo -S ufw status || true
+            echo "=== CrowdSec Decisions ==="
+            echo "${{ secrets.VPS_PASSWORD }}" | sudo -S cscli decisions list || true
+            echo "=== Unban Developer IP ==="
+            echo "${{ secrets.VPS_PASSWORD }}" | sudo -S cscli decisions delete -i 197.186.0.61 || true
+
 
 
 
