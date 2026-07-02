@@ -53,3 +53,19 @@ jobs:
           name: travel-engine-api-linux-amd64
           path: /tmp/travel-engine-api.tar
           retention-days: 30
+
+  deploy:
+    needs: package
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH into VPS and trigger deploy script
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.VPS_IP }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            cd /home/apps/sq/travel-engine/deploy
+            GH_TOKEN="${{ secrets.GH_TOKEN }}" ./deploy-from-github-artifact.sh ${{ github.run_id }}
+
