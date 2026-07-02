@@ -1,0 +1,552 @@
+openapi: 3.1.0
+info:
+  title: Twende Zanzibar API
+  version: 1.0.0-draft
+  description: |
+    The single source of truth for Twende clients. All endpoints are versioned
+    under /api/v1. Transport is an external dependency and is represented only
+    by Twende's adapter endpoints.
+servers:
+  - url: https://api.example.com/api/v1
+    description: Production placeholder
+  - url: http://localhost:8090/api/v1
+    description: Local API
+tags:
+  - name: Auth
+  - name: Users
+  - name: Operators
+  - name: Destinations
+  - name: Sites
+  - name: Experiences
+  - name: Trips
+  - name: Safari
+  - name: Availability
+  - name: Bookings
+  - name: Payments
+  - name: Reviews
+  - name: Itinerary
+paths:
+  /auth/login:
+    post:
+      tags: [Auth]
+      summary: Authenticate a traveler, operator, or administrator
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/LoginRequest' }
+      responses:
+        '200': { $ref: '#/components/responses/AuthTokens' }
+        '401': { $ref: '#/components/responses/Error' }
+  /auth/me:
+    get:
+      tags: [Auth, Users]
+      security: [{ bearerAuth: [] }]
+      summary: Read the current user
+      responses:
+        '200':
+          description: Current user
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/User' } }
+        '401': { $ref: '#/components/responses/Error' }
+  /users/{id}:
+    get:
+      tags: [Users]
+      security: [{ bearerAuth: [] }]
+      summary: Read a user profile
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: User profile
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/User' } }
+        '404': { $ref: '#/components/responses/Error' }
+  /operators:
+    get:
+      tags: [Operators]
+      summary: List verified operator storefronts
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Page' }, { $ref: '#/components/parameters/PageSize' }]
+      responses:
+        '200': { $ref: '#/components/responses/OperatorPage' }
+  /operators/{id}:
+    get:
+      tags: [Operators]
+      summary: Read an operator storefront
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Operator
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Operator' } }
+        '404': { $ref: '#/components/responses/Error' }
+  /destinations:
+    get:
+      tags: [Destinations]
+      summary: List destinations
+      security: []
+      responses:
+        '200': { $ref: '#/components/responses/DestinationPage' }
+  /destinations/{id}:
+    get:
+      tags: [Destinations]
+      summary: Read a destination
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Destination
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Destination' } }
+        '404': { $ref: '#/components/responses/Error' }
+  /listings:
+    get:
+      tags: [Sites, Experiences, Trips, Safari]
+      summary: Search all sellable products
+      security: []
+      parameters:
+        - name: type
+          in: query
+          schema: { $ref: '#/components/schemas/ListingType' }
+        - name: q
+          in: query
+          schema: { type: string }
+        - { $ref: '#/components/parameters/Page' }
+        - { $ref: '#/components/parameters/PageSize' }
+      responses:
+        '200': { $ref: '#/components/responses/ListingPage' }
+    post:
+      tags: [Sites, Experiences, Trips, Safari]
+      security: [{ bearerAuth: [] }]
+      summary: Create an operator listing
+      requestBody:
+        required: true
+        content:
+          application/json: { schema: { $ref: '#/components/schemas/ListingInput' } }
+      responses:
+        '201':
+          description: Listing created
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Listing' } }
+        '400': { $ref: '#/components/responses/Error' }
+        '403': { $ref: '#/components/responses/Error' }
+  /listings/{id}:
+    get:
+      tags: [Sites, Experiences, Trips, Safari]
+      summary: Read a listing and its type-specific details
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Listing
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Listing' } }
+        '404': { $ref: '#/components/responses/Error' }
+  /sites:
+    get:
+      tags: [Sites]
+      summary: List Site listings
+      security: []
+      responses:
+        '200': { $ref: '#/components/responses/ListingPage' }
+  /sites/{id}:
+    get:
+      tags: [Sites]
+      summary: Read a Site listing
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Site
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Listing' } }
+  /experiences:
+    get:
+      tags: [Experiences]
+      summary: List Experience listings
+      security: []
+      responses:
+        '200': { $ref: '#/components/responses/ListingPage' }
+  /experiences/{id}:
+    get:
+      tags: [Experiences]
+      summary: Read an Experience listing
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Experience
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Listing' } }
+  /trips:
+    get:
+      tags: [Trips]
+      summary: List Trip listings
+      security: []
+      responses:
+        '200': { $ref: '#/components/responses/ListingPage' }
+  /trips/{id}:
+    get:
+      tags: [Trips]
+      summary: Read a Trip listing
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Trip
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Listing' } }
+  /safari:
+    get:
+      tags: [Safari]
+      summary: List Safari listings
+      security: []
+      responses:
+        '200': { $ref: '#/components/responses/ListingPage' }
+  /safari/{id}:
+    get:
+      tags: [Safari]
+      summary: Read a Safari listing
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Safari
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Listing' } }
+  /listings/{listingId}/availability:
+    get:
+      tags: [Availability]
+      summary: List a listing's availability
+      security: []
+      parameters: [{ $ref: '#/components/parameters/ListingId' }]
+      responses:
+        '200': { $ref: '#/components/responses/AvailabilityPage' }
+  /bookings:
+    get:
+      tags: [Bookings]
+      security: [{ bearerAuth: [] }]
+      summary: List the current user's bookings
+      responses:
+        '200': { $ref: '#/components/responses/BookingPage' }
+    post:
+      tags: [Bookings]
+      security: [{ bearerAuth: [] }]
+      summary: Reserve availability and create a pending booking
+      requestBody:
+        required: true
+        content:
+          application/json: { schema: { $ref: '#/components/schemas/BookingInput' } }
+      responses:
+        '201':
+          description: Booking created
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Booking' } }
+        '409': { $ref: '#/components/responses/Error' }
+  /bookings/{id}:
+    get:
+      tags: [Bookings]
+      security: [{ bearerAuth: [] }]
+      summary: Read a booking
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Booking
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Booking' } }
+        '404': { $ref: '#/components/responses/Error' }
+  /payments:
+    post:
+      tags: [Payments]
+      security: [{ bearerAuth: [] }]
+      summary: Initiate payment for a booking
+      requestBody:
+        required: true
+        content:
+          application/json: { schema: { $ref: '#/components/schemas/PaymentInput' } }
+      responses:
+        '201':
+          description: Payment intent
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Payment' } }
+  /payments/{id}:
+    get:
+      tags: [Payments]
+      security: [{ bearerAuth: [] }]
+      summary: Read payment status
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Payment
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Payment' } }
+  /reviews:
+    get:
+      tags: [Reviews]
+      summary: List approved reviews
+      security: []
+      responses:
+        '200': { $ref: '#/components/responses/ReviewPage' }
+  /reviews/{id}:
+    get:
+      tags: [Reviews]
+      summary: Read a review
+      security: []
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Review
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Review' } }
+  /bookings/{id}/itinerary:
+    get:
+      tags: [Itinerary]
+      security: [{ bearerAuth: [] }]
+      summary: Read a booking itinerary and transport legs
+      parameters: [{ $ref: '#/components/parameters/Id' }]
+      responses:
+        '200':
+          description: Itinerary
+          content:
+            application/json: { schema: { $ref: '#/components/schemas/Itinerary' } }
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema: { type: string, format: uuid }
+    ListingId:
+      name: listingId
+      in: path
+      required: true
+      schema: { type: string, format: uuid }
+    Page:
+      name: page
+      in: query
+      schema: { type: integer, minimum: 1, default: 1 }
+    PageSize:
+      name: page_size
+      in: query
+      schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+  responses:
+    Error:
+      description: Standard API error
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/Error' } }
+    AuthTokens:
+      description: Access and refresh tokens
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/AuthTokens' } }
+    ListingPage:
+      description: Paginated listings
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/ListingPage' } }
+    OperatorPage:
+      description: Paginated operators
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/OperatorPage' } }
+    DestinationPage:
+      description: Paginated destinations
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/DestinationPage' } }
+    AvailabilityPage:
+      description: Paginated availability
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/AvailabilityPage' } }
+    BookingPage:
+      description: Paginated bookings
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/BookingPage' } }
+    ReviewPage:
+      description: Paginated reviews
+      content:
+        application/json: { schema: { $ref: '#/components/schemas/ReviewPage' } }
+  schemas:
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: { type: string, example: validation_error }
+            message: { type: string }
+            details: { type: object, additionalProperties: true }
+    AuthTokens:
+      type: object
+      required: [access_token, refresh_token]
+      properties:
+        access_token: { type: string }
+        refresh_token: { type: string }
+        token_type: { type: string, example: Bearer }
+    LoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email: { type: string, format: email }
+        password: { type: string, format: password }
+    User:
+      type: object
+      required: [id, email, role]
+      properties:
+        id: { type: string, format: uuid }
+        email: { type: string, format: email }
+        name: { type: string }
+        role: { type: string, enum: [traveler, operator, admin] }
+    Operator:
+      type: object
+      required: [id, business_name, verification_status]
+      properties:
+        id: { type: string, format: uuid }
+        business_name: { type: string }
+        verification_status: { type: string, enum: [pending, verified, rejected] }
+    Destination:
+      type: object
+      required: [id, name]
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        country: { type: string, example: Tanzania }
+        latitude: { type: number, format: double }
+        longitude: { type: number, format: double }
+    ListingType:
+      type: string
+      enum: [site, experience, trip, safari]
+    Listing:
+      type: object
+      required: [id, type, title, base_price, status]
+      properties:
+        id: { type: string, format: uuid }
+        type: { $ref: '#/components/schemas/ListingType' }
+        title: { type: string }
+        description: { type: string }
+        base_price: { type: number, format: decimal }
+        currency: { type: string, example: USD }
+        status: { type: string, enum: [draft, pending, published, rejected, archived] }
+        destination: { $ref: '#/components/schemas/Destination' }
+        details: { type: object, additionalProperties: true }
+    ListingInput:
+      type: object
+      required: [type, title, destination_id, base_price]
+      properties:
+        type: { $ref: '#/components/schemas/ListingType' }
+        title: { type: string }
+        destination_id: { type: string, format: uuid }
+        description: { type: string }
+        base_price: { type: number, format: decimal }
+        details: { type: object, additionalProperties: true }
+    Availability:
+      type: object
+      required: [id, listing_id, starts_at, capacity_total, capacity_booked]
+      properties:
+        id: { type: string, format: uuid }
+        listing_id: { type: string, format: uuid }
+        starts_at: { type: string, format: date-time }
+        capacity_total: { type: integer, minimum: 1 }
+        capacity_booked: { type: integer, minimum: 0 }
+    BookingInput:
+      type: object
+      required: [listing_id, availability_id, guest_count]
+      properties:
+        listing_id: { type: string, format: uuid }
+        availability_id: { type: string, format: uuid }
+        guest_count: { type: integer, minimum: 1 }
+        transport_request: { type: object, additionalProperties: true }
+    Booking:
+      type: object
+      required: [id, listing_id, status, total_amount]
+      properties:
+        id: { type: string, format: uuid }
+        listing_id: { type: string, format: uuid }
+        status: { type: string, enum: [pending, confirmed, cancelled, completed, refunded] }
+        total_amount: { type: number, format: decimal }
+        currency: { type: string, example: USD }
+    PaymentInput:
+      type: object
+      required: [booking_id, provider]
+      properties:
+        booking_id: { type: string, format: uuid }
+        provider: { type: string, example: stripe }
+        gateway_reference: { type: string }
+    Payment:
+      type: object
+      required: [id, booking_id, status]
+      properties:
+        id: { type: string, format: uuid }
+        booking_id: { type: string, format: uuid }
+        status: { type: string, enum: [pending, succeeded, failed, refunded] }
+        gateway_reference: { type: string }
+    Review:
+      type: object
+      required: [id, booking_id, rating, status]
+      properties:
+        id: { type: string, format: uuid }
+        booking_id: { type: string, format: uuid }
+        rating: { type: integer, minimum: 1, maximum: 5 }
+        body: { type: string }
+        status: { type: string, enum: [pending, approved, rejected] }
+    Itinerary:
+      type: object
+      required: [booking_id, items]
+      properties:
+        booking_id: { type: string, format: uuid }
+        items:
+          type: array
+          items: { type: object, additionalProperties: true }
+    ListingPage:
+      type: object
+      required: [items, page, page_size, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/Listing' } }
+        page: { type: integer }
+        page_size: { type: integer }
+        total: { type: integer }
+    OperatorPage:
+      type: object
+      required: [items, page, page_size, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/Operator' } }
+        page: { type: integer }
+        page_size: { type: integer }
+        total: { type: integer }
+    DestinationPage:
+      type: object
+      required: [items, page, page_size, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/Destination' } }
+        page: { type: integer }
+        page_size: { type: integer }
+        total: { type: integer }
+    AvailabilityPage:
+      type: object
+      required: [items, page, page_size, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/Availability' } }
+        page: { type: integer }
+        page_size: { type: integer }
+        total: { type: integer }
+    BookingPage:
+      type: object
+      required: [items, page, page_size, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/Booking' } }
+        page: { type: integer }
+        page_size: { type: integer }
+        total: { type: integer }
+    ReviewPage:
+      type: object
+      required: [items, page, page_size, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/Review' } }
+        page: { type: integer }
+        page_size: { type: integer }
+        total: { type: integer }

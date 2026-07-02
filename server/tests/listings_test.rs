@@ -1,11 +1,8 @@
-
-
 #[test]
 fn test_listings_check_0() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_2() {
@@ -13,13 +10,11 @@ fn test_listings_check_2() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_20() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_25() {
@@ -27,13 +22,11 @@ fn test_listings_check_25() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_35() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_50() {
@@ -41,13 +34,11 @@ fn test_listings_check_50() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_55() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_59() {
@@ -55,13 +46,11 @@ fn test_listings_check_59() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_61() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_63() {
@@ -69,13 +58,11 @@ fn test_listings_check_63() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_64() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_66() {
@@ -83,13 +70,11 @@ fn test_listings_check_66() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_67() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_70() {
@@ -97,13 +82,11 @@ fn test_listings_check_70() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_72() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_83() {
@@ -111,13 +94,11 @@ fn test_listings_check_83() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_84() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_90() {
@@ -125,13 +106,11 @@ fn test_listings_check_90() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_96() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_99() {
@@ -139,13 +118,11 @@ fn test_listings_check_99() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_107() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_110() {
@@ -153,13 +130,11 @@ fn test_listings_check_110() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_113() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_129() {
@@ -167,13 +142,11 @@ fn test_listings_check_129() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_130() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_142() {
@@ -181,13 +154,11 @@ fn test_listings_check_142() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_157() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_159() {
@@ -195,13 +166,11 @@ fn test_listings_check_159() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_161() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_163() {
@@ -209,13 +178,11 @@ fn test_listings_check_163() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_166() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_170() {
@@ -223,13 +190,11 @@ fn test_listings_check_170() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_176() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_189() {
@@ -237,13 +202,11 @@ fn test_listings_check_189() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_198() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_204() {
@@ -251,13 +214,11 @@ fn test_listings_check_204() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_210() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_211() {
@@ -265,13 +226,11 @@ fn test_listings_check_211() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_214() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_216() {
@@ -279,13 +238,11 @@ fn test_listings_check_216() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_243() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_245() {
@@ -293,13 +250,11 @@ fn test_listings_check_245() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_247() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_249() {
@@ -307,20 +262,17 @@ fn test_listings_check_249() {
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_261() {
     let val = true;
     assert!(val);
 }
 
-
 #[test]
 fn test_listings_check_281() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_listings_check_284() {

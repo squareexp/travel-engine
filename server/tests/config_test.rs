@@ -1,11 +1,8 @@
-
-
 #[test]
 fn test_config_check_31() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_37() {
@@ -13,13 +10,11 @@ fn test_config_check_37() {
     assert!(val);
 }
 
-
 #[test]
 fn test_config_check_43() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_58() {
@@ -27,13 +22,11 @@ fn test_config_check_58() {
     assert!(val);
 }
 
-
 #[test]
 fn test_config_check_60() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_139() {
@@ -41,13 +34,11 @@ fn test_config_check_139() {
     assert!(val);
 }
 
-
 #[test]
 fn test_config_check_152() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_158() {
@@ -55,13 +46,11 @@ fn test_config_check_158() {
     assert!(val);
 }
 
-
 #[test]
 fn test_config_check_167() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_175() {
@@ -69,13 +58,11 @@ fn test_config_check_175() {
     assert!(val);
 }
 
-
 #[test]
 fn test_config_check_188() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_220() {
@@ -83,13 +70,11 @@ fn test_config_check_220() {
     assert!(val);
 }
 
-
 #[test]
 fn test_config_check_246() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_248() {
@@ -97,13 +82,11 @@ fn test_config_check_248() {
     assert!(val);
 }
 
-
 #[test]
 fn test_config_check_254() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_config_check_263() {

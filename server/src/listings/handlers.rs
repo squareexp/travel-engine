@@ -310,12 +310,11 @@ pub async fn create_listing(
     }
 
     if auth.role != "admin" {
-        let exists: i64 = sqlx::query_scalar(
-            "SELECT COUNT(*) FROM operator_profiles WHERE user_id = $1",
-        )
-        .bind(auth.id)
-        .fetch_one(&state.db)
-        .await?;
+        let exists: i64 =
+            sqlx::query_scalar("SELECT COUNT(*) FROM operator_profiles WHERE user_id = $1")
+                .bind(auth.id)
+                .fetch_one(&state.db)
+                .await?;
         if exists == 0 {
             return Err(AppError::Forbidden(
                 "Operator profile not set up".to_string(),

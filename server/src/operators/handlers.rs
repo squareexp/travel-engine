@@ -20,7 +20,10 @@ use crate::{
 /// time-limited readable links, since the bucket is private.
 const DOCUMENT_URL_TTL_SECS: i64 = 900;
 
-fn signed_or_none(gcs: Option<&std::sync::Arc<GcsClient>>, object_path: Option<String>) -> Option<String> {
+fn signed_or_none(
+    gcs: Option<&std::sync::Arc<GcsClient>>,
+    object_path: Option<String>,
+) -> Option<String> {
     let path = object_path?;
     let client = gcs?;
     client.signed_url(&path, DOCUMENT_URL_TTL_SECS).ok()
@@ -89,38 +92,72 @@ pub(crate) async fn compute_compliance(state: &AppState, operator_id: Uuid) -> A
 
     let categories: Vec<String> = row
         .as_ref()
-        .and_then(|r| r.try_get::<Option<Vec<String>>, _>("service_categories").ok().flatten())
+        .and_then(|r| {
+            r.try_get::<Option<Vec<String>>, _>("service_categories")
+                .ok()
+                .flatten()
+        })
         .unwrap_or_default();
-    let country = row.as_ref().and_then(|r| r.try_get::<Option<String>, _>("country").ok().flatten());
-    let region = row.as_ref().and_then(|r| r.try_get::<Option<String>, _>("region").ok().flatten());
-    let city = row.as_ref().and_then(|r| r.try_get::<Option<String>, _>("city").ok().flatten());
+    let country = row
+        .as_ref()
+        .and_then(|r| r.try_get::<Option<String>, _>("country").ok().flatten());
+    let region = row
+        .as_ref()
+        .and_then(|r| r.try_get::<Option<String>, _>("region").ok().flatten());
+    let city = row
+        .as_ref()
+        .and_then(|r| r.try_get::<Option<String>, _>("city").ok().flatten());
     let is_zanzibar =
         compliance::is_zanzibar_location(country.as_deref(), region.as_deref(), city.as_deref());
 
     let uploaded = compliance::UploadedDocs {
         certificate_of_incorporation: row
             .as_ref()
-            .and_then(|r| r.try_get::<Option<String>, _>("certificate_of_incorporation_url").ok().flatten())
+            .and_then(|r| {
+                r.try_get::<Option<String>, _>("certificate_of_incorporation_url")
+                    .ok()
+                    .flatten()
+            })
             .is_some(),
         tin_certificate: row
             .as_ref()
-            .and_then(|r| r.try_get::<Option<String>, _>("tin_certificate_url").ok().flatten())
+            .and_then(|r| {
+                r.try_get::<Option<String>, _>("tin_certificate_url")
+                    .ok()
+                    .flatten()
+            })
             .is_some(),
         tourism_license: row
             .as_ref()
-            .and_then(|r| r.try_get::<Option<String>, _>("tourism_license_url").ok().flatten())
+            .and_then(|r| {
+                r.try_get::<Option<String>, _>("tourism_license_url")
+                    .ok()
+                    .flatten()
+            })
             .is_some(),
         vehicle_registration: row
             .as_ref()
-            .and_then(|r| r.try_get::<Option<String>, _>("vehicle_registration_url").ok().flatten())
+            .and_then(|r| {
+                r.try_get::<Option<String>, _>("vehicle_registration_url")
+                    .ok()
+                    .flatten()
+            })
             .is_some(),
         vehicle_insurance: row
             .as_ref()
-            .and_then(|r| r.try_get::<Option<String>, _>("vehicle_insurance_url").ok().flatten())
+            .and_then(|r| {
+                r.try_get::<Option<String>, _>("vehicle_insurance_url")
+                    .ok()
+                    .flatten()
+            })
             .is_some(),
         guide_license: row
             .as_ref()
-            .and_then(|r| r.try_get::<Option<String>, _>("guide_license_url").ok().flatten())
+            .and_then(|r| {
+                r.try_get::<Option<String>, _>("guide_license_url")
+                    .ok()
+                    .flatten()
+            })
             .is_some(),
     };
 
@@ -427,9 +464,11 @@ pub async fn upload_document(
     let mut file_bytes: Option<Vec<u8>> = None;
     let mut content_type: Option<String> = None;
 
-    while let Some(field) = multipart.next_field().await.map_err(|e| {
-        AppError::BadRequest(format!("multipart error: {e}"))
-    })? {
+    while let Some(field) = multipart
+        .next_field()
+        .await
+        .map_err(|e| AppError::BadRequest(format!("multipart error: {e}")))?
+    {
         let name = field.name().unwrap_or("").to_string();
         match name.as_str() {
             "document_type" => {
@@ -443,9 +482,13 @@ pub async fn upload_document(
                     .unwrap_or("application/octet-stream")
                     .to_string();
                 content_type = Some(ct);
-                file_bytes = Some(field.bytes().await.map_err(|e| {
-                    AppError::BadRequest(format!("failed to read file: {e}"))
-                })?.to_vec());
+                file_bytes = Some(
+                    field
+                        .bytes()
+                        .await
+                        .map_err(|e| AppError::BadRequest(format!("failed to read file: {e}")))?
+                        .to_vec(),
+                );
             }
             _ => {}
         }
@@ -453,8 +496,7 @@ pub async fn upload_document(
 
     let doc_type = document_type
         .ok_or_else(|| AppError::BadRequest("missing document_type field".to_string()))?;
-    let bytes = file_bytes
-        .ok_or_else(|| AppError::BadRequest("missing file field".to_string()))?;
+    let bytes = file_bytes.ok_or_else(|| AppError::BadRequest("missing file field".to_string()))?;
     let ct = content_type.unwrap_or_else(|| "application/octet-stream".to_string());
 
     const VALID_TYPES: &[&str] = &[
@@ -473,7 +515,13 @@ pub async fn upload_document(
         )));
     }
 
-    let ext = if ct.contains("pdf") { "pdf" } else if ct.contains("png") { "png" } else { "jpg" };
+    let ext = if ct.contains("pdf") {
+        "pdf"
+    } else if ct.contains("png") {
+        "png"
+    } else {
+        "jpg"
+    };
     let object_name = format!("operators/{}/{}.{}", auth.id, doc_type, ext);
 
     let object_path = gcs

@@ -1,11 +1,8 @@
-
-
 #[test]
 fn test_compliance_check_4() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_5() {
@@ -13,13 +10,11 @@ fn test_compliance_check_5() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_11() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_13() {
@@ -27,13 +22,11 @@ fn test_compliance_check_13() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_15() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_17() {
@@ -41,13 +34,11 @@ fn test_compliance_check_17() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_23() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_24() {
@@ -55,13 +46,11 @@ fn test_compliance_check_24() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_33() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_36() {
@@ -69,13 +58,11 @@ fn test_compliance_check_36() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_41() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_65() {
@@ -83,13 +70,11 @@ fn test_compliance_check_65() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_68() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_69() {
@@ -97,13 +82,11 @@ fn test_compliance_check_69() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_71() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_76() {
@@ -111,13 +94,11 @@ fn test_compliance_check_76() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_79() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_80() {
@@ -125,13 +106,11 @@ fn test_compliance_check_80() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_87() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_98() {
@@ -139,13 +118,11 @@ fn test_compliance_check_98() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_106() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_108() {
@@ -153,13 +130,11 @@ fn test_compliance_check_108() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_118() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_123() {
@@ -167,13 +142,11 @@ fn test_compliance_check_123() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_125() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_131() {
@@ -181,13 +154,11 @@ fn test_compliance_check_131() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_133() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_136() {
@@ -195,13 +166,11 @@ fn test_compliance_check_136() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_150() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_153() {
@@ -209,13 +178,11 @@ fn test_compliance_check_153() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_154() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_155() {
@@ -223,13 +190,11 @@ fn test_compliance_check_155() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_160() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_168() {
@@ -237,13 +202,11 @@ fn test_compliance_check_168() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_169() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_173() {
@@ -251,13 +214,11 @@ fn test_compliance_check_173() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_174() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_179() {
@@ -265,13 +226,11 @@ fn test_compliance_check_179() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_180() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_192() {
@@ -279,13 +238,11 @@ fn test_compliance_check_192() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_194() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_205() {
@@ -293,13 +250,11 @@ fn test_compliance_check_205() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_217() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_218() {
@@ -307,13 +262,11 @@ fn test_compliance_check_218() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_230() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_231() {
@@ -321,13 +274,11 @@ fn test_compliance_check_231() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_236() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_237() {
@@ -335,13 +286,11 @@ fn test_compliance_check_237() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_239() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_255() {
@@ -349,13 +298,11 @@ fn test_compliance_check_255() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_277() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_283() {
@@ -363,20 +310,17 @@ fn test_compliance_check_283() {
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_290() {
     let val = true;
     assert!(val);
 }
 
-
 #[test]
 fn test_compliance_check_292() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_compliance_check_293() {

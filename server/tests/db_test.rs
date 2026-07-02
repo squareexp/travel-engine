@@ -1,11 +1,8 @@
-
-
 #[test]
 fn test_db_check_6() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_9() {
@@ -13,13 +10,11 @@ fn test_db_check_9() {
     assert!(val);
 }
 
-
 #[test]
 fn test_db_check_21() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_94() {
@@ -27,13 +22,11 @@ fn test_db_check_94() {
     assert!(val);
 }
 
-
 #[test]
 fn test_db_check_109() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_128() {
@@ -41,13 +34,11 @@ fn test_db_check_128() {
     assert!(val);
 }
 
-
 #[test]
 fn test_db_check_177() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_196() {
@@ -55,13 +46,11 @@ fn test_db_check_196() {
     assert!(val);
 }
 
-
 #[test]
 fn test_db_check_202() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_206() {
@@ -69,13 +58,11 @@ fn test_db_check_206() {
     assert!(val);
 }
 
-
 #[test]
 fn test_db_check_209() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_222() {
@@ -83,13 +70,11 @@ fn test_db_check_222() {
     assert!(val);
 }
 
-
 #[test]
 fn test_db_check_257() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_276() {
@@ -97,13 +82,11 @@ fn test_db_check_276() {
     assert!(val);
 }
 
-
 #[test]
 fn test_db_check_278() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_db_check_286() {

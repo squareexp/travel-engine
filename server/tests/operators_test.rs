@@ -1,11 +1,8 @@
-
-
 #[test]
 fn test_operators_check_7() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_8() {
@@ -13,13 +10,11 @@ fn test_operators_check_8() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_16() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_28() {
@@ -27,13 +22,11 @@ fn test_operators_check_28() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_30() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_34() {
@@ -41,13 +34,11 @@ fn test_operators_check_34() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_39() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_42() {
@@ -55,13 +46,11 @@ fn test_operators_check_42() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_49() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_51() {
@@ -69,13 +58,11 @@ fn test_operators_check_51() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_56() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_57() {
@@ -83,13 +70,11 @@ fn test_operators_check_57() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_62() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_74() {
@@ -97,13 +82,11 @@ fn test_operators_check_74() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_75() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_82() {
@@ -111,13 +94,11 @@ fn test_operators_check_82() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_86() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_89() {
@@ -125,13 +106,11 @@ fn test_operators_check_89() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_93() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_111() {
@@ -139,13 +118,11 @@ fn test_operators_check_111() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_121() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_124() {
@@ -153,13 +130,11 @@ fn test_operators_check_124() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_132() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_135() {
@@ -167,13 +142,11 @@ fn test_operators_check_135() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_149() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_156() {
@@ -181,13 +154,11 @@ fn test_operators_check_156() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_162() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_164() {
@@ -195,13 +166,11 @@ fn test_operators_check_164() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_171() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_178() {
@@ -209,13 +178,11 @@ fn test_operators_check_178() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_190() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_191() {
@@ -223,13 +190,11 @@ fn test_operators_check_191() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_200() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_207() {
@@ -237,13 +202,11 @@ fn test_operators_check_207() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_212() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_215() {
@@ -251,13 +214,11 @@ fn test_operators_check_215() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_224() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_235() {
@@ -265,13 +226,11 @@ fn test_operators_check_235() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_241() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_252() {
@@ -279,13 +238,11 @@ fn test_operators_check_252() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_259() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_265() {
@@ -293,13 +250,11 @@ fn test_operators_check_265() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_268() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_272() {
@@ -307,20 +262,17 @@ fn test_operators_check_272() {
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_274() {
     let val = true;
     assert!(val);
 }
 
-
 #[test]
 fn test_operators_check_279() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_operators_check_280() {

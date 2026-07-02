@@ -1,11 +1,8 @@
-
-
 #[test]
 fn test_auth_check_1() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_3() {
@@ -13,13 +10,11 @@ fn test_auth_check_3() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_10() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_12() {
@@ -27,13 +22,11 @@ fn test_auth_check_12() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_32() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_48() {
@@ -41,13 +34,11 @@ fn test_auth_check_48() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_54() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_77() {
@@ -55,13 +46,11 @@ fn test_auth_check_77() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_97() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_115() {
@@ -69,13 +58,11 @@ fn test_auth_check_115() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_116() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_117() {
@@ -83,13 +70,11 @@ fn test_auth_check_117() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_127() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_134() {
@@ -97,13 +82,11 @@ fn test_auth_check_134() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_137() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_138() {
@@ -111,13 +94,11 @@ fn test_auth_check_138() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_143() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_144() {
@@ -125,13 +106,11 @@ fn test_auth_check_144() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_147() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_183() {
@@ -139,13 +118,11 @@ fn test_auth_check_183() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_187() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_195() {
@@ -153,13 +130,11 @@ fn test_auth_check_195() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_197() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_221() {
@@ -167,13 +142,11 @@ fn test_auth_check_221() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_225() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_226() {
@@ -181,13 +154,11 @@ fn test_auth_check_226() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_229() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_238() {
@@ -195,13 +166,11 @@ fn test_auth_check_238() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_240() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_256() {
@@ -209,13 +178,11 @@ fn test_auth_check_256() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_267() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_270() {
@@ -223,20 +190,17 @@ fn test_auth_check_270() {
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_273() {
     let val = true;
     assert!(val);
 }
 
-
 #[test]
 fn test_auth_check_275() {
     let val = true;
     assert!(val);
 }
-
 
 #[test]
 fn test_auth_check_285() {

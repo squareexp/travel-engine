@@ -144,7 +144,11 @@ pub fn listing_quota(completion_percent: f64) -> Option<i64> {
 }
 
 /// Best-effort Zanzibar detection from free-text location fields.
-pub fn is_zanzibar_location(country: Option<&str>, region: Option<&str>, city: Option<&str>) -> bool {
+pub fn is_zanzibar_location(
+    country: Option<&str>,
+    region: Option<&str>,
+    city: Option<&str>,
+) -> bool {
     let needles = ["zanzibar", "unguja", "pemba", "stone town"];
     [country, region, city].into_iter().flatten().any(|field| {
         let lower = field.to_lowercase();

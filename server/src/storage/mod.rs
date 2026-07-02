@@ -141,7 +141,10 @@ impl GcsClient {
             bail!("GCS token exchange failed: {body}");
         }
 
-        let token: TokenResponse = resp.json().await.context("failed to parse token response")?;
+        let token: TokenResponse = resp
+            .json()
+            .await
+            .context("failed to parse token response")?;
 
         let cached = CachedToken {
             access_token: token.access_token.clone(),
@@ -201,7 +204,9 @@ impl GcsClient {
         let date_format =
             format_description::parse("[year][month][day]").context("invalid date format")?;
 
-        let request_timestamp = now.format(&ts_format).context("failed to format timestamp")?;
+        let request_timestamp = now
+            .format(&ts_format)
+            .context("failed to format timestamp")?;
         let datestamp = now.format(&date_format).context("failed to format date")?;
 
         let credential_scope = format!("{datestamp}/auto/storage/goog4_request");
@@ -273,8 +278,8 @@ mod tests {
         let bucket = std::env::var("GCS_BUCKET").expect("GCS_BUCKET not set");
         let client = GcsClient::from_env(bucket).expect("failed to init GCS client");
 
-        let data = std::fs::read("/Users/ajmaljs/Assets/SquareCDS-pricing.pdf")
-            .expect("fixture missing");
+        let data =
+            std::fs::read("/Users/ajmaljs/Assets/SquareCDS-pricing.pdf").expect("fixture missing");
 
         let object_path = client
             .upload("test/SquareCDS-pricing.pdf", "application/pdf", data)
