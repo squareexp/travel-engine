@@ -1,6 +1,10 @@
 # Stage 1: Chef - for dependency caching
-FROM rust:1.88-bookworm AS chef
-RUN cargo install cargo-chef
+FROM rust:1.91-bookworm AS chef
+# Pinned: cargo-chef 0.1.77 requires rustc 1.91+. Keep this version and the
+# base image in lockstep — an unpinned `cargo install cargo-chef` silently
+# grabs whatever's latest on crates.io and breaks the build when its MSRV
+# outpaces the base image (which is exactly what happened here).
+RUN cargo install cargo-chef --version 0.1.77 --locked
 WORKDIR /workspace/server
 
 # Stage 2: Planner - generate recipe
