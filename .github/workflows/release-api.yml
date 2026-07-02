@@ -68,4 +68,7 @@ jobs:
           script: |
             cd /home/apps/sq/travel-engine/deploy
             GH_TOKEN="${{ secrets.GH_TOKEN }}" ./deploy-from-github-artifact.sh ${{ github.run_id }}
+            sleep 2
+            docker logs --tail=100 travel-engine-api
+
 
