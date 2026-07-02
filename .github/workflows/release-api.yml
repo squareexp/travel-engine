@@ -70,5 +70,12 @@ jobs:
             GH_TOKEN="${{ secrets.GH_TOKEN }}" ./deploy-from-github-artifact.sh ${{ github.run_id }}
             sleep 2
             docker logs --tail=100 travel-engine-api
+            echo "=== VPS Diagnostics ==="
+            echo "${{ secrets.VPS_PASSWORD }}" | sudo -S systemctl status nginx || true
+            echo "=== Active Ports ==="
+            echo "${{ secrets.VPS_PASSWORD }}" | sudo -S ss -tulpn || true
+            echo "=== Firewall Rules ==="
+            echo "${{ secrets.VPS_PASSWORD }}" | sudo -S ufw status || true
+
 
 
