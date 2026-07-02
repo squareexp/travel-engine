@@ -1,0 +1,158 @@
+warning: struct `RequireRole` is never constructed
+  --> src/auth/mod.rs:65:12
+   |
+65 | pub struct RequireRole(pub &'static str);
+   |            ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `require_role` is never used
+  --> src/auth/mod.rs:68:12
+   |
+67 | impl AuthUser {
+   | ------------- method in this implementation
+68 |     pub fn require_role(&self, role: &str) -> Result<(), AppError> {
+   |            ^^^^^^^^^^^^
+
+warning: fields `issuer`, `authorization_endpoint`, and `token_endpoint` are never read
+  --> src/auth/base_idp.rs:17:9
+   |
+16 | pub struct Metadata {
+   |            -------- fields in this struct
+17 |     pub issuer: String,
+   |         ^^^^^^
+18 |     pub authorization_endpoint: String,
+   |         ^^^^^^^^^^^^^^^^^^^^^^
+19 |     pub token_endpoint: String,
+   |         ^^^^^^^^^^^^^^
+   |
+   = note: `Metadata` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: struct `TokenPair` is never constructed
+  --> src/auth/base_idp.rs:39:12
+   |
+39 | pub struct TokenPair {
+   |            ^^^^^^^^^
+
+warning: field `gid` is never read
+  --> src/auth/base_idp.rs:64:9
+   |
+57 | pub struct AccessClaims {
+   |            ------------ field in this struct
+...
+64 |     pub gid: Option<String>,
+   |         ^^^
+   |
+   = note: `AccessClaims` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: fields `client_id`, `client_secret`, and `redirect_uri` are never read
+  --> src/auth/base_idp.rs:85:5
+   |
+83 | struct Inner {
+   |        ----- fields in this struct
+84 |     issuer: String,
+85 |     client_id: String,
+   |     ^^^^^^^^^
+86 |     client_secret: String,
+   |     ^^^^^^^^^^^^^
+87 |     audience: String,
+88 |     redirect_uri: String,
+   |     ^^^^^^^^^^^^
+
+warning: method `exchange_code` is never used
+   --> src/auth/base_idp.rs:164:18
+    |
+ 94 | impl BaseIdpClient {
+    | ------------------ method in this implementation
+...
+164 |     pub async fn exchange_code(
+    |                  ^^^^^^^^^^^^^
+
+warning: fields `redis`, `google_maps`, and `payments` are never read
+ --> src/config.rs:6:9
+  |
+4 | pub struct Config {
+  |            ------ fields in this struct
+5 |     pub database: DatabaseConfig,
+6 |     pub redis: RedisConfig,
+  |         ^^^^^
+7 |     pub jwt: JwtConfig,
+8 |     pub google_maps: GoogleMapsConfig,
+  |         ^^^^^^^^^^^
+9 |     pub payments: PaymentsConfig,
+  |         ^^^^^^^^
+  |
+  = note: `Config` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+
+warning: field `url` is never read
+  --> src/config.rs:18:9
+   |
+17 | pub struct DatabaseConfig {
+   |            -------------- field in this struct
+18 |     pub url: String,
+   |         ^^^
+   |
+   = note: `DatabaseConfig` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+
+warning: field `url` is never read
+  --> src/config.rs:24:9
+   |
+23 | pub struct RedisConfig {
+   |            ----------- field in this struct
+24 |     pub url: Option<String>,
+   |         ^^^
+   |
+   = note: `RedisConfig` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+
+warning: field `api_key` is never read
+  --> src/config.rs:35:9
+   |
+34 | pub struct GoogleMapsConfig {
+   |            ---------------- field in this struct
+35 |     pub api_key: Option<String>,
+   |         ^^^^^^^
+   |
+   = note: `GoogleMapsConfig` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+
+warning: field `webhook_secret` is never read
+  --> src/config.rs:40:9
+   |
+39 | pub struct PaymentsConfig {
+   |            -------------- field in this struct
+40 |     pub webhook_secret: Option<String>,
+   |         ^^^^^^^^^^^^^^
+   |
+   = note: `PaymentsConfig` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+
+warning: variant `Validation` is never constructed
+  --> src/error.rs:33:5
+   |
+10 | pub enum AppError {
+   |          -------- variant in this enum
+...
+33 |     Validation(String),
+   |     ^^^^^^^^^^
+   |
+   = note: `AppError` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: struct `OperatorRow` is never constructed
+  --> src/operators/handlers.rs:33:8
+   |
+33 | struct OperatorRow {
+   |        ^^^^^^^^^^^
+
+warning: field `gateway` is never read
+  --> src/payments/handlers.rs:29:9
+   |
+26 | pub struct WebhookPayload {
+   |            -------------- field in this struct
+...
+29 |     pub gateway: String,
+   |         ^^^^^^^
+
+warning: `twende-server` (bin "twende-server") generated 15 warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.55s
+warning: the following packages contain code that will be rejected by a future version of Rust: sqlx-postgres v0.7.4
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+     Running `target/debug/twende-server`
+Error: DATABASE_URL must be set
