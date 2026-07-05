@@ -59,11 +59,9 @@ async fn main() -> Result<()> {
                             loop {
                                 match listener.recv().await {
                                     Ok(notification) => {
-                                        if let Ok(payload) =
-                                            serde_json::from_str::<serde_json::Value>(
-                                                notification.payload(),
-                                            )
-                                        {
+                                        if let Ok(payload) = serde_json::from_str::<serde_json::Value>(
+                                            notification.payload(),
+                                        ) {
                                             if let Some(table) = payload["table"].as_str() {
                                                 let _ = tx.send(table.to_string());
                                             }
