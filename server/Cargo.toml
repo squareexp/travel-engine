@@ -36,6 +36,8 @@ urlencoding = "2"
 rsa = { version = "0.9", features = ["pem"] }
 sha2 = { version = "0.10", features = ["oid"] }
 hex = "0.4"
+async-stream = "0.3"
+futures = "0.3"
 
 [profile.release]
 lto = "thin"

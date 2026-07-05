@@ -24,6 +24,10 @@ pub struct AppState {
     pub config: Arc<Config>,
     pub base_idp: Option<BaseIdpClient>,
     pub gcs: Option<Arc<GcsClient>>,
+    /// Fan-out of Postgres `axiomdb_changes` notifications (table name per
+    /// message), fed by a single dedicated LISTEN connection spawned in
+    /// `main.rs`. SSE handlers subscribe and filter for their own table.
+    pub db_changes: Arc<tokio::sync::broadcast::Sender<String>>,
 }
 
 pub fn build_router(state: AppState) -> Router {
@@ -124,6 +128,10 @@ pub fn build_router(state: AppState) -> Router {
         .route(
             "/api/v1/operators/listings",
             get(crate::listings::handlers::operator_listings),
+        )
+        .route(
+            "/api/v1/operators/listings/stream",
+            get(crate::listings::handlers::operator_listings_stream),
         )
         .route(
             "/api/v1/operators/bookings",

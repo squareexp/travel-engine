@@ -1,5 +1,8 @@
+use std::convert::Infallible;
+
 use axum::{
     extract::{Path, Query, State},
+    response::sse::{Event, KeepAlive, Sse},
     Json,
 };
 use serde::Deserialize;
@@ -608,16 +611,12 @@ pub async fn delete_listing(
     Ok(Json(json!({ "message": "Listing deleted", "id": id })))
 }
 
-pub async fn operator_listings(
-    State(state): State<AppState>,
-    auth: AuthUser,
-    Query(params): Query<ListingsQuery>,
-) -> AppResult<Json<Value>> {
-    auth.require_operator()?;
-
-    let limit = params.limit.unwrap_or(20).min(100);
-    let offset = params.offset.unwrap_or(0);
-
+async fn fetch_operator_listings(
+    db: &sqlx::PgPool,
+    operator_id: Uuid,
+    limit: i64,
+    offset: i64,
+) -> AppResult<Value> {
     let rows = sqlx::query(
         r#"SELECT l.id, l.operator_id, l.listing_type::text as listing_type, l.title,
                   l.base_price, l.currency, l.status::text as status,
@@ -636,23 +635,81 @@ pub async fn operator_listings(
            ORDER BY l.created_at DESC
            LIMIT $2 OFFSET $3"#,
     )
-    .bind(auth.id)
+    .bind(operator_id)
     .bind(limit)
     .bind(offset)
-    .fetch_all(&state.db)
+    .fetch_all(db)
     .await?;
 
     let total: i64 = sqlx::query_scalar(
         "SELECT COUNT(*) FROM listings WHERE operator_id = $1 AND deleted_at IS NULL",
     )
-    .bind(auth.id)
-    .fetch_one(&state.db)
+    .bind(operator_id)
+    .fetch_one(db)
     .await?;
 
     let listings: Vec<Value> = rows.iter().map(row_to_listing).collect();
-    Ok(Json(
-        json!({ "data": listings, "total": total, "limit": limit, "offset": offset }),
-    ))
+    Ok(json!({ "data": listings, "total": total, "limit": limit, "offset": offset }))
+}
+
+pub async fn operator_listings(
+    State(state): State<AppState>,
+    auth: AuthUser,
+    Query(params): Query<ListingsQuery>,
+) -> AppResult<Json<Value>> {
+    auth.require_operator()?;
+
+    let limit = params.limit.unwrap_or(20).min(100);
+    let offset = params.offset.unwrap_or(0);
+
+    let body = fetch_operator_listings(&state.db, auth.id, limit, offset).await?;
+    Ok(Json(body))
+}
+
+/// Same data as [`operator_listings`], but pushed over Server-Sent Events:
+/// one immediate snapshot, then a fresh snapshot every time the `listings`
+/// table changes (via the `axiomdb_notify_change` trigger from migration
+/// 019, relayed through `AppState::db_changes`). Auth and query-scoping
+/// mirror `operator_listings` exactly — this is the same data, just live.
+pub async fn operator_listings_stream(
+    State(state): State<AppState>,
+    auth: AuthUser,
+    Query(params): Query<ListingsQuery>,
+) -> AppResult<Sse<impl futures::Stream<Item = Result<Event, Infallible>>>> {
+    auth.require_operator()?;
+
+    let operator_id = auth.id;
+    let limit = params.limit.unwrap_or(20).min(100);
+    let offset = params.offset.unwrap_or(0);
+    let db = state.db.clone();
+    let mut changes = state.db_changes.subscribe();
+
+    let stream = async_stream::stream! {
+        match fetch_operator_listings(&db, operator_id, limit, offset).await {
+            Ok(snapshot) => yield Ok(Event::default().event("listings").data(snapshot.to_string())),
+            Err(e) => tracing::warn!("operator_listings_stream: initial snapshot failed: {e}"),
+        }
+
+        loop {
+            match changes.recv().await {
+                Ok(table) if table == "listings" => {
+                    match fetch_operator_listings(&db, operator_id, limit, offset).await {
+                        Ok(snapshot) => {
+                            yield Ok(Event::default().event("listings").data(snapshot.to_string()))
+                        }
+                        Err(e) => {
+                            tracing::warn!("operator_listings_stream: refetch failed: {e}");
+                        }
+                    }
+                }
+                Ok(_) => continue,
+                Err(tokio::sync::broadcast::error::RecvError::Lagged(_)) => continue,
+                Err(tokio::sync::broadcast::error::RecvError::Closed) => break,
+            }
+        }
+    };
+
+    Ok(Sse::new(stream).keep_alive(KeepAlive::default()))
 }
 
 pub async fn admin_moderate_listing(

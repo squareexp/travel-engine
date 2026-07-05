@@ -41,6 +41,53 @@ async fn main() -> Result<()> {
     let db = db::create_pool(&config.database.direct_url).await?;
     info!("Database pool connected");
 
+    // Dedicated LISTEN connection for realtime (SSE) endpoints: fans out
+    // `axiomdb_changes` notifications (see migration 019) to any number of
+    // in-process subscribers via a broadcast channel. Reconnects on drop.
+    let (db_changes_tx, _) = tokio::sync::broadcast::channel::<String>(64);
+    let db_changes = Arc::new(db_changes_tx);
+    {
+        let direct_url = config.database.direct_url.clone();
+        let tx = db_changes.clone();
+        tokio::spawn(async move {
+            loop {
+                match sqlx::postgres::PgListener::connect(&direct_url).await {
+                    Ok(mut listener) => {
+                        if let Err(e) = listener.listen("axiomdb_changes").await {
+                            tracing::warn!("axiomdb_changes: LISTEN failed: {e}");
+                        } else {
+                            loop {
+                                match listener.recv().await {
+                                    Ok(notification) => {
+                                        if let Ok(payload) =
+                                            serde_json::from_str::<serde_json::Value>(
+                                                notification.payload(),
+                                            )
+                                        {
+                                            if let Some(table) = payload["table"].as_str() {
+                                                let _ = tx.send(table.to_string());
+                                            }
+                                        }
+                                    }
+                                    Err(e) => {
+                                        tracing::warn!(
+                                            "axiomdb_changes: connection lost ({e}), reconnecting"
+                                        );
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Err(e) => {
+                        tracing::warn!("axiomdb_changes: connect failed ({e}), retrying");
+                    }
+                }
+                tokio::time::sleep(std::time::Duration::from_secs(5)).await;
+            }
+        });
+    }
+
     // Run migrations unless explicitly disabled for local diagnostics.
     if std::env::var("SKIP_MIGRATIONS").as_deref() == Ok("true") {
         info!("Migrations skipped because SKIP_MIGRATIONS=true");
@@ -84,6 +131,7 @@ async fn main() -> Result<()> {
         config: Arc::new(config.clone()),
         base_idp,
         gcs,
+        db_changes,
     };
 
     let router = app::build_router(state);
