@@ -312,6 +312,65 @@ pub async fn create_listing(
         ));
     }
 
+    // Input validation — the endpoint cannot trust the client to have
+    // enforced these (a compromised or third-party client can send anything).
+    let title = req.title.trim();
+    if title.is_empty() {
+        return Err(AppError::BadRequest("title is required".to_string()));
+    }
+    if title.chars().count() > 200 {
+        return Err(AppError::BadRequest(
+            "title is too long (max 200 characters)".to_string(),
+        ));
+    }
+    if !req.base_price.is_finite() || req.base_price < 0.0 {
+        return Err(AppError::BadRequest(
+            "base_price must be a non-negative number".to_string(),
+        ));
+    }
+
+    // The destination FK would otherwise surface a bad id as a 500 with a raw
+    // database error; validate it up front for a clean 400.
+    let destination_exists: bool =
+        sqlx::query_scalar("SELECT EXISTS(SELECT 1 FROM destinations WHERE id = $1)")
+            .bind(req.destination_id)
+            .fetch_one(&state.db)
+            .await?;
+    if !destination_exists {
+        return Err(AppError::BadRequest(
+            "destination_id does not reference a known destination".to_string(),
+        ));
+    }
+
+    // Constrained "enum-like" detail fields are plain TEXT columns, so the DB
+    // won't reject a bogus value — validate against the allowed set here.
+    if let Some(level) = req
+        .trip_details
+        .as_ref()
+        .and_then(|d| d.difficulty_level.as_deref())
+    {
+        const LEVELS: &[&str] = &["easy", "moderate", "challenging", "expert"];
+        if !LEVELS.contains(&level) {
+            return Err(AppError::BadRequest(format!(
+                "difficulty_level must be one of: {}",
+                LEVELS.join(", ")
+            )));
+        }
+    }
+    if let Some(class) = req
+        .safari_details
+        .as_ref()
+        .and_then(|d| d.vehicle_class.as_deref())
+    {
+        const CLASSES: &[&str] = &["shared_jeep", "private_jeep", "luxury_4wd"];
+        if !CLASSES.contains(&class) {
+            return Err(AppError::BadRequest(format!(
+                "vehicle_class must be one of: {}",
+                CLASSES.join(", ")
+            )));
+        }
+    }
+
     if auth.role != "admin" {
         let exists: i64 =
             sqlx::query_scalar("SELECT COUNT(*) FROM operator_profiles WHERE user_id = $1")
@@ -353,7 +412,7 @@ pub async fn create_listing(
     .bind(auth.id)
     .bind(req.destination_id)
     .bind(&req.listing_type)
-    .bind(&req.title)
+    .bind(title)
     .bind(req.description.as_deref())
     .bind(req.base_price)
     .bind(&currency)

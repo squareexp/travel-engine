@@ -310,6 +310,13 @@ pub async fn get_my_profile(
         // Verification
         "verification_status": row.try_get::<String, _>("verification_status").unwrap_or_else(|_| "pending".to_string()),
         "verified_at": row.try_get::<Option<String>, _>("verified_at").ok().flatten(),
+        // Analytics counters (read-only on client)
+        "profile_views": sqlx::query_scalar::<_, i64>(
+            "SELECT COALESCE(profile_views, 0) FROM operator_profiles WHERE user_id = $1"
+        ).bind(auth.id).fetch_optional(&state.db).await?.unwrap_or(0),
+        "click_count": sqlx::query_scalar::<_, i64>(
+            "SELECT COALESCE(click_count, 0) FROM operator_profiles WHERE user_id = $1"
+        ).bind(auth.id).fetch_optional(&state.db).await?.unwrap_or(0),
         "compliance": compliance
     })))
 }
@@ -774,6 +781,44 @@ pub async fn admin_verify_operator(
     })))
 }
 
+/// POST /api/v1/public/operators/:id/view
+/// Called by the traveller client each time an operator public profile is opened.
+/// Unauthenticated – no auth required. Increments profile_views counter.
+pub async fn record_profile_view(
+    State(state): State<AppState>,
+    Path(operator_id): Path<Uuid>,
+) -> AppResult<Json<Value>> {
+    sqlx::query(
+        r#"UPDATE operator_profiles
+           SET profile_views = COALESCE(profile_views, 0) + 1,
+               updated_at    = now()
+           WHERE user_id = $1"#,
+    )
+    .bind(operator_id)
+    .execute(&state.db)
+    .await?;
+    Ok(Json(json!({ "ok": true })))
+}
+
+/// POST /api/v1/public/operators/:id/click
+/// Called when a traveller taps "Book now" or a similar conversion action on an operator.
+/// Unauthenticated. Increments click_count; the ratio click_count/profile_views = click_rate.
+pub async fn record_profile_click(
+    State(state): State<AppState>,
+    Path(operator_id): Path<Uuid>,
+) -> AppResult<Json<Value>> {
+    sqlx::query(
+        r#"UPDATE operator_profiles
+           SET click_count = COALESCE(click_count, 0) + 1,
+               updated_at  = now()
+           WHERE user_id = $1"#,
+    )
+    .bind(operator_id)
+    .execute(&state.db)
+    .await?;
+    Ok(Json(json!({ "ok": true })))
+}
+
 pub async fn operator_analytics(
     State(state): State<AppState>,
     auth: AuthUser,
@@ -852,6 +897,27 @@ pub async fn operator_analytics(
         })
         .collect();
 
+    // ── Profile view & click-rate analytics ──
+    let view_row = sqlx::query(
+        "SELECT COALESCE(profile_views,0) as views, COALESCE(click_count,0) as clicks FROM operator_profiles WHERE user_id = $1",
+    )
+    .bind(auth.id)
+    .fetch_optional(&state.db)
+    .await?;
+    let (profile_views, click_count) = view_row
+        .as_ref()
+        .map(|r| {
+            let v = r.try_get::<i64, _>("views").unwrap_or(0);
+            let c = r.try_get::<i64, _>("clicks").unwrap_or(0);
+            (v, c)
+        })
+        .unwrap_or((0, 0));
+    let click_rate: f64 = if profile_views > 0 {
+        (click_count as f64 / profile_views as f64 * 1000.0).round() / 10.0
+    } else {
+        0.0
+    };
+
     Ok(Json(json!({
         "total_listings": total_listings,
         "active_listings": active_listings,
@@ -864,6 +930,9 @@ pub async fn operator_analytics(
         "conversion_rate": (conversion_rate * 1000.0).round() / 10.0,
         "cancellation_rate": (cancellation_rate * 1000.0).round() / 10.0,
         "average_rating": avg_rating.map(|v| (v * 10.0).round() / 10.0),
-        "demand_by_destination": by_destination
+        "demand_by_destination": by_destination,
+        "profile_views": profile_views,
+        "click_count": click_count,
+        "click_rate": click_rate
     })))
 }

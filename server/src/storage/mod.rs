@@ -193,6 +193,52 @@ impl GcsClient {
         Ok(prefixed)
     }
 
+    /// Upload bytes as a **public-read** object and return a permanent public
+    /// URL. Unlike [`upload`] (private objects behind time-limited signed
+    /// URLs), this is for content that must stay viewable indefinitely from a
+    /// plain link — e.g. itinerary day images on the public share page, which
+    /// a signed URL's short TTL would break. Objects are namespaced under a
+    /// `public/` prefix so they're clearly separated from private KYB
+    /// documents in the same bucket.
+    pub async fn upload_public(
+        &self,
+        object_name: &str,
+        content_type: &str,
+        data: Vec<u8>,
+    ) -> Result<String> {
+        let token = self.access_token().await?;
+        let bucket = &self.inner.bucket;
+        let prefixed = format!("travel-engine/public/{object_name}");
+
+        let encoded = urlencoding::encode(&prefixed);
+        let url = format!(
+            "https://storage.googleapis.com/upload/storage/v1/b/{bucket}/o?uploadType=media&name={encoded}&predefinedAcl=publicRead"
+        );
+
+        let resp = self
+            .inner
+            .http
+            .post(&url)
+            .bearer_auth(&token)
+            .header("Content-Type", content_type)
+            .body(data)
+            .send()
+            .await
+            .context("GCS public upload request failed")?;
+
+        if !resp.status().is_success() {
+            let status = resp.status();
+            let body = resp.text().await.unwrap_or_default();
+            bail!("GCS public upload failed ({status}): {body}");
+        }
+
+        // Permanent, unauthenticated URL for a public-read object.
+        Ok(format!(
+            "https://storage.googleapis.com/{bucket}/{}",
+            encode_object_path(&prefixed)
+        ))
+    }
+
     /// Generate a V4 signed URL granting time-limited GET access to a private object.
     /// `object_path` is the full path within the bucket (e.g. "travel-engine/operators/.../license.pdf").
     pub fn signed_url(&self, object_path: &str, ttl_secs: i64) -> Result<String> {

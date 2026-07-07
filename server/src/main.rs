@@ -10,6 +10,7 @@ mod config;
 mod db;
 mod destinations;
 mod error;
+mod itinerary;
 mod listings;
 mod middleware;
 mod operators;

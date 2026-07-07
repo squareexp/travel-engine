@@ -48,6 +48,25 @@ pub fn build_router(state: AppState) -> Router {
     Router::new()
         // Health
         .route("/healthz", get(healthz))
+        // Public itinerary sharing (no auth): JSON contract for the future
+        // client web app, plus an interim server-rendered share page.
+        .route(
+            "/api/v1/public/itineraries/:token",
+            get(crate::itinerary::handlers::get_public_itinerary),
+        )
+        .route(
+            "/i/:token",
+            get(crate::itinerary::handlers::public_itinerary_page),
+        )
+        // Public operator engagement tracking (no auth required)
+        .route(
+            "/api/v1/public/operators/:id/view",
+            post(crate::operators::handlers::record_profile_view),
+        )
+        .route(
+            "/api/v1/public/operators/:id/click",
+            post(crate::operators::handlers::record_profile_click),
+        )
         // Auth
         .route("/api/v1/auth/register", post(auth_handlers::register))
         .route("/api/v1/auth/login", post(auth_handlers::login))
@@ -132,6 +151,21 @@ pub fn build_router(state: AppState) -> Router {
         .route(
             "/api/v1/operators/listings/stream",
             get(crate::listings::handlers::operator_listings_stream),
+        )
+        // Itinerary authoring (operator-owned)
+        .route(
+            "/api/v1/operators/listings/:id/itinerary",
+            get(crate::itinerary::handlers::get_operator_itinerary)
+                .put(crate::itinerary::handlers::replace_itinerary),
+        )
+        .route(
+            "/api/v1/operators/listings/:id/itinerary/image",
+            post(crate::itinerary::handlers::upload_itinerary_image),
+        )
+        .route(
+            "/api/v1/operators/listings/:id/itinerary/share",
+            post(crate::itinerary::handlers::share_itinerary)
+                .delete(crate::itinerary::handlers::unshare_itinerary),
         )
         .route(
             "/api/v1/operators/bookings",

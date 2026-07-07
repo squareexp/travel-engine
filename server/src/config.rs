@@ -12,6 +12,7 @@ pub struct Config {
     pub logging: LoggingConfig,
     pub base_idp: BaseIdpConfig,
     pub gcs: GcsConfig,
+    pub public: PublicConfig,
 }
 
 #[derive(Clone)]
@@ -72,6 +73,15 @@ pub struct GcsConfig {
     pub credentials_path: Option<String>,
 }
 
+#[derive(Clone)]
+pub struct PublicConfig {
+    /// Base URL that public share links are built on top of, e.g.
+    /// `https://api.travelengine.zhio.dev`. The interim share page is served
+    /// by this backend at `{share_base_url}/i/{token}`; when the dedicated
+    /// client web app ships, point this at that web app instead.
+    pub share_base_url: String,
+}
+
 impl Config {
     pub fn from_env() -> Result<Self> {
         let database_url = required_var("DATABASE_URL")?;
@@ -124,6 +134,10 @@ impl Config {
             gcs: GcsConfig {
                 bucket: optional_var("GCS_BUCKET"),
                 credentials_path: optional_var("GOOGLE_APPLICATION_CREDENTIALS"),
+            },
+            public: PublicConfig {
+                share_base_url: optional_var("PUBLIC_SHARE_BASE_URL")
+                    .unwrap_or_else(|| "https://api.travelengine.zhio.dev".to_string()),
             },
         })
     }
