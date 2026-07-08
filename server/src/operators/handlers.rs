@@ -529,7 +529,11 @@ pub async fn upload_document(
     } else {
         "jpg"
     };
-    let object_name = format!("operators/{}/{}.{}", auth.id, doc_type, ext);
+    let now_secs = std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .unwrap()
+        .as_secs();
+    let object_name = format!("operators/{}/{}_{}.{}", auth.id, doc_type, now_secs, ext);
 
     let object_path = gcs
         .upload(&object_name, &ct, bytes)
