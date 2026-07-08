@@ -2,7 +2,9 @@ use std::convert::Infallible;
 
 use axum::{
     extract::{Path, Query, State},
+    http::{header, HeaderValue},
     response::sse::{Event, KeepAlive, Sse},
+    response::{IntoResponse, Response},
     Json,
 };
 use serde::Deserialize;
@@ -734,7 +736,7 @@ pub async fn operator_listings_stream(
     State(state): State<AppState>,
     auth: AuthUser,
     Query(params): Query<ListingsQuery>,
-) -> AppResult<Sse<impl futures::Stream<Item = Result<Event, Infallible>>>> {
+) -> AppResult<Response> {
     auth.require_operator()?;
 
     let operator_id = auth.id;
@@ -745,7 +747,9 @@ pub async fn operator_listings_stream(
 
     let stream = async_stream::stream! {
         match fetch_operator_listings(&db, operator_id, limit, offset).await {
-            Ok(snapshot) => yield Ok(Event::default().event("listings").data(snapshot.to_string())),
+            Ok(snapshot) => yield Ok::<Event, Infallible>(
+                Event::default().event("listings").data(snapshot.to_string()),
+            ),
             Err(e) => tracing::warn!("operator_listings_stream: initial snapshot failed: {e}"),
         }
 
@@ -768,7 +772,21 @@ pub async fn operator_listings_stream(
         }
     };
 
-    Ok(Sse::new(stream).keep_alive(KeepAlive::default()))
+    // nginx buffers proxied responses by default, which holds SSE frames in
+    // its buffer indefinitely — the client connects but never receives a
+    // single event. `X-Accel-Buffering: no` is nginx's per-response opt-out;
+    // without it this endpoint works when hit directly but is dead through
+    // the production proxy.
+    let mut response = Sse::new(stream)
+        .keep_alive(KeepAlive::default())
+        .into_response();
+    response
+        .headers_mut()
+        .insert("X-Accel-Buffering", HeaderValue::from_static("no"));
+    response
+        .headers_mut()
+        .insert(header::CACHE_CONTROL, HeaderValue::from_static("no-cache"));
+    Ok(response)
 }
 
 pub async fn admin_moderate_listing(
